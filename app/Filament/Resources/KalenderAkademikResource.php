@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class KalenderAkademikResource extends Resource
 {
     protected static ?string $model = KalenderAkademik::class;
+    protected static ?string $navigationGroup = 'Akademik';
     protected static ?string $navigationLabel = 'Kalender Akademik'; // Mengubah nama sidebar
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
