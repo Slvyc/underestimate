@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kerjasamas', function (Blueprint $table) {
+        Schema::create('pengumumen', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_kerjasama');
-            $table->string('lingkup_kerjasama');
-            $table->string('jenis_dokumen');
-            $table->enum('status_kerjasama', ['Aktif', 'Selesai']);
+            $table->integer('tanggal_pengumuman');
+            $table->enum('bulan_pengumuman', ['JAN', 'FEB', 'MAR', 'APR', 'MEI', 'JUNI', 'JULI', 'AGU', 'SEP', 'OKT', 'NOV', 'DES']);
+            $table->string('judul_pengumuman');
+            $table->text('deskripsi_pengumuman');
             $table->string('link');
-            $table->date('tanggal');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kerjasamas');
+        Schema::dropIfExists('pengumumen');
     }
 };

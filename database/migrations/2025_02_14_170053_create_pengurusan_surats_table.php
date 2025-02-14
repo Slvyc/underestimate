@@ -11,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kerjasamas', function (Blueprint $table) {
+        Schema::create('pengurusan_surats', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_kerjasama');
-            $table->string('lingkup_kerjasama');
-            $table->string('jenis_dokumen');
-            $table->enum('status_kerjasama', ['Aktif', 'Selesai']);
+            $table->string('pengurusan_surat');
             $table->string('link');
-            $table->date('tanggal');
+            $table->date('date');
             $table->timestamps();
         });
     }
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kerjasamas');
+        Schema::dropIfExists('pengurusan_surats');
     }
 };
