@@ -2,26 +2,30 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\BeritaResource\Pages;
-use App\Filament\Resources\BeritaResource\RelationManagers;
-use App\Models\Berita;
+use App\Filament\Resources\KegiatanBemResource\Pages;
+use App\Filament\Resources\KegiatanBemResource\RelationManagers;
+use App\Models\KegiatanBem;
 use Filament\Forms;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\DatePicker;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Forms\Components\FileUpload;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ImageColumn;
 
-class BeritaResource extends Resource
+class KegiatanBemResource extends Resource
 {
-    protected static ?string $model = Berita::class;
-    protected static ?string $navigationLabel = 'Berita FT Unaya'; // Mengubah nama sidebar
-    protected static ?string $navigationGroup = 'Manajemen Berita'; // Membuat grup di sidebar
+    protected static ?string $model = KegiatanBem::class;
+    protected static ?string $navigationGroup = 'Organisasi';
+    protected static ?string $navigationLabel = 'Kegiatan BEM'; 
+    protected static ?string $slug = 'Kegiatan-Bem';
+    protected static ?string $pluralLabel = 'Kegiatan BEM';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -36,8 +40,8 @@ class BeritaResource extends Resource
                     ->required(),
                 FileUpload::make('image_news')
                     ->required()
-                    ->directory('uploads/berita'),
-                Forms\Components\DatePicker::make('date')
+                    ->directory('uploads/kegiatan_bem'),
+                DatePicker::make('date')
                     ->label('Tanggal Publikasi')
                     ->required()
             ]);
@@ -47,17 +51,18 @@ class BeritaResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image_news')
-                    ->label('Gambar Berita')
+                ImageColumn::make('image_news')
+                    ->label('Gambar Kegiatan')
                     ->square()
                     ->width(200)
                     ->height(200)
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
                     ->url(fn ($record) => asset('storage/' . $record->image_news)),
-                Tables\Columns\TextColumn::make('title')
-                     ->searchable(),
-                Tables\Columns\TextColumn::make('description'),
-                Tables\Columns\TextColumn::make('date')
+                TextColumn::make('title')
+                    ->searchable(),
+                TextColumn::make('description')
+                    ->searchable(),
+                TextColumn::make('date')
                     ->label('Tanggal Publikasi')
                     ->searchable()
                     ->sortable(),
@@ -79,7 +84,7 @@ class BeritaResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManageBeritas::route('/'),
+            'index' => Pages\ManageKegiatanBems::route('/'),
         ];
     }
 }
