@@ -24,6 +24,7 @@ class KerjasamaResource extends Resource
 {
     protected static ?string $model = Kerjasama::class;
     protected static ?string $navigationLabel = 'Kerjasama FT Unaya'; // Mengubah nama sidebar
+    protected static ?string $pluralLabel = 'Kerjasama FT Unaya'; // Mengubah nama header
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form

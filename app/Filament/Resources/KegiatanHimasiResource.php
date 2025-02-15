@@ -2,31 +2,30 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\KegiatanBemResource\Pages;
-use App\Filament\Resources\KegiatanBemResource\RelationManagers;
-use App\Models\KegiatanBem;
+use App\Filament\Resources\KegiatanHimasiResource\Pages;
+use App\Filament\Resources\KegiatanHimasiResource\RelationManagers;
+use App\Models\KegiatanHimasi;
 use Filament\Forms;
 use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
+use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-
-class KegiatanBemResource extends Resource
+class KegiatanHimasiResource extends Resource
 {
-    protected static ?string $model = KegiatanBem::class;
+    protected static ?string $model = KegiatanHimasi::class;
     protected static ?string $navigationGroup = 'Organisasi';
-    protected static ?string $navigationLabel = 'Kegiatan BEM'; 
-    protected static ?string $slug = 'Kegiatan-Bem';
-    protected static ?string $pluralLabel = 'Kegiatan BEM';
+    protected static ?string $navigationLabel = 'Kegiatan Himasi'; 
+    protected static ?string $slug = 'Kegiatan-Himasi';
+    protected static ?string $pluralLabel = 'Kegiatan Himasi';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -41,7 +40,7 @@ class KegiatanBemResource extends Resource
                     ->required(),
                 FileUpload::make('image_news')
                     ->required()
-                    ->directory('uploads/kegiatan_bem'),
+                    ->directory('uploads/kegiatan_himasi'),
                 DatePicker::make('date')
                     ->label('Tanggal Publikasi')
                     ->required()
@@ -85,7 +84,7 @@ class KegiatanBemResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManageKegiatanBems::route('/'),
+            'index' => Pages\ManageKegiatanHimasis::route('/'),
         ];
     }
 }
