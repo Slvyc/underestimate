@@ -95,7 +95,7 @@
                     <li><a href="{{ route('emagazine') }}" class="no-border-hover">E-Magazine</a></li>
                     <li><a href="{{ route('pengurusanSurat') }}" class="no-border-hover">Pengurusan Surat</a></li>
                     <li><a href="{{ route('sop') }}" class="no-border-hover">SOP / Panduan</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing" class="no-border-hover">Vidio Intro / Outro Teknik</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing" class="no-border-hover">Video Intro / Outro Teknik</a></li>
                 </ul>
         </li>
         <li><a href="{{ route('tracerStudy') }}">Tracer Study</a></li>
@@ -107,24 +107,24 @@
     <div class="mobile-close"><i class="fas fa-times"></i></div>
         <div class="menu-wrapper-nav">
             <ul class="menu-slide main-menu">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
                 <li class="submenu-link" data-target="profile-menu"><a href="#">Profile<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li class="submenu-link" data-target="program-menu"><a href="#">Program Studi<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li class="submenu-link" data-target="pendidikan-menu"><a href="#">Pendidikan<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li class="submenu-link" data-target="kemahasiswaan-menu"><a href="#">Kemahasiswaan<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li class="submenu-link" data-target="award-menu"><a href="#">Award<i class="ri-arrow-right-s-fill"></i></a></li>
-                <li><a href="#">Kerjasama</a></li>
+                <li><a href="{{ route('kerjasama') }}">Kerjasama</a></li>
                 <li class="submenu-link" data-target="download-menu"><a href="#">Download<i class="ri-arrow-right-s-fill"></i></a></li>
-                <li><a href="#">Tracer Studi</a></li>
+                <li><a href="{{ route('tracerStudy') }}">Tracer Studi</a></li>
             </ul>
 
             <!-- Profile Menu -->
             <ul class="menu-slide profile-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="sejarah.php">Sejarah</a></li>
-                <li><a href="visimisi.php">Visi & Misi</a></li>
-                <li><a href="struktur.php">Struktur Organisasi</a></li>
-                <li><a href="kalender_akademik.php">Kalender Akademik</a></li>
+                <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
+                <li><a href="{{ route('visiMisi') }}">Visi & Misi</a></li>
+            <li><a href="{{ route('strukturOrganisasi') }}">Struktur Organisasi</a></li>
+                <li><a href="{{ route('kalenderAkademik') }}">Kalender Akademik</a></li>
             </ul>
 
             <!-- Program Studi Menu -->
@@ -138,17 +138,17 @@
             <!-- Sistem Informasi Submenu -->
             <ul class="menu-slide sistemInformasi-menu">
                 <li class="back-button-nav" data-target="program-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="visimisi_SI.php">Visi</a></li>
-                <li><a href="dosen_Tsi.php">Dosen</a></li>
-                <li><a href="kurikulum_Tsi.php">Kurikulum</a></li>
+                <li><a href="{{ route('visiMisiSi') }}">Visi</a></li>
+                <li><a href="{{ route('dosenSi') }}">Dosen</a></li>
+                <li><a href="#">Kurikulum</a></li>
             </ul>
 
             <!-- Teknik Sipil Submenu -->
             <ul class="menu-slide teknikSipil-menu">
                 <li class="back-button-nav" data-target="program-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="visimisi_civil.php">Visi</a></li>
-                <li><a href="dosen_Tsipil.php">Dosen</a></li>
-                <li><a href="kurikulum_Tsipil.">Kurikulum</a></li>
+                <li><a href="{{ route('visiMisiSipil') }}">Visi</a></li>
+                <li><a href="{{ route('dosenSipil') }}">Dosen</a></li>
+                <li><a href="#">Kurikulum</a></li>
             </ul>
 
             <!-- Teknik Mesin Submenu -->
@@ -162,10 +162,10 @@
             <!-- Menu Pendidikan -->
             <ul class="menu-slide pendidikan-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="laboratorium.php">Laboratorium</a></li>
-                <li><a href="beasiswa.php">Beasiswa</a></li>
-                <li><a href="perpus.php">Perpustakaan</a></li>
-                <li><a href="jurnal.php">Jurnal</a></li>
+                <li><a href="{{ route('laboratorium') }}">Laboratorium</a></li>
+                <li><a href="{{ route('beasiswa') }}">Beasiswa</a></li>
+                <li><a href="{{ route('perpustakaan') }}">Perpustakaan</a></li>
+                <li><a href="{{ route('jurnal')}}">Jurnal</a></li>
             </ul>
 
             <!-- Menu Kemahasiswaan -->
@@ -179,27 +179,27 @@
             <!-- Organisasi Submenu -->
             <ul class="menu-slide Organisasi-menu">
                 <li class="back-button-nav" data-target="kemahasiswaan-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="bem.php">BEM</a></li>
-                <li><a href="himasi.php">Himasi</a></li>
-                <li><a href="himatesya.php">Himatesya</a></li>
-                <li><a href="hmm.php">HMM</a></li>
+                <li><a href="{{ route('bem') }}">BEM</a></li>
+                <li><a href="{{ route('himasi') }}">Himasi</a></li>
+                <li><a href="{{ route('himatesya') }}">Himatesya</a></li>
+                <li><a href="{{ route('hmm') }}">HMM</a></li>
             </ul>
 
             <!-- Menu Award -->
             <ul class="menu-slide award-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="prestasiDosen.php">Prestasi Dosen</a></li>
-                <li><a href="prestasiMahasiswa.php">Prestasi Mahasiswa</a></li>
+                <li><a href="{{ route('penghargaanDosen') }}">Prestasi Dosen</a></li>
+                <li><a href="{{ route('penghargaanMahasiswa') }}">Prestasi Mahasiswa</a></li>
             </ul>
 
             <!--Menu Download -->
             <ul class="menu-slide download-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="kegiatan_akademik.php">Kegiatan Akademik</a></li>
-                <li><a href="Magazine.php">E-Magazine</a></li>
-                <li><a href="pengurusan.php">Pengurusan Surat</a></li>
-                <li><a href="SOP.php">SOP / Panduan</a></li>
-                <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing">Vidio Intro / Outro Teknik</a></li>
+                <li><a href="{{ route('kegiatanAkademik') }}">Kegiatan Akademik</a></li>
+                <li><a href="{{ route('emagazine') }}">E-Magazine</a></li>
+                <li><a href="{{ route('pengurusanSurat') }}">Pengurusan Surat</a></li>
+                <li><a href="{{ route('sop') }}">SOP / Panduan</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing">Video Intro / Outro Teknik</a></li>
             </ul>
 
         </div>
