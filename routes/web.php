@@ -86,3 +86,39 @@ Route::get('/HMM', function () {
     return view('kemahasiswaan.organisasi.hmm');
 })->name('hmm');
 
+//route penghargaan
+//dosen
+Route::get('/Penghargaan-Dosen', function () {
+    return view('penghargaan.penghargaanDosen');
+})->name('penghargaanDosen');
+//mahasiswa
+Route::get('/Penghargaan-Mahasiswa', function () {
+    return view('penghargaan.penghargaanMahasiswa');
+})->name('penghargaanMahasiswa');
+//kerjasama
+Route::get('/Kerjasama', function () {
+    return view('kerjasama');
+})->name('kerjasama');
+
+//route download
+//kegiatan akademik
+Route::get('/Kegiatan-Akademik', function () {
+    return view('download.kegiatanAkademik');
+})->name('kegiatanAkademik');
+//e-magazine
+Route::get('/E-Magazine', function () {
+    return view('download.emagazine');
+})->name('emagazine');
+//pengurusan surat
+Route::get('/Pengurusan-Surat', function () {
+    return view('download.pengurusanSurat');
+})->name('pengurusanSurat');
+//SOP
+Route::get('/SOP/Panduan', function () {
+    return view('download.sop');
+})->name('sop');
+
+//route tracer study
+Route::get('/Tracer-Study', function () {
+    return view('tracerStudy');
+})->name('tracerStudy');

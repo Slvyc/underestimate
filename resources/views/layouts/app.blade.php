@@ -84,21 +84,21 @@
         </li>
         <li><a href="#">Award</a>
             <ul class="submenu_dropdown-nav">
-                    <li><a href="prestasiDosen.php" class="no-border-hover">Penghargaan Dosen</a></li>
-                    <li><a href="prestasiMahasiswa.php" class="no-border-hover">Penghargaan Mahasiswa</a></li>
+                    <li><a href="{{ route('penghargaanDosen') }}" class="no-border-hover">Penghargaan Dosen</a></li>
+                    <li><a href="{{ route('penghargaanMahasiswa') }}" class="no-border-hover">Penghargaan Mahasiswa</a></li>
                 </ul>
             </li>
-        <li><a href="kerjasama.php">Kerjasama</a></li>
+        <li><a href="{{ route('kerjasama') }}">Kerjasama</a></li>
         <li><a href="#">Download</a>
         <ul class="submenu_dropdown-nav">
-                    <li><a href="kegiatan_akademik.php" class="no-border-hover">Kegiatan Akademik</a></li>
-                    <li><a href="Magazine.php" class="no-border-hover">E-Magazine</a></li>
-                    <li><a href="pengurusan.php" class="no-border-hover">Pengurusan Surat</a></li>
-                    <li><a href="SOP.php" class="no-border-hover">SOP / Panduan</a></li>
+                    <li><a href="{{ route('kegiatanAkademik') }}" class="no-border-hover">Kegiatan Akademik</a></li>
+                    <li><a href="{{ route('emagazine') }}" class="no-border-hover">E-Magazine</a></li>
+                    <li><a href="{{ route('pengurusanSurat') }}" class="no-border-hover">Pengurusan Surat</a></li>
+                    <li><a href="{{ route('sop') }}" class="no-border-hover">SOP / Panduan</a></li>
                     <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing" class="no-border-hover">Vidio Intro / Outro Teknik</a></li>
                 </ul>
         </li>
-        <li><a href="tracerstudy.php">Tracer Study</a></li>
+        <li><a href="{{ route('tracerStudy') }}">Tracer Study</a></li>
     </ul>
     <div class="hamburger"><i class="fas fa-bars" style="color: #000"></i></div>
 </nav>
