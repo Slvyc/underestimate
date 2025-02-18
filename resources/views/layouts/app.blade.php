@@ -23,7 +23,7 @@
 <!-- navbar start -->
 <nav>
     <div class="logo-nav">
-        <img src="asset\img\logoFTUNAYA.svg" alt="FT UI Logo">
+        <img src="\asset\img\logoFTUNAYA.svg" alt="FT UI Logo">
     </div>
     <ul class="menu-nav">
         <li><a href="{{route('home')}}">Home</a></li>
@@ -31,52 +31,52 @@
             <ul class="submenu_dropdown-nav">
                 <li><a href="{{ route('sejarah') }}" class="no-border-hover">Sejarah</a></li>
                 <li><a href="{{ route('visiMisi') }}" class="no-border-hover">Visi & Misi</a></li>
-                <li><a href="{{route('strukturOrganisasi')}}" class="no-border-hover">Struktur Organisasi</a></li>
-                <li><a href="kalender_akademik.php" class="no-border-hover">Kalender Akademik</a></li>
+                <li><a href="{{ route('strukturOrganisasi')}}" class="no-border-hover">Struktur Organisasi</a></li>
+                <li><a href="{{ route('kalenderAkademik')  }}" class="no-border-hover">Kalender Akademik</a></li>
             </ul>
         </li>
         <li><a href="#">Program Studi</a>
             <ul class="submenu_dropdown-nav">
             <li><a href="#" class="no-border-hover">Sistem Informasi</a>
                     <ul class="dropdown-nav">
-                        <li><a href="visimisi_SI.php" class="no-border-hover">Visi</a></li>
-                        <li><a href="dosen_Tsi.php" class="no-border-hover">Dosen</a></li>
-                        <li><a href="kurikulum_Tsi.php" class="no-border-hover">Kurikulum</a></li>
+                        <li><a href="{{ route('visiMisiSi') }}" class="no-border-hover">Visi</a></li>
+                        <li><a href="{{ route('dosenSi') }}" class="no-border-hover">Dosen</a></li>
+                        <li><a href="" class="no-border-hover">Kurikulum</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="no-border-hover">Teknik Sipil</a>
                     <ul class="dropdown-nav">
-                        <li><a href="visimisi_civil.php" class="no-border-hover">Visi</a></li>
-                        <li><a href="dosen_Tsipil.php" class="no-border-hover">Dosen</a></li>
-                        <li><a href="kurikulum_Tsipil.php" class="no-border-hover">Kurikulum</a></li>
+                        <li><a href="{{ route('visiMisiSipil') }}" class="no-border-hover">Visi</a></li>
+                        <li><a href="{{ route('dosenSipil') }}" class="no-border-hover">Dosen</a></li>
+                        <li><a href="#" class="no-border-hover">Kurikulum</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="no-border-hover">Teknik Mesin</a>
                     <ul class="dropdown-nav">
-                        <li><a href="visimisi_mesin.php" class="no-border-hover">Visi</a></li>
-                        <li><a href="dosen_Tmesin.php" class="no-border-hover">Dosen</a></li>
-                        <li><a href="kurikulum_Tmesin.php" class="no-border-hover">Kurikulum</a></li>
+                        <li><a href="{{ route('visiMisiMesin') }}" class="no-border-hover">Visi</a></li>
+                        <li><a href="{{ route('dosenMesin') }}" class="no-border-hover">Dosen</a></li>
+                        <li><a href="#" class="no-border-hover">Kurikulum</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
         <li><a href="#">Pendidikan</a>
             <ul class="submenu_dropdown-nav">
-                    <li><a href="laboratorium.php" class="no-border-hover">Laboratorium</a></li>
-                    <li><a href="beasiswa.php" class="no-border-hover">Beasiswa</a></li>
-                    <li><a href="perpus.php" class="no-border-hover">Perpustakaan</a></li>
-                    <li><a href="jurnal.php" class="no-border-hover">Jurnal</a></li>
+                    <li><a href="{{ route('laboratorium') }}" class="no-border-hover">Laboratorium</a></li>
+                    <li><a href="{{ route('beasiswa') }}" class="no-border-hover">Beasiswa</a></li>
+                    <li><a href="{{ route('perpustakaan') }}" class="no-border-hover">Perpustakaan</a></li>
+                    <li><a href="{{ route('jurnal') }}" class="no-border-hover">Jurnal</a></li>
                 </ul>
         </li>
         <li><a href="#">Kemahasiswaan</a>
         <ul class="submenu_dropdown-nav">
-                <li><a href="layanan.php" class="no-border-hover">Layanan Komunikasi Orang Tua/Wali Mahasiswa</a></li>
+                <li><a href="{{ route('layanan')}}" class="no-border-hover">Layanan Komunikasi Orang Tua/Wali Mahasiswa</a></li>
                 <li><a href="#" class="no-border-hover">Organisasi Mahasiswa</a>
                     <ul class="dropdown-nav">
-                        <li><a href="bem.php" class="no-border-hover">BEM</a></li>
-                        <li><a href="himasi.php" class="no-border-hover">Himasi</a></li>
-                        <li><a href="himatesya.php" class="no-border-hover">Himatesya</a></li>
-                        <li><a href="hmm.php" class="no-border-hover">HMM</a></li>
+                        <li><a href="{{ route('bem') }}" class="no-border-hover">BEM</a></li>
+                        <li><a href="{{ route('himasi') }}" class="no-border-hover">Himasi</a></li>
+                        <li><a href="{{ route('himatesya') }}" class="no-border-hover">Himatesya</a></li>
+                        <li><a href="{{ route('hmm') }}" class="no-border-hover">HMM</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="no-border-hover">UKM</a></li>
@@ -95,7 +95,7 @@
                     <li><a href="Magazine.php" class="no-border-hover">E-Magazine</a></li>
                     <li><a href="pengurusan.php" class="no-border-hover">Pengurusan Surat</a></li>
                     <li><a href="SOP.php" class="no-border-hover">SOP / Panduan</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing">Vidio Intro / Outro Teknik</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing" class="no-border-hover">Vidio Intro / Outro Teknik</a></li>
                 </ul>
         </li>
         <li><a href="tracerstudy.php">Tracer Study</a></li>
@@ -210,6 +210,7 @@
 <!-- content start -->
 @yield('content')
 <!-- content end-->
+
 <!-- Footer -->
 <footer class="bg-footer text-center text-dark">
     <!-- Grid container -->
@@ -261,7 +262,7 @@
                 <!--Grid column: Logo-->
                 <div class="footer-column">
                     <ul class="list-unstyled mb-0">
-                        <img src="asset/img/Universitas Abulyatama.png" alt="Logo Universitas Abulyatama"
+                        <img src="/asset/img/Universitas Abulyatama.png" alt="Logo Universitas Abulyatama"
                             class="img-footer">
                     </ul>
                 </div>
