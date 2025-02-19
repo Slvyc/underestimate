@@ -88,24 +88,24 @@
 <div class="container-fluid-news mt-5">
         <div class="col-md-12">
             <div id="news-slider" class="owl-carousel">
-                
+                @foreach ( $KegiatanHimasis as $KegiatanHimasi )
                 <div class="post-slide" onclick="openPopup(this)">
                     <div class="post-img">
-                        <img src="admin/uploads/" alt="">
+                        <img src="{{ asset('storage/' . $KegiatanHimasi->image_news) }}" alt="">
                         <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                     </div>
                     <div class="post-content">
                         <h3 class="post-title">
-                        <a href="#"></a>
+                        <a href="#">{{ $KegiatanHimasi->title }}</a>
                         </h3>
-                        <p class="post-description" data-full-description="">
-                            
+                        <p class="post-description" data-full-description="{{ $KegiatanHimasi->description }}">
+                        {{ Str::limit($KegiatanHimasi->description, 100) }}
                         </p>
-                        <span class="post-date"><i class="fa fa-clock-o"></i></span>
+                        <span class="post-date"><i class="fa fa-clock-o"></i>{{ $KegiatanHimasi->date }}</span>
                         <a href="#" class="read-more"></a>
                     </div>
                 </div>
-               
+                @endforeach
             </div>
         </div>
     </div>

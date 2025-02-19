@@ -82,7 +82,8 @@ Route::get('/Bem', function () {
 })->name('bem');
 //himasi
 Route::get('/Himasi', function () {
-    return view('kemahasiswaan.organisasi.himasi');
+    $KegiatanHimasis = App\Models\KegiatanHimasi::all();
+    return view('kemahasiswaan.organisasi.himasi', compact('KegiatanHimasis'));
 })->name('himasi');
 //himatesya
 Route::get('/Himatesya', function () {

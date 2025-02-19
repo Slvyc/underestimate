@@ -105,7 +105,7 @@
                 <p class="post-description" data-full-description="{{ $KegiatanBem->description }}">
                 {{ Str::limit($KegiatanBem->description, 100) }}
                 </p>
-                <span class="post-date"><i class="fa fa-clock-o"></i></span>
+                <span class="post-date"><i class="fa fa-clock-o"></i>{{ $KegiatanBem->date }}</span>
                 <a href="#" class="read-more"></a>
             </div>
             </div>     
