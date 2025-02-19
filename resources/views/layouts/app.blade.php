@@ -42,21 +42,21 @@
                     <ul class="dropdown-nav">
                         <li><a href="{{ route('visiMisiSi') }}" class="no-border-hover">Visi</a></li>
                         <li><a href="{{ route('dosenSi') }}" class="no-border-hover">Dosen</a></li>
-                        <li><a href="" class="no-border-hover">Kurikulum</a></li>
+                        <li><a href="{{ route('kurikulumSi') }}" class="no-border-hover">Kurikulum</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="no-border-hover">Teknik Sipil</a>
                     <ul class="dropdown-nav">
                         <li><a href="{{ route('visiMisiSipil') }}" class="no-border-hover">Visi</a></li>
                         <li><a href="{{ route('dosenSipil') }}" class="no-border-hover">Dosen</a></li>
-                        <li><a href="#" class="no-border-hover">Kurikulum</a></li>
+                        <li><a href="{{ route('kurikulumSipil') }}" class="no-border-hover">Kurikulum</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="no-border-hover">Teknik Mesin</a>
                     <ul class="dropdown-nav">
                         <li><a href="{{ route('visiMisiMesin') }}" class="no-border-hover">Visi</a></li>
                         <li><a href="{{ route('dosenMesin') }}" class="no-border-hover">Dosen</a></li>
-                        <li><a href="#" class="no-border-hover">Kurikulum</a></li>
+                        <li><a href="{{ route('kurikulumMesin') }}" class="no-border-hover">Kurikulum</a></li>
                     </ul>
                 </li>
             </ul>
@@ -91,13 +91,13 @@
             </li>
         <li><a href="{{ route('kerjasama') }}">Kerjasama</a></li>
         <li><a href="#">Download</a>
-        <ul class="submenu_dropdown-nav">
+            <ul class="submenu_dropdown-nav">
                     <li><a href="{{ route('kegiatanAkademik') }}" class="no-border-hover">Kegiatan Akademik</a></li>
                     <li><a href="{{ route('emagazine') }}" class="no-border-hover">E-Magazine</a></li>
                     <li><a href="{{ route('pengurusanSurat') }}" class="no-border-hover">Pengurusan Surat</a></li>
                     <li><a href="{{ route('sop') }}" class="no-border-hover">SOP / Panduan</a></li>
                     <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing" class="no-border-hover">Video Intro / Outro Teknik</a></li>
-                </ul>
+            </ul>
         </li>
         <li><a href="{{ route('tracerStudy') }}">Tracer Study</a></li>
     </ul>
