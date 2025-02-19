@@ -9,12 +9,13 @@
 
 <!-- Struktur Organisasi Section -->
 <section class="kalender-akademik-section">
+    @foreach ( $KalenderAkademiks as $KalenderAkademik )
     <div class="container-kalender-akademik text-center">
         <!-- Gambar Struktur Organisasi -->
-        <img src="admin/uploads/" alt="Struktur Organisasi Fakultas Teknik" class="org-image-kalender">
+        <img src="{{ asset('storage/' . $KalenderAkademik->image_ganjil) }}" alt="Struktur Organisasi Fakultas Teknik" class="org-image-kalender">
         <!-- Download Button -->
         <div class="mt-3">
-            <a href="admin/uploads/" download class="btn btn-custom">
+            <a href="{{ asset('storage/' . $KalenderAkademik->image_ganjil) }}" download class="btn btn-custom">
                 <i class="bi bi-download"></i> Download 
             </a>`
         </div>
@@ -22,13 +23,14 @@
 
     <div class="container-kalender-akademik text-center">
         <!-- Gambar Struktur Organisasi -->
-        <img src="admin/uploads/" alt="Struktur Organisasi Fakultas Teknik" class="org-image-kalender">
+        <img src="{{ asset('storage/' . $KalenderAkademik->image_genap) }}" alt="Struktur Organisasi Fakultas Teknik" class="org-image-kalender">
         <!-- Download Button -->
         <div class="mt-3">
-            <a href="admin/uploads/" download class="btn btn-custom">
+            <a href="{{ asset('storage/' . $KalenderAkademik->image_genap) }}" download class="btn btn-custom">
                 <i class="bi bi-download"></i> Download 
             </a>
         </div>
     </div>
+    @endforeach
 </section>
 @endsection

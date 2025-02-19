@@ -92,24 +92,24 @@
     <div class="row">
         <div class="col-md-12">
         <div id="news-slider" class="owl-carousel">
-            
+            @foreach ( $KegiatanBems as $KegiatanBem )
             <div class="post-slide" onclick="openPopup(this)">
             <div class="post-img">
-                <img src="admin/uploads/" alt="">
-                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                <img src="{{ asset('storage/' . $KegiatanBem->image_news) }}" alt="">
+                <span class="over-layer"><i class="fa fa-link"></i></span>
             </div>
             <div class="post-content">
                 <h3 class="post-title">
-                <a href="#"></a>
+                <a href="#">{{ $KegiatanBem->title }}</a>
                 </h3>
-                <p class="post-description" data-full-description="">
-                    
+                <p class="post-description" data-full-description="{{ $KegiatanBem->description }}">
+                {{ Str::limit($KegiatanBem->description, 100) }}
                 </p>
                 <span class="post-date"><i class="fa fa-clock-o"></i></span>
                 <a href="#" class="read-more"></a>
             </div>
-            </div>
-            
+            </div>     
+            @endforeach
         </div>
         </div>
     </div>

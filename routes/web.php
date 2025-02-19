@@ -26,7 +26,8 @@ Route::get('/Struktur-Organisasi', function () {
 })->name('strukturOrganisasi');
 //kalender akademik
 Route::get('/Kalender-Akademik', function () {
-    return view('profile.kalenderAkademik');
+    $KalenderAkademiks = App\Models\KalenderAkademik::all();
+    return view('profile.kalenderAkademik', compact('KalenderAkademiks'));
 })->name('kalenderAkademik');
 
 
@@ -76,7 +77,8 @@ Route::get('/Layanan-Komunikasi', function () {
 })->name('layanan');
 //bem
 Route::get('/Bem', function () {
-    return view('kemahasiswaan.organisasi.bem');
+    $KegiatanBems = App\Models\KegiatanBem::all();
+    return view('kemahasiswaan.organisasi.bem', compact('KegiatanBems'));
 })->name('bem');
 //himasi
 Route::get('/Himasi', function () {
