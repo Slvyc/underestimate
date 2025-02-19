@@ -16,7 +16,7 @@
                 <h1 class="title-sambutan">Dr. Ir. Cut Rahmawati, M.T., IPM., ASEAN Eng.</h1>
                 <h2 class="subtitle-sambutan">Dekan Fakultas Teknik</h2>
                 <p class="description-sambutan">
-                    Selamat datang di Fakultas Teknik Universitas Abulyatama. Fakultas Teknik UNAYA menyelenggarakan pendidikan rekayasa teknik yang memiliki keunggulan pada inovasi dan berkomitmen mencetak generasi unggul yang siap membawa perubahan. Mari bergabung bersama kami dalam penyelenggaraan pembelajaran yang terintegrasi dengan riset unggulan. Kami berkomitmen menyebarkan hasil riset unggulan untuk pengembangan Dunia Usaha dan Industri (DUDI) serta kebutuhan masyarakat.
+                    Selamat datang di Fakultasssssss Teknik Universitas Abulyatama. Fakultas Teknik UNAYA menyelenggarakan pendidikan rekayasa teknik yang memiliki keunggulan pada inovasi dan berkomitmen mencetak generasi unggul yang siap membawa perubahan. Mari bergabung bersama kami dalam penyelenggaraan pembelajaran yang terintegrasi dengan riset unggulan. Kami berkomitmen menyebarkan hasil riset unggulan untuk pengembangan Dunia Usaha dan Industri (DUDI) serta kebutuhan masyarakat.
                 </p>
             </div>
 
