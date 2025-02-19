@@ -32,23 +32,24 @@
         <h2 class="news-titles">Berita</h2>
             <div class="col-md-12">
                 <div id="news-slider" class="owl-carousel">
-                    <!-- mulai -->
+                    @foreach($beritas as $berita)
                     <div class="post-slide" onclick="openPopup(this)">
                         <div class="post-img">
-                            <img src="admin/uploads/" alt="">
-                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        <img src="{{ asset('storage/' . $berita->image_news) }}" alt="">
+                            <span class="over-layer"><i class="fa fa-link"></i></span>
                         </div>
                         <div class="post-content">
                             <h3 class="post-title">
-                            <a href="#"></a>
+                            <a href="#">{{ $berita->title }}</a>
                             </h3>
-                            <p class="post-description" data-full-description="description">
-                                description
+                            <p class="post-description" data-full-description="{{ $berita->description }}">
+                                {{ Str::limit($berita->description, 100) }}
                             </p>
-                            <span class="post-date"><i class="fa fa-clock-o"></i>date</span>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>{{ $berita->date }}</span>
                             <a href="#" class="read-more"></a>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -72,28 +73,31 @@
         <!-- pengunguman -->
         <section class="announcements">
             <h2 class="title-announcement">Pengumuman</h2>
-            <a href="#linkcard" class="card-link">
+            @foreach ($pengumumans as $pengumuman)
+            <a href="{{ $pengumuman->link }}" class="card-link">
                 <div class="announcement">
-                <div class="date1"><span>19</span><br>Nov</div>
+                <div class="date1"><span>{{ $pengumuman->tanggal_pengumuman }}</span><br>{{ $pengumuman->bulan_pengumuman }}</div>
                     <div class="content">
-                      <h3 class="title">judul pengumuman</h3>
-                      <p class="description">desc pengumuman</p>
+                      <h3 class="title">{{ $pengumuman->judul_pengumuman }}</h3>
+                      <p class="description">{{ $pengumuman->deskripsi_pengumuman }}</p>
                     </div>
                 </div>
-            </a>
+            </a>      
+            @endforeach
         </section>
         
         <!-- agenda -->
         <section class="agenda">
             <h2 class="title-event">Agenda</h2>
+            @foreach ($agendas as $agenda)
                 <div class="event">
-                    <div class="date"><span>2024</span></div>
+                    <div class="date"><span>{{ $agenda->tahun_agenda }}</span></div>
                     <div class="content">
-                      <h3 class="event-title">judul agenda</h3>
-                      <p class="time">masa agenda</p>
+                      <h3 class="event-title">{{ $agenda->judul_agenda }}</h3>
+                      <p class="time">{{ $agenda->masa_agenda }}</p>
                     </div>
                 </div>
-            </a>
+            @endforeach
         </section>
     </div>
 

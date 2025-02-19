@@ -2,9 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
-    return view('home');
+    $beritas = App\Models\Berita::all();
+    $pengumumans = App\Models\Pengumuman::all();
+    $agendas = App\Models\Agenda::all();
+    return view('home', compact('beritas','pengumumans','agendas'));
 })->name('home');
+
 
 //route profile 
 //sejarah
