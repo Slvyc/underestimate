@@ -24,17 +24,20 @@
           </tr>
         </thead>
         <tbody>
+          @foreach ( $Kerjasamas as $Kerjasama )
             <tr>
-                <td data-label='No'></td>
-                <td data-label='Kerjasama'></td>
-                <td data-label='Lingkup Kerjasama'></td>
-                <td data-label='Jenis Dokumen'></td>
-                <td data-label='Tanggal'></td>
-                <td data-label='Status'></td>
-                <td data-label='Aksi'><a href="" target='_blank' class='btn-primary btn-sm text-decoration-underline'> <i class='fas fa-download'></i> Download</a></td>
-            <tr>
+                <td class="text-center" data-label='No'>{{ $loop->iteration }}</td>
+                <td data-label='Kerjasama'>{{ $Kerjasama->nama_kerjasama }}</td>
+                <td data-label='Lingkup Kerjasama'>{{ $Kerjasama->lingkup_kerjasama }}</td>
+                <td data-label='Jenis Dokumen'>{{ $Kerjasama->jenis_dokumen }}</td>
+                <td class="text-center" data-label='Tanggal'>{{ $Kerjasama->tanggal }}</td>
+                <td class="text-center" data-label='Status'>{{ $Kerjasama->status }}</td>
+                <td class="text-center" data-label='Aksi'><a href="{{ $Kerjasama->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'> <i class='fas fa-download'></i> Download</a></td>
+            <!-- <tr>
                 <td colspan='6' class='text-center'>Tidak ada data</td>
+            </tr> -->
             </tr>
+          @endforeach
         </tbody>
       </table>
     </div>

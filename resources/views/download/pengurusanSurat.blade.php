@@ -34,10 +34,13 @@
                     </tr>
                 </thead>
                 <tbody class="download-table-body">
-                    <tr>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" target='_blank' class='btn-primary btn-sm text-decoration-underline'>Ajukan Disini</a></td>
+                @foreach ( $PengurusanSurats as $PengurusanSurat )
+                    <tr class="text-center"> 
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $PengurusanSurat->pengurusan_surat }}</td>
+                        <td><a href="{{ $PengurusanSurat->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'>Ajukan Disini</a></td>
+                    </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

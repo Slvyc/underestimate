@@ -35,11 +35,14 @@
                     </tr>
                 </thead>
                 <tbody class="download-table-body">
-                    <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" target='_blank' class='btn-primary btn-sm text-decoration-underline'><i class='fas fa-download'></i> Download</a></td>
+                    @foreach ( $KegiatanAkademiks as $KegiatanAkademik )
+                    <tr class="text-center">
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $KegiatanAkademik->nama_kegiatan }}</td>
+                        <td>{{ $KegiatanAkademik->tanggal_pelaksanaan }}</td>
+                        <td><a href="{{ $KegiatanAkademik->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'><i class='fas fa-download'></i> Download</a></td>
+                    </tr>         
+                    @endforeach
                 </tbody>
             </table>
         </div>

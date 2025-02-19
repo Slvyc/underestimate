@@ -25,22 +25,22 @@
                 </tr>
             </thead>
             <tbody>
-           
+            @foreach ( $PenghargaanDosens as $PenghargaanDosen )
                     <tr>
-                        <td>no</td>
+                        <td class="text-center">{{ $loop->iteration }}</td>
                         <td>
                             <div class="profile-container">
-                                <img src="admin/uploads/" alt="Dosen Image" class="profile-image">
-                                <div class="profile-name"></div>
+                                <img src="{{ asset('storage/' . $PenghargaanDosen->gambar_person) }}" alt="Dosen Image" class="profile-image">
+                                <div class="profile-name">{{ $PenghargaanDosen->person }}</div>
                             </div>
                         </td>
                         <td>
-                            <a href=""></a>
+                            <a href="{{ $PenghargaanDosen->link }}">{{ $PenghargaanDosen->prestasi }}</a>
                         </td>
-                        <td></td>
-                        <td></td>
+                        <td>{{ $PenghargaanDosen->tingkat }}</td>
+                        <td>{{ $PenghargaanDosen->tahun }}</td>
                     </tr>
-              
+            @endforeach
             </tbody>
         </table>
     </div>

@@ -87,31 +87,37 @@ Route::get('/Himasi', function () {
 })->name('himasi');
 //himatesya
 Route::get('/Himatesya', function () {
-    return view('kemahasiswaan.organisasi.himatesya');
+    $KegiatanHimatesyas = App\Models\KegiatanHimatesya::all();
+    return view('kemahasiswaan.organisasi.himatesya', compact('KegiatanHimatesyas'));
 })->name('himatesya');
 //hmm
 Route::get('/HMM', function () {
-    return view('kemahasiswaan.organisasi.hmm');
+    $KegiatanHmms = App\Models\KegiatanHmm::all();
+    return view('kemahasiswaan.organisasi.hmm', compact('KegiatanHmms'));
 })->name('hmm');
 
 //route penghargaan
 //dosen
 Route::get('/Penghargaan-Dosen', function () {
-    return view('penghargaan.penghargaanDosen');
+    $PenghargaanDosens = App\Models\PenghargaanDosen::all();
+    return view('penghargaan.penghargaanDosen', compact('PenghargaanDosens'));
 })->name('penghargaanDosen');
 //mahasiswa
 Route::get('/Penghargaan-Mahasiswa', function () {
-    return view('penghargaan.penghargaanMahasiswa');
+    $PenghargaanMahasiswas = App\Models\PenghargaanMahasiswa::all();
+    return view('penghargaan.penghargaanMahasiswa', compact('PenghargaanMahasiswas'));
 })->name('penghargaanMahasiswa');
 //kerjasama
 Route::get('/Kerjasama', function () {
-    return view('kerjasama');
+    $Kerjasamas = App\Models\Kerjasama::all();
+    return view('kerjasama', compact('Kerjasamas'));
 })->name('kerjasama');
 
 //route download
 //kegiatan akademik
 Route::get('/Kegiatan-Akademik', function () {
-    return view('download.kegiatanAkademik');
+    $KegiatanAkademiks = App\Models\KegiatanAkademik::all();
+    return view('download.kegiatanAkademik', compact('KegiatanAkademiks'));
 })->name('kegiatanAkademik');
 //e-magazine
 Route::get('/E-Magazine', function () {
@@ -119,11 +125,13 @@ Route::get('/E-Magazine', function () {
 })->name('emagazine');
 //pengurusan surat
 Route::get('/Pengurusan-Surat', function () {
-    return view('download.pengurusanSurat');
+    $PengurusanSurats = App\Models\PengurusanSurat::all();
+    return view('download.pengurusanSurat', compact('PengurusanSurats'));
 })->name('pengurusanSurat');
 //SOP
 Route::get('/SOP/Panduan', function () {
-    return view('download.sop');
+    $Sops = App\Models\Sop::all();
+    return view('download.sop', compact('Sops'));
 })->name('sop');
 
 //route tracer study
