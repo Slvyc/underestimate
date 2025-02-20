@@ -13,7 +13,7 @@
     <div class="card-lecture-section">
         <div class="row g-4">
             <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\zardi.jpg">
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\meliyana.jpg">
@@ -63,7 +63,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\ichsan syahputra.jpg">
@@ -86,14 +86,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Section 2 -->
-    <div class="card-lecture-section">
-        <div class="row g-4">
             <!-- Card 4 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\Rahmawati.jpeg">
@@ -118,7 +113,7 @@
             </div>
 
             <!-- Card 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\ridha.jpg">
@@ -143,7 +138,7 @@
             </div>
 
             <!-- Card 6 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\amalia.jpg">
@@ -166,13 +161,9 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-            <!-- Section 3 -->
-            <div class="card-lecture-section">
-            <div class="row g-4">
+          
             <!-- Card 7 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\tety sriana.jpg">
@@ -197,7 +188,7 @@
             </div>
 
             <!-- Card 8 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\mery.jpg">
@@ -221,7 +212,7 @@
                 </div>
             </div>
             <!-- Card 9 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\zu irfan.jpg">
@@ -244,14 +235,9 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-
-            <!-- Section 4 -->
-    <div class="card-lecture-section">
-        <div class="row g-4">
+        
             <!-- Card 9 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\eva herlina.jpg">

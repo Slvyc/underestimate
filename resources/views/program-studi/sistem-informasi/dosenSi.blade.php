@@ -13,7 +13,7 @@
     <div class="card-lecture-section">
         <div class="row g-4">
             <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\ryan setiawann.jpg">
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\rahmat sufri.jpg">
@@ -63,7 +63,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\teuku rizki.jpg">
@@ -87,12 +87,6 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="card-lecture-section">
-        <div class="row g-4">
             <!-- Card 4 -->
             <!-- <div class="col-12 col-md-6 col-lg-4">
                 <div class="card-lecture">
@@ -119,7 +113,7 @@
             </div> -->
 
             <!-- Card 5 -->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\anisah.jpg">
