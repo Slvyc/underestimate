@@ -66,7 +66,6 @@ Route::get('/Teknik-Mesin/Dosen-Teknik-Mesin', function () {
 Route::get('/Teknik-Mesin/Kurikulum-Teknik-Mesin', [KurikulumMesinController::class, 'index'])
     ->name('kurikulumMesin');
 
-
 //route pendidikan
 //laboratorium
 Route::get('/Laboratorium', function () {

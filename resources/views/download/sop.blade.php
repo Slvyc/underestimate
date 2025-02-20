@@ -37,10 +37,10 @@
                 <tbody class="download-table-body">
                 @foreach ( $Sops as $Sop )
                     <tr>
-                        <td>{{ $loop->iteration }}</td>
+                        <td class="text-center">{{ $loop->iteration }}</td>
                         <td>{{ $Sop->nama_file }}</td>
-                        <td>{{ $Sop->date }}</td>
-                        <td><a href="{{ $Sop->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'><i class='fas fa-download'></i> Download</a></td>
+                        <td class="text-center">{{ $Sop->date }}</td>
+                        <td class="text-center"><a href="{{ $Sop->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'><i class='fas fa-download'></i> Download</a></td>
                     </tr>             
                 @endforeach
                 </tbody>

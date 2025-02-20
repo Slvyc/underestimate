@@ -10,29 +10,29 @@
 
 <!-- Konten Kerja Sama -->
 <div class="container table-container mt-3 mb-5">
-    <div class="table-responsive">
-      <table class="table table-hover mt-5 mb-5">
-        <thead>
+    <div class="download-table-wrapper table-responsive">
+      <table class="download-table table table-hover" id="sop-download-table">
+          <thead class="download-table-header table-dark">
           <tr>
-            <th>No</th>
-            <th>Kerjasama</th>
-            <th>Lingkup Kerjasama</th>
-            <th>Jenis Dokumen</th>
-            <th>Tanggal</th>
-            <th>Status</th>
-            <th>Aksi</th>
+            <th class="download-col-no">No</th>
+            <th class="download-col-name">Kerjasama</th>
+            <th class="download-col-name">Lingkup Kerjasama</th>
+            <th class="download-col-name">Jenis Dokumen</th>
+            <th class="download-col-date">Tanggal</th>
+            <th class="download-col-name">Status</th>
+            <th class="download-col-action">Aksi</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="download-table-body">
           @foreach ( $Kerjasamas as $Kerjasama )
             <tr>
                 <td class="text-center" data-label='No'>{{ $loop->iteration }}</td>
-                <td data-label='Kerjasama'>{{ $Kerjasama->nama_kerjasama }}</td>
-                <td data-label='Lingkup Kerjasama'>{{ $Kerjasama->lingkup_kerjasama }}</td>
-                <td data-label='Jenis Dokumen'>{{ $Kerjasama->jenis_dokumen }}</td>
-                <td class="text-center" data-label='Tanggal'>{{ $Kerjasama->tanggal }}</td>
-                <td class="text-center" data-label='Status'>{{ $Kerjasama->status }}</td>
-                <td class="text-center" data-label='Aksi'><a href="{{ $Kerjasama->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'> <i class='fas fa-download'></i> Download</a></td>
+                <td>{{ $Kerjasama->nama_kerjasama }}</td>
+                <td class="text-center">{{ $Kerjasama->lingkup_kerjasama }}</td>
+                <td class="text-center">{{ $Kerjasama->jenis_dokumen }}</td>
+                <td class="text-center">{{ $Kerjasama->tanggal }}</td>
+                <td class="text-center">{{ $Kerjasama->status_kerjasama }}</td>
+                <td class="text-center"><a href="{{ $Kerjasama->link }}" target='_blank' class='btn-primary btn-sm text-decoration-underline'> <i class='fas fa-download'></i> Download</a></td>
             <!-- <tr>
                 <td colspan='6' class='text-center'>Tidak ada data</td>
             </tr> -->

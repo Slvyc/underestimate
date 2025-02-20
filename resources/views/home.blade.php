@@ -40,7 +40,7 @@
                         </div>
                         <div class="post-content">
                             <h3 class="post-title">
-                            <a href="#">{{ $berita->title }}</a>
+                            <a href="#">{{ $berita->title }}</a> 
                             </h3>
                             <p class="post-description" data-full-description="{{ $berita->description }}">
                                 {{ Str::limit($berita->description, 100) }}
