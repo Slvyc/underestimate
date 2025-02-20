@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KurikulumSiController;
 
 
 Route::get('/', function () {
@@ -38,10 +39,11 @@ Route::get('/Sistem-Informasi/Visi-Misi', function () {
 Route::get('/Sistem-Informasi/Dosen-Sistem-Informasi', function () {
     return view('program-studi.sistem-informasi.dosenSi');
 })->name('dosenSi');
-Route::get('/Sistem-Informasi/Kurikulum-Sistem-Informasi', function () {
-    $KurikulumSis = App\Models\KurikulumSi::all();
-    return view('program-studi.sistem-informasi.kurikulumSi', compact('KurikulumSis'));
-})->name('kurikulumSi');
+
+//kurikulum si
+Route::get('/Sistem-Informasi/Kurikulum-Sistem-Informasi', [KurikulumSiController::class, 'index'])
+    ->name('kurikulumSi');
+    
 // Teknik sipil
 Route::get('/Teknik-Sipil/Visi-Misi', function () {
     return view('program-studi.teknik-sipil.visiMisiSipil');

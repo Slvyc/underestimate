@@ -73,6 +73,7 @@ class KurikulumSiResource extends Resource
             ->columns([
                 TextColumn::make('semester')
                     ->label('Semester')
+                    ->sortable()
                     ->searchable(),
                 TextColumn::make('kode_mk')
                     ->label('Kode Mata Kuliah')
