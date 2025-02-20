@@ -1,0 +1,87 @@
+id;semester;kode_mk;mata_kuliah;sks;praktek;teori;kategori_mk;rps;;;;;;;;;created_at;update_at
+1;1;MKN101;Pendidikan Agama;2;2;2;Wajib;Link;;;;;;;;;16/02/2025 20:01;16/02/2025 20:01
+2;1;MKN103;Pancasila;2;2;0;Wajib;Link;;;;;;;;;17/02/2025 20:01;17/02/2025 20:01
+3;1;MKU105;Bahasa Inggris;2;2;0;Wajib;Link;;;;;;;;;18/02/2025 20:01;18/02/2025 20:01
+4;1;MFT101;Matematika I;3;3;0;Wajib;Link;;;;;;;;;19/02/2025 20:01;19/02/2025 20:01
+5;1;MSN101;Fisika Dasar;3;3;3;Wajib;https://drive.google.com/file/d/1EAdUQlsbStHpzAH7Ih_erX49GudBnZdF/view?usp=drive_link;;;;;;;;;20/02/2025 20:01;20/02/2025 20:01
+6;1;MSN103;Kimia Dasar;2;2;0;Wajib;Link;;;;;;;;;21/02/2025 20:01;21/02/2025 20:01
+7;1;MSN105;Menggambar Teknik;2;2;0;Wajib;Link;;;;;;;;;22/02/2025 20:01;22/02/2025 20:01
+8;1;MSN107;Pengenalan Teknik Mesin;2;2;0;Wajib;Link;;;;;;;;;23/02/2025 20:01;23/02/2025 20:01
+9;1;MSN109;Material Teknik;2;2;2;Wajib;https://drive.google.com/file/d/1IcrVZQUYifwh8hfnsxIfrGc7aB9OBMgs/view?usp=sharing;;;;;;;;;24/02/2025 20:01;24/02/2025 20:01
+10;2;MKN102;Bahasa Indonesia;2;2;0;Wajib;Link;;;;;;;;;25/02/2025 20:01;25/02/2025 20:01
+11;2;MKN104;Pendidikan Kewarganegaraan;2;2;0;Wajib;Link;;;;;;;;;26/02/2025 20:01;26/02/2025 20:01
+12;2;MFT102;Matematika II;3;3;0;Wajib;Link;;;;;;;;;27/02/2025 20:01;27/02/2025 20:01
+13;2;MSN102;Pengantar Mesin Konversi;2;2;0;Wajib;Link;;;;;;;;;28/02/2025 20:01;28/02/2025 20:01
+14;2;MSN104;Pengukuran Teknik;2;2;0;Wajib;Link;;;;;;;;;01/03/2025 20:01;01/03/2025 20:01
+15;2;MSN106;Fisika Lanjut;3;2;2;Wajib;https://drive.google.com/file/d/1Kkj7DAQkUbMfJkLuNtPHbplqunOHDby5/view?usp=drive_link;;;;;;;;;02/03/2025 20:01;02/03/2025 20:01
+16;2;MSN108;Gambar Mesin;2;1;1;Wajib;Link;;;;;;;;;03/03/2025 20:01;03/03/2025 20:01
+17;2;MSN110;Metalurgi Fisik;2;2;2;Wajib;https://drive.google.com/file/d/1FYaiSRjxGDYR653wzMhoFPTM_Hf4-oc-/view?usp=drive_link;;;;;;;;;04/03/2025 20:01;04/03/2025 20:01
+18;2;MSN112;Keselamatan, Kesehatan Kerja & Lingkungan;2;2;2;Wajib;https://drive.google.com/file/d/1VDeZvMp5jewmIMNtI1TbaKUdMzm12t-3/view?usp=sharing;;;;;;;;;05/03/2025 20:01;05/03/2025 20:01
+19;3;MFT201;Statistika dan Probabilitas;2;2;0;Wajib;Link;;;;;;;;;06/03/2025 20:01;06/03/2025 20:01
+20;3;PTM201;Mekanika dan Kekuatan Material;2;2;2;Wajib;https://drive.google.com/file/d/1Ke6RI8lpoXE_OwpHcKbt6cZ4xgBDIwqV/view?usp=drive_link;;;;;;;;;07/03/2025 20:01;07/03/2025 20:01
+21;3;MSN203;Matematika III;2;2;0;Wajib;Link;;;;;;;;;08/03/2025 20:01;08/03/2025 20:01
+22;3;MSN205;Elemen Mesin I;2;2;0;Wajib;Link;;;;;;;;;09/03/2025 20:01;09/03/2025 20:01
+23;3;MSN207;Aplikasi Komputer;2;2;2;Wajib;https://drive.google.com/file/d/1F66E1CW9EjvZTVWW8vXdMiNBdNv9o_X4/view?usp=drive_link;;;;;;;;;10/03/2025 20:01;10/03/2025 20:01
+24;3;MSN209;Proses manufaktur  ;2;2;0;Wajib;Link;;;;;;;;;11/03/2025 20:01;11/03/2025 20:01
+25;3;MSN211;Thermodinamika Dasar;2;2;2;Wajib;https://drive.google.com/file/d/1F4pVqc0HK7J1mCA_tGb35cdT8mOnXWpw/view?usp=sharing;;;;;;;;;12/03/2025 20:01;12/03/2025 20:01
+26;3;MSN213;Kinematika dan Dinamika;2;2;0;Wajib;Link;;;;;;;;;13/03/2025 20:01;13/03/2025 20:01
+27;3;MSN215;Mekanika Fluida Dasar;2;2;0;Wajib;Link;;;;;;;;;14/03/2025 20:01;14/03/2025 20:01
+28;3;MSN217;Statika struktur;2;2;0;Wajib;Link;;;;;;;;;15/03/2025 20:01;15/03/2025 20:01
+29;4;MSN202;Matematika IV;2;2;0;Wajib;Link;;;;;;;;;16/03/2025 20:01;16/03/2025 20:01
+30;4;MSN204;Elemen Mesin II;2;2;0;Wajib;Link;;;;;;;;;17/03/2025 20:01;17/03/2025 20:01
+31;4;MSN206;Thermodinamika Lanjut;2;2;2;Wajib;https://drive.google.com/file/d/1thxEk4c5JXay6kbWBCXSsbrYMIlrWqgo/view?usp=sharing;;;;;;;;;18/03/2025 20:01;18/03/2025 20:01
+32;4;MSN208;Perpindahan Kalor dan Massa I;2;2;0;Wajib;Link;;;;;;;;;19/03/2025 20:01;19/03/2025 20:01
+33;4;MSN210;Getaran Mekanik;2;2;0;Wajib;Link;;;;;;;;;20/03/2025 20:01;20/03/2025 20:01
+34;4;MSN212;Mesin Konversi Energi;2;2;0;Wajib;Link;;;;;;;;;21/03/2025 20:01;21/03/2025 20:01
+35;4;MSN214;Pemilihan Material dan proses;2;2;0;Pilihan;Link;;;;;;;;;22/03/2025 20:01;22/03/2025 20:01
+36;4;MSN216;Mekanika Fluida Lanjut;2;2;0;Wajib;Link;;;;;;;;;23/03/2025 20:01;23/03/2025 20:01
+37;4;MSN218;Tekink Pengelasan;2;2;0;Wajib;Link;;;;;;;;;24/03/2025 20:01;24/03/2025 20:01
+38;4;MSN220;Plant Lay out;2;2;2;Wajib;https://drive.google.com/file/d/1PTTdb2N1Q0S9dCRjJ4tLD97LP7b8e7R4/view?usp=sharing;;;;;;;;;25/03/2025 20:01;25/03/2025 20:01
+39;4;MSN222;Teknik Pengecoran Logam;2;2;0;Wajib;Link;;;;;;;;;26/03/2025 20:01;26/03/2025 20:01
+40;5;MSN301;Proses Pemesinan  ;2;2;0;Wajib;Link;;;;;;;;;27/03/2025 20:01;27/03/2025 20:01
+41;5;MSN303;Manajemen Industri;2;2;0;Wajib;Link;;;;;;;;;28/03/2025 20:01;28/03/2025 20:01
+42;5;MSN305;Perpindahan Kalor dan Massa II;2;2;0;Wajib;Link;;;;;;;;;29/03/2025 20:01;29/03/2025 20:01
+43;5;MSN307;Mesin-Mesin Fluida;2;2;0;Wajib;Link;;;;;;;;;30/03/2025 20:01;30/03/2025 20:01
+44;5;MSN309;Sistem Kendali;2;2;0;Wajib;Link;;;;;;;;;31/03/2025 20:01;31/03/2025 20:01
+45;5;MSN311;Energi Bio Massa;2;2;0;Wajib;Link;;;;;;;;;01/04/2025 20:01;01/04/2025 20:01
+46;5;MSN313;Technopreneurship  ;2;2;0;Wajib;Link;;;;;;;;;02/04/2025 20:01;02/04/2025 20:01
+47;5;MSN315;Teknologi Pembakaran;2;2;0;Wajib;Link;;;;;;;;;03/04/2025 20:01;03/04/2025 20:01
+48;5;MSN317;Rancang Inovasi Produk;2;2;2;Wajib;https://drive.google.com/file/d/1FUaXIFn5S6eZR2ZFAq1KE6mO65OsIOWx/view?usp=drive_link;;;;;;;;;04/04/2025 20:01;04/04/2025 20:01
+49;5;MSN319;Material Komposit;2;2;2;Wajib;https://drive.google.com/file/d/1lsXNfGX4TQALHPfc1DUDYfN0wo2H0CQy/view?usp=drive_link;;;;;;;;;05/04/2025 20:01;05/04/2025 20:01
+50;6;MSN302;Alat Pengangkat & Pengangkut bahan;2;2;0;Wajib;Link;;;;;;;;;06/04/2025 20:01;06/04/2025 20:01
+51;6;MSN304;Pendidikan Anti Korupsi;2;2;0;Wajib;Link;;;;;;;;;07/04/2025 20:01;07/04/2025 20:01
+52;6;MSN306;Teknik Tenaga Listrik;2;2;0;Wajib;Link;;;;;;;;;08/04/2025 20:01;08/04/2025 20:01
+53;6;MSN308;Etika Profesi;2;2;0;Wajib;Link;;;;;;;;;09/04/2025 20:01;09/04/2025 20:01
+54;6;MSN310;Konsep Teknologi dan Desain;2;2;0;Wajib;Link;;;;;;;;;10/04/2025 20:01;10/04/2025 20:01
+55;6;MSN312;Mekatronika;2;2;0;Wajib;Link;;;;;;;;;11/04/2025 20:01;11/04/2025 20:01
+56;6;MSN314;Tugas Purnarupa Inovasi Produk;2;0;2;Wajib;Link;;;;;;;;;12/04/2025 20:01;12/04/2025 20:01
+57;6;MSNXXX;MK Pilihan Keahlian  ;3;3;0;Pilihan;Link;;;;;;;;;13/04/2025 20:01;13/04/2025 20:01
+58;6;MSNXXX;MK Pilihan Keahlian;3;3;0;Pilihan;Link;;;;;;;;;14/04/2025 20:01;14/04/2025 20:01
+59;6;MSN502;Motor Bakar;3;0;0;Pilihan;Link;;;;;;;;;15/04/2025 20:01;15/04/2025 20:01
+60;6;MSN504;Teknik Penukar Kalor;3;0;0;Pilihan;Link;;;;;;;;;16/04/2025 20:01;16/04/2025 20:01
+61;6;MSN506;Turbin Uap;3;0;0;Pilihan;Link;;;;;;;;;17/04/2025 20:01;17/04/2025 20:01
+62;6;MSN508;Energi Terbarukan;3;0;0;Pilihan;Link;;;;;;;;;18/04/2025 20:01;18/04/2025 20:01
+63;6;MSN510;Mesin Pengkondisin Udara;3;0;0;Pilihan;Link;;;;;;;;;19/04/2025 20:01;19/04/2025 20:01
+64;6;MSN512;Teknik Pembentukan Material;3;0;0;Pilihan;Link;;;;;;;;;20/04/2025 20:01;20/04/2025 20:01
+65;6;MSN514;Nano Material;3;0;0;Pilihan;Link;;;;;;;;;21/04/2025 20:01;21/04/2025 20:01
+66;6;MSN516;Material Polimer dan Proses;3;0;0;Pilihan;Link;;;;;;;;;22/04/2025 20:01;22/04/2025 20:01
+67;6;MSN518;Sistem perpipaan;3;0;0;Pilihan;Link;;;;;;;;;23/04/2025 20:01;23/04/2025 20:01
+68;6;MSN520;Bio Material;3;0;0;Pilihan;Link;;;;;;;;;24/04/2025 20:01;24/04/2025 20:01
+69;7;MKU111;Metode Penelitin;2;2;0;Wajib;Link;;;;;;;;;25/04/2025 20:01;25/04/2025 20:01
+70;7;MSN401;Pratikum Fenomena Dasar dan Uji Prestasi Mesin;2;0;0;Wajib;https://drive.google.com/file/d/1JNHI4w1XY-r2XFsf4E8b4aPDj3tw40Rp/view?usp=drive_link;;;;;;;;;26/04/2025 20:01;26/04/2025 20:01
+71;7;MSN403;Pemilihan Bahan dan Proses;2;2;0;Wajib;Link;;;;;;;;;27/04/2025 20:01;27/04/2025 20:01
+72;7;MSN405;Kerja Praktek;2;0;2;Wajib;Link;;;;;;;;;28/04/2025 20:01;28/04/2025 20:01
+73;7;MSN407;Kuliah Kerja Nyata;4;0;4;Wajib;Link;;;;;;;;;29/04/2025 20:01;29/04/2025 20:01
+74;7;MSNXXX;MK Pilihan Keahlian;3;0;0;Pilihan;Link;;;;;;;;;30/04/2025 20:01;30/04/2025 20:01
+75;7;MSNXXX;MK Pilihan Keahlian;3;0;0;Pilihan;Link;;;;;;;;;01/05/2025 20:01;01/05/2025 20:01
+76;7;MSN501;Teknik Tenaga Surya;3;3;0;Pilihan;Link;;;;;;;;;02/05/2025 20:01;02/05/2025 20:01
+77;7;MSN503;Perawatan Mesin;3;3;0;Pilihan;Link;;;;;;;;;03/05/2025 20:01;03/05/2025 20:01
+78;7;MSN505;Teknik Tenaga Listrik Lanjut;3;3;0;Pilihan;Link;;;;;;;;;04/05/2025 20:01;04/05/2025 20:01
+79;7;MSN507;Bahan Bakar dan Pembakaran;3;3;0;Pilihan;Link;;;;;;;;;05/05/2025 20:01;05/05/2025 20:01
+80;7;MSN509;Ketel Uap;3;3;0;Pilihan;Link;;;;;;;;;06/05/2025 20:01;06/05/2025 20:01
+81;7;MSN511;Plant Lay Out;3;3;0;Pilihan;Link;;;;;;;;;07/05/2025 20:01;07/05/2025 20:01
+82;7;MSN513;Perawatan Mesin;3;3;0;Pilihan;Link;;;;;;;;;08/05/2025 20:01;08/05/2025 20:01
+83;7;MSN515;Industri Daur Ulang;3;3;0;Pilihan;Link;;;;;;;;;09/05/2025 20:01;09/05/2025 20:01
+84;7;MSN517;Teknik Pengelasan;3;3;0;Pilihan;Link;;;;;;;;;10/05/2025 20:01;10/05/2025 20:01
+85;7;MSN519;Teknologi Tepat Guna;3;3;3;Wajib;https://drive.google.com/file/d/1vZ6bqFbNFd69VDzmWvaSh5ERSW6Ee68D/view?usp=drive_link;;;;;;;;;11/05/2025 20:01;11/05/2025 20:01
+86;7;MFT402;Tugas Akhir;4;0;4;Wajib;Link;;;;;;;;;12/05/2025 20:01;12/05/2025 20:01

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KurikulumSiController;
+use App\Http\Controllers\KurikulumMesinController;
+use App\Http\Controllers\KurikulumSipilController;
 
 
 Route::get('/', function () {
@@ -39,11 +41,10 @@ Route::get('/Sistem-Informasi/Visi-Misi', function () {
 Route::get('/Sistem-Informasi/Dosen-Sistem-Informasi', function () {
     return view('program-studi.sistem-informasi.dosenSi');
 })->name('dosenSi');
-
 //kurikulum si
 Route::get('/Sistem-Informasi/Kurikulum-Sistem-Informasi', [KurikulumSiController::class, 'index'])
     ->name('kurikulumSi');
-    
+
 // Teknik sipil
 Route::get('/Teknik-Sipil/Visi-Misi', function () {
     return view('program-studi.teknik-sipil.visiMisiSipil');
@@ -51,10 +52,9 @@ Route::get('/Teknik-Sipil/Visi-Misi', function () {
 Route::get('/Teknik-Sipil/Dosen-Teknik-Sipil', function () {
     return view('program-studi.teknik-sipil.dosenSipil');
 })->name('dosenSipil');
-Route::get('/Teknik-Sipil/Kurikulum-Teknik-Sipil', function () {
-    $KurikulumSipils = App\Models\KurikulumSipil::all();
-    return view('program-studi.teknik-sipil.kurikulumSipil', compact('KurikulumSipils'));
-})->name('kurikulumSipil');
+//kurikulum sipil
+Route::get('/Teknik-Sipil/Kurikulum-Teknik-Sipil', [KurikulumSipilController::class, 'index'])
+    ->name('kurikulumSipil');
 //teknik mesin
 Route::get('/Teknik-Mesin/Visi-Misi', function () {
     return view('program-studi.teknik-mesin.visiMisiMesin');
@@ -62,10 +62,9 @@ Route::get('/Teknik-Mesin/Visi-Misi', function () {
 Route::get('/Teknik-Mesin/Dosen-Teknik-Mesin', function () {
     return view('program-studi.teknik-mesin.dosenMesin');
 })->name('dosenMesin');
-Route::get('/Teknik-Mesin/Kurikulum-Teknik-Mesin', function () {
-    $KurikulumMesins = App\Models\KurikulumMesin::all();
-    return view('program-studi.teknik-mesin.kurikulumMesin', compact('KurikulumMesins'));
-})->name('kurikulumMesin');
+//kurikulum mesin
+Route::get('/Teknik-Mesin/Kurikulum-Teknik-Mesin', [KurikulumMesinController::class, 'index'])
+    ->name('kurikulumMesin');
 
 
 //route pendidikan

@@ -1,0 +1,77 @@
+﻿id;semester;kode_mk;mata_kuliah;sks;praktek;teori;kategori_mk;rps;;;;;;;;;created_at;update_at
+1;1;MKN101;Pendidikan Agama;2;2;2;wajib;https://drive.google.com/file/d/1Iph62Aog4ktEuAAYD5_u5KRp5osK7e_I/view?usp=drive_link;;;;;;;;;19/02/2025 00:39;19/02/2025 00:39
+2;1;MKN103;Pendidikan Pancasila ;2;2;2;wajib;https://drive.google.com/file/d/1o6zvTo6CJgIM1ypWkoanW1Ck2XKRwt1b/view?usp=drive_link;;;;;;;;;20/02/2025 00:39;20/02/2025 00:39
+3;1;MKN105;Bahasa Indonesia;2;2;2;wajib;https://drive.google.com/file/d/1JlahCgk0KYL_19YNxR6ty0-KbqsT57g5/view?usp=drive_link;;;;;;;;;21/02/2025 00:39;21/02/2025 00:39
+4;1;MKU101;Aplikasi Komputer;2;1;1;wajib;https://drive.google.com/file/d/1lDsnxCwJqY-iMjRx7vjHoLiH8ppkmdcY/view?usp=drive_link;;;;;;;;;22/02/2025 00:39;22/02/2025 00:39
+5;1;MKU103;Bahasa Inggris;2;2;2;wajib;https://drive.google.com/file/d/1Ed97twz0hhXUuoJ3TEO6CrfDLAG7wWxx/view?usp=drive_link;;;;;;;;;23/02/2025 00:39;23/02/2025 00:39
+6;1;MFT101;Matematika I;3;3;3;wajib;https://drive.google.com/file/d/1xSeeDR0hrDyJ1ckm4PO-ZfV_faBXhqme/view?usp=drive_link;;;;;;;;;24/02/2025 00:39;24/02/2025 00:39
+7;1;SIF101;Konsep Sistem Informasi;2;2;2;wajib;https://drive.google.com/file/d/1q5Lsuajlcm1mCtEusO9RtfaWTIQ-CmNy/view?usp=drive_link;;;;;;;;;25/02/2025 00:39;25/02/2025 00:39
+8;1;SIF103;Arsitektur Komputer;2;2;2;wajib;https://drive.google.com/file/d/1h_vVLxFfyU7aPeyJEfNCwtV_Q2Wo3ql3/view?usp=drive_link;;;;;;;;;26/02/2025 00:39;26/02/2025 00:39
+9;1;SIF107;Algoritma dan Pemrograman ;3;2;2;wajib;https://drive.google.com/file/d/1S86ohu5zM2xPVgsTTUo_r7tm_BEq5RlA/view?usp=drive_link;;;;;;;;;27/02/2025 00:39;27/02/2025 00:39
+10;2;MKN102;Kewarganegaraan;2;2;2;wajib;https://drive.google.com/file/d/1eDHT1qCuwy3VhvonqeJeGzAbOIEIDQ3S/view?usp=drive_link;;;;;;;;;28/02/2025 00:39;28/02/2025 00:39
+11;2;MFT102;Matematika II;3;3;3;wajib;https://drive.google.com/file/d/1iIF67oResTwzBQAB1CCejLEx_rCQfm0-/view?usp=drive_link;;;;;;;;;01/03/2025 00:39;01/03/2025 00:39
+12;2;SIF102;Pengantar Teknologi Informasi;2;1;1;wajib;https://drive.google.com/file/d/1qX4r7kx4CuFJFNbjvGz4ET9svmuqeNxq/view?usp=drive_link;;;;;;;;;02/03/2025 00:39;02/03/2025 00:39
+13;2;SIF104;UI/ UX Desain ;2;1;1;wajib;https://drive.google.com/file/d/13PahB3-NPBp7FXORGsUMzNNhNG_BzK_Y/view?usp=drive_link;;;;;;;;;03/03/2025 00:39;03/03/2025 00:39
+14;2;SIF106;Konsep Basis Data;2;1;1;wajib;https://drive.google.com/file/d/1WBoyruSYqnzRS6s0aB_3p8qZuQ8Omlj8/view?usp=drive_link;;;;;;;;;04/03/2025 00:39;04/03/2025 00:39
+15;2;SIF108;Dasar Telekomunikasi;2;1;1;wajib;https://drive.google.com/file/d/1AtazQfyUCRMtgD4Gxbe0j7Qb9XtbHKpQ/view?usp=drive_link;;;;;;;;;05/03/2025 00:39;05/03/2025 00:39
+16;2;SIF110;Sistem Operasi;2;1;1;wajib;https://drive.google.com/file/d/1I7JjINHpAp7DdE4mPIs4f46I1g5XQvHU/view?usp=drive_link;;;;;;;;;06/03/2025 00:39;06/03/2025 00:39
+17;2;SIF112;Algoritma dan Struktur Data;3;2;2;wajib;https://drive.google.com/file/d/1vTgK6HNtmjbEHp6FQm6ZZv7hhwumoGec/view?usp=drive_link;;;;;;;;;07/03/2025 00:39;07/03/2025 00:39
+18;2;SIF114;Logika Digital;2;2;2;wajib;https://drive.google.com/file/d/1W6eUwMFhqRp1nhRUWxj-bZJst-zGQ9ND/view?usp=drive_link;;;;;;;;;08/03/2025 00:39;08/03/2025 00:39
+19;3;MFT201;Statistika dan Probabilitas;2;2;2;wajib;https://drive.google.com/file/d/1WkZVaOc8-MH_27cJWUr9fJ9biPedgaCi/view?usp=drive_link;;;;;;;;;09/03/2025 00:39;09/03/2025 00:39
+20;3;SIF201;Analisa dan Perancangan Sistem;3;2;2;wajib;https://drive.google.com/file/d/1jsQ4glqJ12Iq_6U7OftZxsmRKJvPUiJs/view?usp=drive_link;;;;;;;;;10/03/2025 00:39;10/03/2025 00:39
+21;3;SIF203;Sistem Informasi Manajemen;2;2;2;wajib;https://drive.google.com/file/d/1oOmudGvoMW-wmZBdc8FFmOsRMgnDsUww/view?usp=drive_link;;;;;;;;;11/03/2025 00:39;11/03/2025 00:39
+22;3;SIF205;Jaringan Komputer;3;2;2;wajib;https://drive.google.com/file/d/1KU1aknL4ReRAsqSAdZytRTYesVX0yJvN/view?usp=drive_link;;;;;;;;;12/03/2025 00:39;12/03/2025 00:39
+23;3;SIF207;Desain Grafis dan Multimedia;2;1;1;wajib;https://drive.google.com/file/d/1SfYq7VlJuUaj4C_f1IiqGy20a509GmnM/view?usp=drive_link;;;;;;;;;13/03/2025 00:39;13/03/2025 00:39
+24;3;SIF209;Pemrograman Berorientasi Objek;3;2;2;wajib;https://drive.google.com/file/d/1ULQKNlEY6ZsQ-Tj_URtHh8mmKJZg2dLI/view?usp=drive_link;;;;;;;;;14/03/2025 00:39;14/03/2025 00:39
+25;3;SIF211;Sistem Basis Data;3;2;2;wajib;https://drive.google.com/file/d/1vT4GrcKG3iTjG7REffzsujPv0SvcUAXg/view?usp=drive_link;;;;;;;;;15/03/2025 00:39;15/03/2025 00:39
+26;3;SIF213;Akuntansi Dasar;2;2;2;wajib;https://drive.google.com/file/d/1Uw6x_VTJZVmNasr2VcX_YB99tQI22iCo/view?usp=drive_link;;;;;;;;;16/03/2025 00:39;16/03/2025 00:39
+27;3;SIF215;Kepemimpinan dan Manajemen Organisasi;2;2;0;wajib;Link;;;;;;;;;17/03/2025 00:39;17/03/2025 00:39
+28;4;SIF202;Pengolahan Citra Digital;3;2;2;wajib;https://drive.google.com/file/d/1RfpQ7Rsx_JKf4WEVSDuqkgZq_BFY3E36/view?usp=drive_link;;;;;;;;;18/03/2025 00:39;18/03/2025 00:39
+29;4;SIF204;Keamanan Jaringan;2;1;1;wajib;https://drive.google.com/file/d/1awd3ppwLtvYcTeGIEy_bYrfEpxTuc7qj/view?usp=drive_link;;;;;;;;;19/03/2025 00:39;19/03/2025 00:39
+30;4;SIF206;Komunikasi Data;3;2;2;wajib;https://drive.google.com/file/d/1bvD4t8CGrTnEUs8k1JL1mmDjezr4Kmsu/view?usp=drive_link;;;;;;;;;20/03/2025 00:39;20/03/2025 00:39
+31;4;SIF208;Pemrograman Lanjutan;2;1;1;wajib;https://drive.google.com/file/d/1HuGNX20O5VIeSCYO65ha-IVcTTeFSC3c/view?usp=drive_link;;;;;;;;;21/03/2025 00:39;21/03/2025 00:39
+32;4;SIF210;Kecerdasan Buatan;3;2;2;wajib;https://drive.google.com/file/d/1JYdXJN3e4FVMP5GF-F5-K0XpKIhumu65/view?usp=drive_link;;;;;;;;;22/03/2025 00:39;22/03/2025 00:39
+33;4;SIF212;Financial Technology;2;2;2;wajib;https://drive.google.com/file/d/1lQlHg6YK-SjvFYXJZBHAwWzGrM2L-0xp/view?usp=drive_link;;;;;;;;;23/03/2025 00:39;23/03/2025 00:39
+34;4;SIF214;Sistem Informasi Geografis;2;1;1;wajib;https://drive.google.com/file/d/1u8CPG7qnLpcPEId9FmPazHPQ-UZS6O-a/view?usp=drive_link;;;;;;;;;24/03/2025 00:39;24/03/2025 00:39
+35;4;SIF216;Rekayasa Perangkat Lunak;2;2;2;wajib;https://drive.google.com/file/d/1DuGmpWOc_kpxjuFdpjzF3q2ygkGUZ7dK/view?usp=drive_link;;;;;;;;;25/03/2025 00:39;25/03/2025 00:39
+36;4;SIF218;Pemrograman Web;3;2;2;wajib;https://drive.google.com/file/d/1RzN6Y-DWWFzgA1HAwJzTDzxp1GsBaIV2/view?usp=drive_link;;;;;;;;;26/03/2025 00:39;26/03/2025 00:39
+37;5;SIF301;Natural Language Processing;2;1;1;wajib;https://drive.google.com/file/d/1EVmnrGJhztAeCnRXh25pcmu7IoG2DiDK/view?usp=drive_link;;;;;;;;;27/03/2025 00:39;27/03/2025 00:39
+38;5;SIF303;Simulasi dan Pemodelan;2;1;1;wajib;https://drive.google.com/file/d/1DYwa_Mv8pfISpfU1N6L2IBgMypaYphrQ/view?usp=drive_link;;;;;;;;;28/03/2025 00:39;28/03/2025 00:39
+39;5;SIF305;Kapita Selekta Sistem Informasi;2;2;2;wajib;https://drive.google.com/file/d/1yhprq4wnkIkw-HabAgEhaNnti90LoozT/view?usp=drive_link;;;;;;;;;29/03/2025 00:39;29/03/2025 00:39
+40;5;SIF307;Pemrograman Web Lanjut;3;2;2;wajib;https://drive.google.com/file/d/1zsmTPBeOrFN-UmqPkKem4zuUQiYxxK7o/view?usp=drive_link;;;;;;;;;30/03/2025 00:39;30/03/2025 00:39
+41;5;SIF309;Keamanan Sistem Informasi;2;1;1;wajib;https://drive.google.com/file/d/1HHJADnh7UWALTzy3IlIi9CDxP6813OCy/view?usp=drive_link;;;;;;;;;31/03/2025 00:39;31/03/2025 00:39
+42;5;SIF311;Mobile Technology ;3;2;2;wajib;https://drive.google.com/file/d/1AU1A4cuMYBq42uUUF4v4008w8XCuGr1h/view?usp=drive_link;;;;;;;;;01/04/2025 00:39;01/04/2025 00:39
+43;5;SIF501;Cloud Computing;2;1;1;pilihan;"https://drive.google.com/file/d/14wnNRzsm0hmSUvmvUyvDJ9wqfPhni3pA/view?usp=drive_link
+";;;;;;;;;02/04/2025 00:39;02/04/2025 00:39
+44;5;SIF503;Internet of Things;2;1;1;pilihan;https://drive.google.com/file/d/1EbrWNy2oMnKgLae0tvbb8ngS3d7h2C-H/view?usp=drive_link;;;;;;;;;03/04/2025 00:39;03/04/2025 00:39
+45;5;SIF505;Sistem Terdistribusi;2;1;1;pilihan;https://drive.google.com/file/d/1S7f59K0k30rOCe1LJee98pLEnmWOYyMU/view?usp=drive_link;;;;;;;;;04/04/2025 00:39;04/04/2025 00:39
+46;5;SIF507;Mobile Technology Lanjutan;2;1;1;pilihan;https://drive.google.com/file/d/1AU1A4cuMYBq42uUUF4v4008w8XCuGr1h/view?usp=drive_link;;;;;;;;;05/04/2025 00:39;05/04/2025 00:39
+47;5;SIF509;Komputer Grafik;2;1;1;pilihan;https://drive.google.com/file/d/1FTLajAXqqhogCLXTuLYxe0wmRglqk2B2/view?usp=drive_link;;;;;;;;;06/04/2025 00:39;06/04/2025 00:39
+48;5;SIF511;Machine Learning;2;1;1;pilihan;Link;;;;;;;;;07/04/2025 00:39;07/04/2025 00:39
+49;5;SIF513;Manajemen Proses Bisnis;2;2;0;pilihan;Link;;;;;;;;;08/04/2025 00:39;08/04/2025 00:39
+50;5;SIF515;Blockchain;2;2;0;pilihan;Link;;;;;;;;;09/04/2025 00:39;09/04/2025 00:39
+51;5;SIF517;Financial Accounting;2;2;0;pilihan;Link;;;;;;;;;10/04/2025 00:39;10/04/2025 00:39
+52;6;SIF302;Analitik dan Visualisasi Data;2;1;1;wajib;https://drive.google.com/file/d/1LseFKB2j_fTIg22-tCsLcg4rQE_DLj9r/view?usp=drive_link;;;;;;;;;11/04/2025 00:39;11/04/2025 00:39
+53;6;SIF304;Data Mining;3;2;2;wajib;https://drive.google.com/file/d/18vN4044MrAMuNtaRvxuRSgVRHuY6m0d5/view?usp=drive_link;;;;;;;;;12/04/2025 00:39;12/04/2025 00:39
+54;6;SIF306;Testing dan Implementasi Sistem;2;1;1;wajib;https://drive.google.com/file/d/1dMAbSBqao3FJJQZ_4NmfZK3iJ8hUdh7W/view?usp=drive_link;;;;;;;;;13/04/2025 00:39;13/04/2025 00:39
+55;6;SIF308;Tata Kelola Teknologi Informasi;2;2;2;wajib;https://drive.google.com/file/d/1BR0GRJ1aZy8PMu9Pxwib5EJaMYgD7esN/view?usp=drive_link;;;;;;;;;14/04/2025 00:39;14/04/2025 00:39
+56;6;SIF310;Audit Sistem Informasi;3;2;2;wajib;https://drive.google.com/file/d/1aPflmCfFfjjhailpfVnQJVp0vdtD4anO/view?usp=drive_link;;;;;;;;;15/04/2025 00:39;15/04/2025 00:39
+57;6;SIF312;Etika Profesi dan Profesional;2;2;2;wajib;https://drive.google.com/file/d/1US77RJ76itz7ap4eq3N7vlRKtCGOsO39/view?usp=drive_link;;;;;;;;;16/04/2025 00:39;16/04/2025 00:39
+58;6;SIF502;Information Retrieval;2;1;1;pilihan;https://drive.google.com/file/d/1LJZuIYrhgnmZR2f6p6hUVEBwm3gvmu2F/view?usp=drive_link;;;;;;;;;17/04/2025 00:39;17/04/2025 00:39
+59;6;SIF504;Desain Sistem Tertanam;2;1;1;pilihan;https://drive.google.com/file/d/1vh1DvoGNWApXQkeyQpBNKLeBPWsdj7u3/view?usp=drive_link;;;;;;;;;18/04/2025 00:39;18/04/2025 00:39
+60;6;SIF506;Communication Skill;2;2;0;pilihan;Link;;;;;;;;;19/04/2025 00:39;19/04/2025 00:39
+61;6;SIF508;Sistem Pendukung Keputusan;2;1;1;pilihan;https://drive.google.com/file/d/1LfcS1g_364MR87Vguo0BWRVC7xlmm9iP/view?usp=drive_link;;;;;;;;;20/04/2025 00:39;20/04/2025 00:39
+62;6;SIF510;Interaksi Manusia Komputer;2;1;1;pilihan;Link;;;;;;;;;21/04/2025 00:39;21/04/2025 00:39
+63;6;SIF512;Supply Chain Management;2;1;1;pilihan;Link;;;;;;;;;22/04/2025 00:39;22/04/2025 00:39
+64;6;SIF514;Computer Vision;2;1;1;pilihan;Link;;;;;;;;;23/04/2025 00:39;23/04/2025 00:39
+65;6;SIF516;Human Resource Management;2;2;0;pilihan;Link;;;;;;;;;24/04/2025 00:39;24/04/2025 00:39
+66;6;SIF518;Business Intelligence;2;1;1;pilihan;Link;;;;;;;;;25/04/2025 00:39;25/04/2025 00:39
+67;7;MKU401;Kuliah Kerja Nyata;4;0;4;wajib;Link;;;;;;;;;26/04/2025 00:39;26/04/2025 00:39
+68;7;MFT401;Kerja Praktek;2;0;2;wajib;Link;;;;;;;;;27/04/2025 00:39;27/04/2025 00:39
+69;7;SIF401;Manajemen Proyek Sistem Informasi;2;0;0;wajib;https://drive.google.com/file/d/1LD5U1Kk1e5WJVLO378DppvcoKAmZISIa/view?usp=sharing;;;;;;;;;28/04/2025 00:39;28/04/2025 00:39
+70;7;SIF403;Technopreneurship;2;0;0;wajib;https://drive.google.com/file/d/19ue_P-ggbl0-vZH9XpZ1SavfF0bfbZr6/view?usp=sharing;;;;;;;;;29/04/2025 00:39;29/04/2025 00:39
+71;7;SIF405;Transformasi Digital;3;0;0;wajib;https://drive.google.com/file/d/1CkB-410IDQWShLIUqC35uTYnF1mz6Qew/view?usp=sharing;;;;;;;;;30/04/2025 00:39;30/04/2025 00:39
+72;7;SIF407;Metodologi Penelitian ;3;1;1;wajib;https://drive.google.com/file/d/1ssfTZqp2UERkfLe9wCSR0TbfgmuXSFKL/view?usp=sharing;;;;;;;;;01/05/2025 00:39;01/05/2025 00:39
+73;8;MFT402;Tugas Akhir;4;0;4;wajib;Link;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
