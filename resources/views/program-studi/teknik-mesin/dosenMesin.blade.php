@@ -10,8 +10,6 @@
 
 <!--Main content-->
 <div class="container-lecture">
-    <!-- Section 1 -->
-    <div class="card-lecture-section">
         <div class="row g-4">
             <!-- Card 1 -->
             <div class="col-12 col-md-6 col-lg-3">
