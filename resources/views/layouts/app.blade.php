@@ -263,7 +263,7 @@
                 <!--Grid column: Logo-->
                 <div class="footer-column">
                     <ul class="list-unstyled mb-0">
-                        <img src="/asset/img/Universitas Abulyatama.png" alt="Logo Universitas Abulyatama"
+                        <img src="/asset/img/unayaaaa.png" alt="Logo Universitas Abulyatama"
                             class="img-footer">
                     </ul>
                 </div>
