@@ -141,7 +141,7 @@
                 <li class="back-button-nav" data-target="program-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('visiMisiSi') }}">Visi</a></li>
                 <li><a href="{{ route('dosenSi') }}">Dosen</a></li>
-                <li><a href="#">Kurikulum</a></li>
+                <li><a href="{{ route('kurikulumSi') }}">Kurikulum</a></li>
             </ul>
 
             <!-- Teknik Sipil Submenu -->
@@ -149,15 +149,15 @@
                 <li class="back-button-nav" data-target="program-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('visiMisiSipil') }}">Visi</a></li>
                 <li><a href="{{ route('dosenSipil') }}">Dosen</a></li>
-                <li><a href="#">Kurikulum</a></li>
+                <li><a href="{{ route('kurikulumSipil') }}">Kurikulum</a></li>
             </ul>
 
             <!-- Teknik Mesin Submenu -->
             <ul class="menu-slide teknikMesin-menu">
                 <li class="back-button-nav" data-target="program-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="visimisi_mesin.php">Visi</a></li>
-                <li><a href="dosen_Tmesin.php">Dosen</a></li>
-                <li><a href="kurikulum_Tmesin.php">Kurikulum</a></li>
+                <li><a href="{{ route('visiMisiMesin') }}">Visi</a></li>
+                <li><a href="{{ route('dosenMesin') }}">Dosen</a></li>
+                <li><a href="{{ route('kurikulumMesin') }}">Kurikulum</a></li>
             </ul>
 
             <!-- Menu Pendidikan -->
@@ -172,7 +172,7 @@
             <!-- Menu Kemahasiswaan -->
             <ul class="menu-slide kemahasiswaan-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="layanan.php">Layanan Komunikasi Orang Tua/Wali Mahasiswa</a></li>
+                <li><a href="{{ route('layanan') }}">Layanan Komunikasi Orang Tua/Wali Mahasiswa</a></li>
                 <li class="submenu-link" data-target="Organisasi-menu"><a href="#">Organisasi Mahasiswa<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li><a href="#">UKM</a></li>
             </ul>
