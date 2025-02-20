@@ -40,6 +40,26 @@
           @endforeach
         </tbody>
       </table>
+      <div class="pagination-container mt-3">
+          <ul class="pagination justify-content-end">
+              <li class="page-item">
+                  <a class="page-link" href=""><i class="fas fa-angle-double-left"></i></a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href=""><i class="fas fa-angle-left"></i></a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href=""></a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href=""><i class="fas fa-angle-right"></i></a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href=""><i class="fas fa-angle-double-right"></i></a>
+              </li>
+          </ul>
+      </div>
+      
     </div>
   </div>   
 @endsection
