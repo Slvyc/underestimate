@@ -9,7 +9,19 @@
 </section>
 
 <!-- Konten Kerja Sama -->
-<div class="container table-container mt-3 mb-5">
+<div class="container table-container mt-5 mb-5">
+    <!-- Search Box -->
+    <div class="download-search-wrapper mb-4 d-flex justify-content-end">
+        <div class="download-search-box">
+            <div class="input-group" style="width: 300px;">
+                <input type="text" class="form-control download-search-input" id="downloadSearchInput" placeholder="Cari">
+                <span class="input-group-text download-search-icon">
+                    <i class="bi bi-search"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    
     <div class="download-table-wrapper table-responsive">
       <table class="download-table table table-hover" id="sop-download-table">
           <thead class="download-table-header table-dark">
@@ -40,8 +52,8 @@
           @endforeach
         </tbody>
       </table>
-      <div class="pagination-container mt-3">
-          <ul class="pagination justify-content-end">
+      <div class="pagination-container mt-1">
+          <!-- <ul class="pagination justify-content-end">
               <li class="page-item">
                   <a class="page-link" href=""><i class="fas fa-angle-double-left"></i></a>
               </li>
@@ -57,7 +69,7 @@
               <li class="page-item">
                   <a class="page-link" href=""><i class="fas fa-angle-double-right"></i></a>
               </li>
-          </ul>
+          </ul> -->
       </div>
       
     </div>

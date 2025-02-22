@@ -4009,7 +4009,7 @@ color: #000;
 /* end kerja sama */
 
 /* MENU DOWNLOAD */
-
+DOWNLOAD
 .download-table-wrapper {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -4033,7 +4033,6 @@ color: #000;
 .download-table td {
   padding: 10px;
   border: 1px solid #ddd;
-  text-align: center;
   vertical-align: middle;
 }
 

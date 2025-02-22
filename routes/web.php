@@ -6,6 +6,7 @@ use App\Http\Controllers\KurikulumMesinController;
 use App\Http\Controllers\KurikulumSipilController;
 
 
+
 Route::get('/', function () {
     $beritas = App\Models\Berita::all();
     $pengumumans = App\Models\Pengumuman::all();
@@ -119,8 +120,9 @@ Route::get('/Penghargaan-Dosen', function () {
 Route::get('/Penghargaan-Mahasiswa', function () {
     $PenghargaanMahasiswas = App\Models\PenghargaanMahasiswa::all();
     return view('penghargaan.penghargaanMahasiswa', compact('PenghargaanMahasiswas'));
-})->name('penghargaanMahasiswa');
-//kerjasama
+})->name('penghargaanMahasiswa'); //url buat navbar
+
+//route kerjasama
 Route::get('/Kerjasama', function () {
     $Kerjasamas = App\Models\Kerjasama::all();
     return view('kerjasama', compact('Kerjasamas'));
