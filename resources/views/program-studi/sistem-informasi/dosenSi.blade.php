@@ -4,28 +4,29 @@
 <section class="hero">
         <div class="container-hero text-center">
             <h1 class="display-4 fw-bold fade-in">Dosen Pengajar</h1>
-            <p class="lead fade-in">Teknik Sistem Informasi</p>
+            <p class="lead fade-in">Sistem Informasi</p>
         </div>
 </section>
 
 <div class="container-lecture">
         <div class="row g-4">
             <!-- Card 1 -->
+            @foreach ( $DosenSis as $DosenSi )
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
-                        <img src="\asset\img\dosen\ryan setiawann.jpg">
-                        <h5 class="lecturer-name mt-3">Ryan Setiawan</h5>
-                        <p class="lecturer-position">Asisten Ahli</p>
+                        <img src="{{ asset('storage/' . $DosenSi->gambar_dosen) }}">
+                        <h5 class="lecturer-name mt-3">{{ $DosenSi->nama_dosen }}</h5>
+                        <p class="lecturer-position">{{ $DosenSi->posisi_dosen }}</p>
                     </div>
                     <div class="card-body">
-                        <p class="nidn">NIDN: 1316079301</p>
+                        <p class="nidn">NIDN: {{ $DosenSi->nidn }}</p>
                     </div>
                     <div class="card-info">
                         <h6>Riwayat Pendidikan</h6>
-                        <p>S2 Sistem Informasi</p>
-                        <p>(Institut Teknologi Sepuluh Nopember)</p>
-                        <a href="https://sinta.kemdikbud.go.id/authors/profile/6840109" target="_blank">
+                        <p>{{ $DosenSi->riwayat_prodi }}</p>
+                        <p>({{ $DosenSi->riwayat_universitas }})</p>
+                        <a href="{{ $DosenSi->link_Publikasi }}" target="_blank">
                             <button class="btn-publications">Lihat Publikasi</button>
                         </a>
                         <div class="button-info">
@@ -33,10 +34,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>     
+            @endforeach
 
             <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <!-- <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\rahmat sufri.jpg">
@@ -58,10 +60,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <!-- <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\teuku rizki.jpg">
@@ -83,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Card 4 -->
             <!-- <div class="col-12 col-md-6 col-lg-4">
@@ -111,7 +113,7 @@
             </div> -->
 
             <!-- Card 5 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <!-- <div class="col-12 col-md-6 col-lg-3">
                 <div class="card-lecture">
                     <div class="card-header">
                         <img src="\asset\img\dosen\anisah.jpg">
@@ -133,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

@@ -39,8 +39,10 @@ Route::get('/Kalender-Akademik', function () {
 Route::get('/Sistem-Informasi/Visi-Misi', function () {
     return view('program-studi.sistem-informasi.visiMisiSi');
 })->name('visiMisiSi');
+//dosen si
 Route::get('/Sistem-Informasi/Dosen-Sistem-Informasi', function () {
-    return view('program-studi.sistem-informasi.dosenSi');
+    $DosenSis = App\Models\DosenSi::all();
+    return view('program-studi.sistem-informasi.dosenSi', compact('DosenSis'));
 })->name('dosenSi');
 //kurikulum si
 Route::get('/Sistem-Informasi/Kurikulum-Sistem-Informasi', [KurikulumSiController::class, 'index'])
@@ -50,8 +52,10 @@ Route::get('/Sistem-Informasi/Kurikulum-Sistem-Informasi', [KurikulumSiControlle
 Route::get('/Teknik-Sipil/Visi-Misi', function () {
     return view('program-studi.teknik-sipil.visiMisiSipil');
 })->name('visiMisiSipil');
+//dosen sipil
 Route::get('/Teknik-Sipil/Dosen-Teknik-Sipil', function () {
-    return view('program-studi.teknik-sipil.dosenSipil');
+    $DosenSipils = App\Models\DosenSipil::all();
+    return view('program-studi.teknik-sipil.dosenSipil', compact('DosenSipils'));
 })->name('dosenSipil');
 //kurikulum sipil
 Route::get('/Teknik-Sipil/Kurikulum-Teknik-Sipil', [KurikulumSipilController::class, 'index'])
@@ -60,8 +64,10 @@ Route::get('/Teknik-Sipil/Kurikulum-Teknik-Sipil', [KurikulumSipilController::cl
 Route::get('/Teknik-Mesin/Visi-Misi', function () {
     return view('program-studi.teknik-mesin.visiMisiMesin');
 })->name('visiMisiMesin');
+//dosen mesin
 Route::get('/Teknik-Mesin/Dosen-Teknik-Mesin', function () {
-    return view('program-studi.teknik-mesin.dosenMesin');
+    $DosenMesins = App\Models\DosenMesin::all();
+    return view('program-studi.teknik-mesin.dosenMesin', compact('DosenMesins'));
 })->name('dosenMesin');
 //kurikulum mesin
 Route::get('/Teknik-Mesin/Kurikulum-Teknik-Mesin', [KurikulumMesinController::class, 'index'])

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 20, 2025 at 09:56 AM
+-- Generation Time: Feb 22, 2025 at 07:39 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -101,10 +101,10 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('356a192b7913b04c54574d18c28d46e6395428ab', 'i:1;', 1740034626),
-('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1740034626;', 1740034626),
-('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1740023232),
-('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1740023232;', 1740023232);
+('356a192b7913b04c54574d18c28d46e6395428ab', 'i:2;', 1740206083),
+('356a192b7913b04c54574d18c28d46e6395428ab:timer', 'i:1740206083;', 1740206083),
+('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1740110636),
+('livewire-rate-limiter:a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1740110636;', 1740110636);
 
 -- --------------------------------------------------------
 
@@ -117,6 +117,103 @@ CREATE TABLE `cache_locks` (
   `owner` varchar(255) NOT NULL,
   `expiration` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dosen_mesins`
+--
+
+CREATE TABLE `dosen_mesins` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `gambar_dosen` varchar(255) NOT NULL,
+  `nama_dosen` varchar(255) NOT NULL,
+  `posisi_dosen` enum('Asisten Ahli','Lektor Kepala','Lektor','Profesor') DEFAULT NULL,
+  `nidn` int(11) DEFAULT NULL,
+  `riwayat_prodi` varchar(255) DEFAULT NULL,
+  `riwayat_universitas` varchar(255) DEFAULT NULL,
+  `link_publikasi` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `dosen_mesins`
+--
+
+INSERT INTO `dosen_mesins` (`id`, `gambar_dosen`, `nama_dosen`, `posisi_dosen`, `nidn`, `riwayat_prodi`, `riwayat_universitas`, `link_publikasi`, `created_at`, `updated_at`) VALUES
+(3, 'uploads/gambar_dosen_mesin/01JMP3Q3WY8M2EJ2VB949TS3P5.jpg', 'Iqbal', 'Lektor', 120108002, 'Doctor Ilmu Teknik', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6089920', '2025-02-21 22:57:35', '2025-02-21 23:22:41'),
+(4, 'uploads/gambar_dosen_mesin/01JMP3SF0FZRWBJD1ZZCAPFJ3B.jpg', 'Muhtadin', 'Lektor', 123097301, 'Magister Teknik Mesin', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6022843', '2025-02-21 22:58:52', '2025-02-21 23:37:09'),
+(5, 'uploads/gambar_dosen_mesin/01JMP45BXR9YYYS7VGZ6C2FRTM.jpeg', 'Mahyuddin', 'Lektor', 113057505, 'Magister Teknik Mesin', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6022833', '2025-02-21 23:05:22', '2025-02-21 23:37:15'),
+(6, 'uploads/gambar_dosen_mesin/01JMP47ENHHV41HRMENWHR2C7S.jpeg', 'Muhammad Faisal', 'Lektor', 110107402, 'Magister Teknik Mesin', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6022932', '2025-02-21 23:06:31', '2025-02-21 23:37:21'),
+(7, 'uploads/gambar_dosen_mesin/01JMP4AA53X5YRR8KSC4N4QKDB.jpg', 'Lindawati', 'Lektor', 20038604, 'Magister Teknik Mesin', 'Universiti Tun Jussein Onn Malaysia', 'https://sinta.kemdikbud.go.id/authors/profile/6003766', '2025-02-21 23:08:04', '2025-02-21 23:37:27'),
+(8, 'uploads/gambar_dosen_mesin/01JMP4CSHGT0Z0EMJTC0MJPGJB.jpg', 'Amri Amin', 'Lektor', 126096201, 'Magister Teknik Kimia', 'Universitas Padjajaran', 'https://sinta.kemdikbud.go.id/authors/profile/6029454', '2025-02-21 23:09:26', '2025-02-21 23:37:41'),
+(9, 'uploads/gambar_dosen_mesin/01JMP4EWT003695QZJK03EGY1R.jpeg', 'Yusrizal', 'Asisten Ahli', 112067402, 'Magister Teknik Produksi dan Material Kelautan', 'Institut Teknologi Sepuluh Nopember', 'https://sinta.kemdikbud.go.id/authors/profile/6166712', '2025-02-21 23:10:34', '2025-02-21 23:37:33'),
+(10, 'uploads/gambar_dosen_mesin/01JMP4H9WAWHTZMZGJVX7CXBW9.jpg', 'Nur Hanifa', NULL, NULL, 'Magister Teknik Energi Terbarukan', 'Universitas Malikussaleh', NULL, '2025-02-21 23:11:53', '2025-02-21 23:37:48');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dosen_sipils`
+--
+
+CREATE TABLE `dosen_sipils` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `gambar_dosen` varchar(255) NOT NULL,
+  `nama_dosen` varchar(255) NOT NULL,
+  `posisi_dosen` enum('Asisten Ahli','Lektor Kepala','Lektor','Profesor') DEFAULT NULL,
+  `nidn` int(11) DEFAULT NULL,
+  `riwayat_prodi` varchar(255) DEFAULT NULL,
+  `riwayat_universitas` varchar(255) DEFAULT NULL,
+  `link_publikasi` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `dosen_sipils`
+--
+
+INSERT INTO `dosen_sipils` (`id`, `gambar_dosen`, `nama_dosen`, `posisi_dosen`, `nidn`, `riwayat_prodi`, `riwayat_universitas`, `link_publikasi`, `created_at`, `updated_at`) VALUES
+(3, 'uploads/gambar_dosen_sipil/01JMP50V6J2E719XWCXYZN4FCG.jpg', 'Muhammad Zardi', 'Lektor', 101057601, 'S2 Teknik Sipil', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6022831', '2025-02-21 23:20:23', '2025-02-21 23:20:23'),
+(4, 'uploads/gambar_dosen_sipil/01JMP573XPY0HG2JECZQZAM0PJ.jpg', 'Meliyana', 'Lektor', 25107504, 'S2 Teknik Sipil', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6021219', '2025-02-21 23:23:48', '2025-02-21 23:23:48'),
+(5, 'uploads/gambar_dosen_sipil/01JMP5EW0G653DQJE6BJ251YHB.jpg', 'Ichsan Syahputra', 'Lektor', 106047601, 'S2 Teknik Sipil', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6198838', '2025-02-21 23:28:02', '2025-02-21 23:28:02'),
+(6, 'uploads/gambar_dosen_sipil/01JMP5H5MMDXP8S6G6MBHFFCH2.jpeg', 'Cut Rahmawati', 'Lektor Kepala', 1316087601, 'S3 Doktor Ilmu Teknik', 'Universitas Abulyatama', 'https://sinta.kemdikbud.go.id/authors/profile/220844', '2025-02-21 23:29:18', '2025-02-21 23:29:18'),
+(7, 'uploads/gambar_dosen_sipil/01JMP5K31FAQ7XH8XEZEMZBTTW.jpg', 'Muhammad Ridha', 'Lektor', 9088208, 'S2 Teknik Sipil', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6023183', '2025-02-21 23:30:20', '2025-02-21 23:30:20'),
+(8, 'uploads/gambar_dosen_sipil/01JMP5MXRG2FQ5J8N07R3CHAYA.jpg', 'Amalia', 'Lektor', 1038206, '0001038206', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6148907', '2025-02-21 23:31:21', '2025-02-21 23:31:21'),
+(9, 'uploads/gambar_dosen_sipil/01JMP5Q1G1GSPRKG0YQZXCG38C.jpg', 'Tety Sriana', 'Lektor', 1329056901, 'S2 Teknik Sipil', 'Universitas Syiah Kuala', 'https://sinta.kemdikbud.go.id/authors/profile/6735379', '2025-02-21 23:32:30', '2025-02-21 23:32:30'),
+(10, 'uploads/gambar_dosen_sipil/01JMP5RGQW52HKF8WVEVD08HMG.jpg', 'Mery Silviana', 'Lektor', 23038505, 'S2 Teknik Sipil', 'S2 Teknik Sipil', 'https://sinta.kemdikbud.go.id/authors/profile/6157091', '2025-02-21 23:33:18', '2025-02-21 23:33:18'),
+(11, 'uploads/gambar_dosen_sipil/01JMP5T6DE0WS99ZVWRT7AJ7DH.jpg', 'Zu Irfan', 'Lektor', NULL, 'S3 Doktor Ilmu Teknik', 'Universitas Abulyatama', NULL, '2025-02-21 23:34:13', '2025-02-21 23:34:13'),
+(12, 'uploads/gambar_dosen_sipil/01JMP5VVNDG4YSKM717BG1VW85.jpg', 'Eva Herlina', 'Lektor', 117128104, '-', '-', NULL, '2025-02-21 23:35:08', '2025-02-21 23:35:08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dosen_sis`
+--
+
+CREATE TABLE `dosen_sis` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `gambar_dosen` varchar(255) NOT NULL,
+  `nama_dosen` varchar(255) NOT NULL,
+  `posisi_dosen` enum('Asisten Ahli','Lektor Kepala','Lektor','Profesor') DEFAULT NULL,
+  `nidn` int(11) DEFAULT NULL,
+  `riwayat_prodi` varchar(255) DEFAULT NULL,
+  `riwayat_universitas` varchar(255) DEFAULT NULL,
+  `link_publikasi` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `dosen_sis`
+--
+
+INSERT INTO `dosen_sis` (`id`, `gambar_dosen`, `nama_dosen`, `posisi_dosen`, `nidn`, `riwayat_prodi`, `riwayat_universitas`, `link_publikasi`, `created_at`, `updated_at`) VALUES
+(5, 'uploads/gambar_dosen_si/01JMP4NH3W8PH2HDFAK4S8TYHC.jpg', 'Ryan Setiawan', 'Asisten Ahli', 1316079301, 'S2 Sistem Informasi', 'Institut Teknologi Sepuluh Nopember', 'https://sinta.kemdikbud.go.id/authors/profile/6840109', '2025-02-21 23:14:12', '2025-02-21 23:14:12'),
+(6, 'uploads/gambar_dosen_si/01JMP4Q2EYTSG6HE5H9JWVE29Z.jpg', 'Rahmat Sufri', 'Lektor', 1303068801, 'Magister Teknik Elektro', 'Universitas Syiah Kuala', NULL, '2025-02-21 23:15:02', '2025-02-21 23:15:02'),
+(7, 'uploads/gambar_dosen_si/01JMP4W04MP1P41F75WZ32WPT8.jpg', 'Teuku Rizky Noviandy', NULL, NULL, 'S2 Kecerdasan Buatan', 'Universitas Syiah Kuala', NULL, '2025-02-21 23:17:44', '2025-02-21 23:17:44'),
+(8, 'uploads/gambar_dosen_si/01JMP4Y1WMP684X03YKE2Y8YPK.jpg', 'Anisah', 'Asisten Ahli', NULL, 'S2 Teknik Elektro', 'Universitas Syiah Kuala', NULL, '2025-02-21 23:18:51', '2025-02-21 23:18:51');
 
 -- --------------------------------------------------------
 
@@ -695,7 +792,13 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (25, '2025_02_15_070227_create_kurikulum_sis_table', 17),
 (26, '2025_02_17_022226_create_kurikulum_sis_table', 18),
 (27, '2025_02_17_025037_create_kurikulum_sipils_table', 19),
-(28, '2025_02_17_025805_create_kurikulum_mesins_table', 20);
+(28, '2025_02_17_025805_create_kurikulum_mesins_table', 20),
+(29, '2025_02_22_030541_create_dosen_sis_table', 21),
+(30, '2025_02_22_042610_create_dosen_sipils_table', 22),
+(31, '2025_02_22_043616_create_dosen_mesins_table', 23),
+(32, '2025_02_22_050419_add_link_publikasi_to_dosen_mesins_table', 24),
+(33, '2025_02_22_050835_add_link_publikasi_to_dosen_sipils_table', 25),
+(34, '2025_02_22_050952_add_link_publikasi_to_dosen_sis_table', 26);
 
 -- --------------------------------------------------------
 
@@ -733,9 +836,34 @@ CREATE TABLE `penghargaan_dosens` (
 --
 
 INSERT INTO `penghargaan_dosens` (`id`, `gambar_person`, `person`, `prestasi`, `tingkat`, `tahun`, `link`, `date`, `created_at`, `updated_at`) VALUES
-(1, 'uploads/gambar_person/01JM3WK6ZZPE3DDPQK4754XMB6.jpeg', 'tes', 'tes', 'Lokal', 2023, 'https://disbun.kaltimprov.go.id/halaman/tes-aja', '2025-02-22', '2025-02-14 21:06:48', '2025-02-18 23:30:21'),
-(2, 'uploads/gambar_person/01JM3WMN81V2SQT593826HEBE3.jpeg', 'tes', 'tes', 'Wilayah', 2030, 'adw', '2025-03-01', '2025-02-14 21:07:35', '2025-02-14 21:07:35'),
-(3, 'uploads/gambar_person/01JM3XWKZ7VBNEPCB09TJ33GX4.jpeg', 'tes', 'wda', 'Internasional', 2021, 'awda', '2025-02-22', '2025-02-14 21:29:24', '2025-02-14 21:29:24');
+(4, 'uploads/gambar_person/01JMHWNREC62A9JP39KT1K210M.jpg', 'Cut Rahmawati', 'Academic Leader Bid. Sains LLDIKTI 13 Aceh ', 'Provinsi', 2024, 'https://drive.google.com/file/d/1F5kq2jyhIIQX0qk7VRfalTiw0aLwLoUJ/view?usp=sharing', '2024-12-03', '2025-02-20 07:37:33', '2025-02-20 07:37:33'),
+(5, 'uploads/gambar_person/01JMHWT1A59HVFW5VCHN9SY7MW.jpg', 'Iqbal', 'Panelis Debat Calon Walikota Banda Aceh', 'Wilayah', 2024, 'https://drive.google.com/file/d/1IxhPOz_ISCU8ckXtfaKXdCOkwtBWiNkh/view?usp=sharing', '2024-11-20', '2025-02-20 07:39:53', '2025-02-20 07:39:53'),
+(6, 'uploads/gambar_person/01JMHY0QBTZ12FFT1E8YDKY7VZ.jpg', 'Cut Rahmawati', 'Dosen Pembimbing Program Pembinaan Mahasiswa Wirausaha (P2MW) ', 'Nasional', 2024, 'https://drive.google.com/file/d/1fPrCfSzryTNWh1D4RorEpLFkWi89PV02/view?usp=sharing', '2024-11-02', '2025-02-20 08:01:01', '2025-02-20 08:01:01'),
+(7, 'uploads/gambar_person/01JMKAVFSY2YRB10KWB52T2Y3Z.jpg', 'Lindawati', 'Dosen Pendamping Wirausaha Mahasiswa, Program Pembinaan Mahasiswa Wirausaha (P2MW)', 'Nasional', 2024, 'https://drive.google.com/file/d/1ZCVvyc8wgXv7q-lgU1PKaxh1nMKk5Moy/view?usp=sharing', '2024-11-02', '2025-02-20 21:04:35', '2025-02-20 21:04:35'),
+(8, 'uploads/gambar_person/01JMKAXX9R0YZYQM1462Q4ZTC5.jpg', 'Cut Rahmawati', 'ASEAN Engineer', 'Internasional', 2024, '	https://drive.google.com/file/d/1smvWZnpfETXMS7fdAQaLsjIa_E1JG8OQ/view?usp=sharing', '2024-10-12', '2025-02-20 21:05:55', '2025-02-20 21:05:55'),
+(9, 'uploads/gambar_person/01JMKAZ3HAZMC53MK6FTP81TXZ.jpg', 'Cut Rahmawati', 'Reviewer  Journal of Building Engineering', 'Internasional', 2024, 'https://drive.google.com/file/d/1mLZnO5iApBoKoqgcC_TQLcwunl3rZpO6/view?usp=sharing', '2024-10-01', '2025-02-20 21:06:34', '2025-02-20 21:06:34'),
+(10, 'uploads/gambar_person/01JMKB0N0NR3J99H197NZNETWM.jpg', 'Cut Rahmawati', 'Narasumber Bimbingan Teknis Pelaporan dan Evaluasi  MBKM, LLDIKTI XIII Aceh', 'Wilayah', 2024, 'https://drive.google.com/file/d/1TDGmFKD1adigpKytCtr7xtOnwUhyTJg3/view?usp=sharing', '2024-09-17', '2025-02-20 21:07:24', '2025-02-20 21:07:24'),
+(11, 'uploads/gambar_person/01JMKB29HJ321GFVS767YB18E9.png', 'Ichsan Syahputra', 'Ahli Madya Sumber Daya Air', 'Nasional', 2024, 'No Link ', '2024-08-16', '2025-02-20 21:08:18', '2025-02-20 21:08:18'),
+(12, 'uploads/gambar_person/01JMKB40MC4NN4W7D4JT2YGYNW.png', 'Muhammad Zardi', 'Instruktur Balai Jasa Konstruksi Nasional untuk Uji Sertifikasi Kompetensi SDM Vokasional', 'Nasional', 2024, 'https://drive.google.com/file/d/1XhMFekuj1NjKTgEs0k4tw3Z0Mp6OuEOw/view?usp=sharing', '2024-05-30', '2025-02-20 21:09:15', '2025-02-20 21:09:15'),
+(13, 'uploads/gambar_person/01JMKB5F74DAGCQG5CDPEHXECF.jpg', 'Cut Rahmawati', 'Reviewer Sustainable Chemistry and Pharmacy', 'Internasional', 2024, 'https://drive.google.com/file/d/1r42R2M2OcT_qEEqRDj9DEGQ5y8uHpFRb/view?usp=sharing', '2024-04-02', '2025-02-20 21:10:02', '2025-02-20 21:10:02'),
+(14, 'uploads/gambar_person/01JMKB6MXE6F40XY35PVRHEXVG.jpg', 'Cut Rahmawati', 'Reviewer Cement and Concrete Composites', 'Internasional', 2024, 'https://drive.google.com/file/d/1KHAvlw8RccOSv6yiYf7PXUX66h9xE1g0/view?usp=sharing', '2024-04-01', '2025-02-20 21:10:41', '2025-02-20 21:10:41'),
+(15, 'uploads/gambar_person/01JMKB84AZY311B8RPH872BSA4.png', 'Zu Irfan', 'Ahli Madya Teknik Jembatan', 'Nasional', 2024, '-', '2024-03-19', '2025-02-20 21:11:30', '2025-02-20 21:11:30'),
+(16, 'uploads/gambar_person/01JMKB9T71C2GB4ESE6R3GQBQC.jpg', 'Cut Rahmawati', 'Internasional ', 'Internasional', 2024, 'https://drive.google.com/file/d/1OcysfWMjR-kEHWwCg7GvRkKkKOf0VYeU/view?usp=sharing', '2024-02-03', '2025-02-20 21:12:25', '2025-02-20 21:12:25'),
+(17, 'uploads/gambar_person/01JMKBBMJT73YX81RF3EWK2188.png', 'Muhtadin', 'Juri lomba TTG Provinsi Aceh', 'Provinsi', 2024, 'https://drive.google.com/file/d/16umhzCfIgL57Ugrs5TkLENjYn5dwwgrh/view?usp=sharing', '2024-01-01', '2025-02-20 21:13:24', '2025-02-20 21:13:24'),
+(18, 'uploads/gambar_person/01JMKBD3HESSRP6YT3JDC916BD.jpg', 'Cut Rahmawati', 'Dosen Terbaik  Universitas Abulyatama', 'Lokal', 2023, 'https://drive.google.com/file/d/1arDANznjfYMuWuCrpz0Z0BWCK9ICEhkZ/view?usp=sharing', '2023-12-20', '2025-02-20 21:14:13', '2025-02-20 21:14:13'),
+(19, 'uploads/gambar_person/01JMKBECDGVX8VPZ0QVMFYS38N.jpg', 'Cut Rahmawati', 'DIKTIRISTEK AWARDS 2023. Pemenang 2, Anugerah Prioritas Nasional, Kategori Non Tematik (Umum)', 'Nasional', 2023, 'https://drive.google.com/file/d/1TMOih0c0IjuQrxu--lHn0_RtkBSfF1jk/view?usp=sharing', '2023-12-12', '2025-02-20 21:14:54', '2025-02-20 21:14:54'),
+(20, 'uploads/gambar_person/01JMKBFHPF29EZZ4Y8DFKGXHTP.png', 'Ichsan Syahputra', 'APEC Engineer', 'Internasional', 2023, 'https://drive.google.com/file/d/1b9pS4z0kNGznz6Vq1mdfJQKaTvrfuyUy/view?usp=sharing', '2023-10-27', '2025-02-20 21:15:33', '2025-02-20 21:15:33'),
+(21, 'uploads/gambar_person/01JMKBH4DH5E6QQFND9AJYNPX0.jpg', 'Amalia', 'Koordinator Building Information Modeling (BIM) ', 'Nasional', 2023, 'No link ', '2023-10-02', '2025-02-20 21:16:25', '2025-02-20 21:16:25'),
+(22, 'uploads/gambar_person/01JMKBJH8P4RP2XRBXJTW89YXG.jpg', 'Cut Rahmawati', 'Presenter Terbaik, Seminar Nasional Pengabdian kepada Masyarakat, Universitas Lancang Kuning, 2023', 'Nasional', 2023, 'https://drive.google.com/file/d/1FdYghZTs5gFWezzDNtojeqwKMOEN7aAv/view?usp=sharing', '2023-09-05', '2025-02-20 21:17:10', '2025-02-20 21:17:10'),
+(23, 'uploads/gambar_person/01JMKBKPVM82XG0HP6T1C4MHK5.png', 'Ichsan Syahputra', 'ASEAN Engineer', 'Internasional', 2023, 'https://drive.google.com/file/d/1ux-x_qu5XpG9bCC6J2NQFasKZFk5sAjK/view?usp=sharing', '2023-07-21', '2025-02-20 21:17:49', '2025-02-20 21:17:49'),
+(24, 'uploads/gambar_person/01JMKBNDZ6MY08DRFMF7XJTAZC.jpg', 'Amalia', 'Ahli Madya Teknik Bangunan Gedung', 'Nasional', 2023, '-', '2023-05-05', '2025-02-20 21:18:45', '2025-02-20 21:18:45'),
+(25, 'uploads/gambar_person/01JMKBPP4SXNWMXXA9NA52XD61.jpg', 'Ahli Madya Teknik Bangunan Gedung', 'Reviewer Case Studies in Construction Materials', 'Internasional', 2023, 'https://drive.google.com/file/d/1QkUKFk3OnkjEqpGvu0nYGDh5pYlo6CM3/view?usp=sharing', '2023-05-01', '2025-02-20 21:19:27', '2025-02-20 21:19:27'),
+(26, 'uploads/gambar_person/01JMKBR66FE9C3Z72185KD9B26.jpg', 'Cut Rahmawati', 'LLDIKTI 13 Award 2022. Pemenang 2 Dosen berprestasi Bidang Sains dan Teknologi', 'Wilayah', 2022, 'https://drive.google.com/file/d/1GQNxgny_Q0UUpqerQzsJDPjHuwjrggMU/view?usp=sharing', '2022-12-12', '2025-02-20 21:20:16', '2025-02-20 21:20:16'),
+(27, 'uploads/gambar_person/01JMKBT44QMXB3032F54MAY5H9.jpg', 'Cut Rahmawati', 'Dosen of The year Universitas Abulyatama', 'Lokal', 2022, 'https://drive.google.com/file/d/1ItzF0yk5eRxXROJgIM9nA09QFTu617RP/view?usp=sharing', '2022-12-03', '2025-02-20 21:21:19', '2025-02-20 21:21:19'),
+(28, 'uploads/gambar_person/01JMKBWPVQ9A1VR5H3JQSAF00A.jpg', 'Cut Rahmawati', 'Best Poster, Seminar Nasional Pascasarjana Universitas Syiah Kuala', 'Nasional', 2022, 'https://drive.google.com/file/d/18qIqPWE8Q4Ev88Co2DzjpsYjp2cVXw_r/view?usp=sharing', '2022-10-14', '2025-02-20 21:22:44', '2025-02-20 21:22:44'),
+(29, 'uploads/gambar_person/01JMKBXXVJW6ZK3K8VNHRM593W.jpg', 'Cut Rahmawati', 'Presenter Terbaik Seminaar Nasional Pengabdian kepada Masyarakat (SNPKM) Tahun 2022 ', 'Nasional', 2022, 'https://drive.google.com/file/d/1vyuUk4fltGXqvUdWjClHZwYv7sTDYTpf/view?usp=sharin', '2022-09-05', '2025-02-20 21:23:24', '2025-02-20 21:23:24'),
+(30, 'uploads/gambar_person/01JMKBZ23EEXV3XNDZB5ZN5W77.jpg', 'Cut Rahmawati', 'Reviewer Arabian Journal of Chemistry', 'Internasional', 2022, 'https://drive.google.com/file/d/1niYA4YCvimClRIYywHaMNQmEtHf5KKQQ/view?usp=sharing', '2022-06-01', '2025-02-20 21:24:01', '2025-02-20 21:24:01'),
+(31, 'uploads/gambar_person/01JMKC18V0J7E4E0NPNCA3EK93.png', 'Muhammad Zardi', 'Dewan Pengurus Perkumpulan Tenaga Ahli Konsultan Indonesia (Bidang Profesi Jasa Non Konstruksi)', 'Nasional', 2023, 'https://drive.google.com/file/d/1cq-uUNVK2pMNZcmwoJwOFYwMevUoOHYT/view?usp=sharing', '2021-03-16', '2025-02-20 21:25:13', '2025-02-20 21:25:13');
 
 -- --------------------------------------------------------
 
@@ -761,7 +889,17 @@ CREATE TABLE `penghargaan_mahasiswas` (
 --
 
 INSERT INTO `penghargaan_mahasiswas` (`id`, `gambar_person`, `person`, `prestasi`, `tingkat`, `tahun`, `link`, `date`, `created_at`, `updated_at`) VALUES
-(1, 'uploads/gambar_person/01JM3YWF5E1JV5MR2KK8ZAT7E8.jpeg', 'tes', 'ts', 'Nasional', 2023, 'https://disbun.kaltimprov.go.id/halaman/tes-aja', '2025-02-15', '2025-02-14 21:46:48', '2025-02-18 23:30:31');
+(2, 'uploads/gambar_person/01JMKC4GF7BWE68F1TKSW38M4V.jpg', 'Putri Nafarah', 'Medali Perunggu PON XXI Cabang Olahraga Rugbi Putri', 'Nasional', 2024, 'https://drive.google.com/file/d/14OUcJflgS8siZsKtAHxs05ED271UQj6J/view?usp=sharing', '2024-09-20', '2025-02-20 21:26:59', '2025-02-20 21:26:59'),
+(3, 'uploads/gambar_person/01JMKC6GADWVT74DW0NJBDC1EA.png', 'Muhammad Fatani', 'Juara III Atraksi Budaya Universitas Muhammadiyah Gorontalo', 'Nasional', 2023, 'https://drive.google.com/file/d/1KT2nTq4WNIGvoaknGKSvHW4OSXb-nZ0k/view?usp=sharing', '2023-10-31', '2025-02-20 21:28:05', '2025-02-20 21:28:05'),
+(4, 'uploads/gambar_person/01JMKC7X7GEN5GNW03SJ66YAHE.png', 'Muhammad Fatani', 'Juara Harapan I Vokalia Universitas Muhammadiyah Gorontalo', 'Nasional', 2023, 'https://drive.google.com/file/d/1TOa4SkkDn9Joxt2NWCrZSV0vGtgKhcmv/view?usp=sharing', '2023-10-31', '2025-02-20 21:28:51', '2025-02-20 21:28:51'),
+(5, 'uploads/gambar_person/01JMKC98W4P8E37RW3RTZRMMRX.png', 'Muhammad Fatani', 'Juara III Voli Ball, Festival Budaya Nusantara Universitas Muhammadiyah Gorontalo', 'Nasional', 2023, 'https://drive.google.com/file/d/1i9H4_Yz-wR0YiYLjUwqs1VYDLjFRraM4/view?usp=sharing', '2023-10-29', '2025-02-20 21:29:36', '2025-02-20 21:29:36'),
+(6, 'uploads/gambar_person/01JMKCB1Z7CAGCSR2CPYZ3D99D.png', 'Mohd. Firdaus Putra Yunira', 'Juara 3 Tilawatil Quran Putra, Musabaqoh Tilawatil Quran FIKES Universitas Abulyatama', 'Lokal', 2023, 'https://drive.google.com/file/d/1Ej0tiBgTig9uykABOUUan15kEEnUi9Ph/view?usp=sharing', '2023-01-19', '2025-02-20 21:30:34', '2025-02-20 21:30:34'),
+(7, 'uploads/gambar_person/01JMKCC50964AS0EMEZXYBQEYH.png', 'Muhammad Fatani', 'Juara 3 Pidato Putra Musabaqoh Tilawatil Quran Internasional Universitas Abulyatama', 'Internasional', 2023, 'https://drive.google.com/file/d/1y0gjCLTxF5SEBl5LEdYZvtEKy33zKV5j/view?usp=sharing', '2023-01-19', '2025-02-20 21:31:10', '2025-02-20 21:31:10'),
+(8, 'uploads/gambar_person/01JMKCDR864DMHA5W7H1J8APDE.jpg', 'Muhammad Djoji Alamni', 'Juara 1 Pidato Putra, Musabaqah Tilawatil Al-Quran FIKES Universitas Abulyatama', 'Internasional', 2023, 'https://drive.google.com/file/d/1UA2JYkPtTiRuzjvqkrZi_R60FnMDx6ZJ/view?usp=sharing', '2023-01-19', '2025-02-20 21:32:02', '2025-02-20 21:32:02'),
+(9, 'uploads/gambar_person/01JMKCESWYJVKPJQJ7QPX1SM37.jpg', 'Muhammad Djoji Alamni', 'Juara 1 Puisi Putra Musabaqah Tilawatil Al-Quran FIKES Universitas Abulyatama', 'Internasional', 2023, 'https://drive.google.com/file/d/1qnwKMFp29lsR4Yp3wUXqWRGYzrvX2Zeq/view?usp=sharing', '2023-01-19', '2025-02-20 21:32:37', '2025-02-20 21:32:37'),
+(10, 'uploads/gambar_person/01JMKCGAJRMZM9PMHQGQD7SKD4.jpeg', 'M. Rifki', 'Juara III Cabor Pencak Silat, Pekan Olahraga Mahasiswa Aceh', 'Provinsi', 2022, 'https://drive.google.com/file/d/1Kqx1F4hACkCeF6jLxA_FxLp9WeU0MM4l/view?usp=sharing', '2022-10-06', '2025-02-20 21:33:27', '2025-02-20 21:33:27'),
+(11, 'uploads/gambar_person/01JMKCJ4FYTGBZGT6M2SWZFVNA.jpg', 'Nyak Putri Mayla', 'Juara Harapan I Kompetisi Sains Madrasah Kabupaten Pidie', 'Lokal', 2022, 'https://drive.google.com/file/d/1BCGBQuNLdGpjddEggjvVmmFN8B3nOxUq/view?usp=sharing', '2022-08-18', '2025-02-20 21:34:26', '2025-02-20 21:34:26'),
+(12, 'uploads/gambar_person/01JMKCKTC2SDS10J2JWF0N0DV3.jpg', 'Nyak Putri Mayla', 'Juara 2 Kompetisi Sains Madrasah ', 'Lokal', 2022, 'https://drive.google.com/file/d/140c_S34DQNefkmiOFhFitVoibAx3rQyM/view?usp=sharing', '2022-06-18', '2025-02-20 21:35:21', '2025-02-20 21:35:21');
 
 -- --------------------------------------------------------
 
@@ -833,7 +971,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('j0pLTeFnLIyGMd8bt0p0Nzx12y1nR60PnXa37sbD', 1, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'YTo4OntzOjY6Il90b2tlbiI7czo0MDoiVVNNdHFSMkdIOHJ1TVlndUV6eGl5MVl5SkYzdUVHdXVkSUxYN0dyVSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkWWRtbFZoajVZV3pGbExNWXhrYjRSLmhkWmo1dHJVNWhOelhFQVFVLlZkM2MvTGJjWTBlaU8iO3M6ODoiZmlsYW1lbnQiO2E6MDp7fXM6NjoidGFibGVzIjthOjM6e3M6MTk6Ik1hbmFnZVNvcHNfcGVyX3BhZ2UiO3M6MToiNSI7czoyMjoiTWFuYWdlQmVyaXRhc19wZXJfcGFnZSI7czoxOiI1IjtzOjI3OiJNYW5hZ2VLdXJpa3VsdW1TaXNfcGVyX3BhZ2UiO3M6MzoiYWxsIjt9fQ==', 1740041774);
+('bH8mcBjOrFuisj7DfvlG2LxeBpxf83wqeVial1Mu', 1, '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiRWt2SlZaY1B5ajc0OGg4d1BLeFBCd0l0cGJBN0FwSXg4YXN3OVF3dCI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJFlkbWxWaGo1WVd6RmxMTVl4a2I0Ui5oZFpqNXRyVTVoTnpYRUFRVS5WZDNjL0xiY1kwZWlPIjtzOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czo0MToiaHR0cDovLzEyNy4wLjAuMTo4MDAwL2FkbWluLWZ0L1Blbmd1bXVtYW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjg6ImZpbGFtZW50IjthOjA6e319', 1740206277);
 
 -- --------------------------------------------------------
 
@@ -926,6 +1064,24 @@ ALTER TABLE `cache`
 --
 ALTER TABLE `cache_locks`
   ADD PRIMARY KEY (`key`);
+
+--
+-- Indexes for table `dosen_mesins`
+--
+ALTER TABLE `dosen_mesins`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dosen_sipils`
+--
+ALTER TABLE `dosen_sipils`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dosen_sis`
+--
+ALTER TABLE `dosen_sis`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `failed_jobs`
@@ -1081,6 +1237,24 @@ ALTER TABLE `beritas`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
+-- AUTO_INCREMENT for table `dosen_mesins`
+--
+ALTER TABLE `dosen_mesins`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `dosen_sipils`
+--
+ALTER TABLE `dosen_sipils`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `dosen_sis`
+--
+ALTER TABLE `dosen_sis`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -1156,19 +1330,19 @@ ALTER TABLE `kurikulum_sis`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `penghargaan_dosens`
 --
 ALTER TABLE `penghargaan_dosens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `penghargaan_mahasiswas`
 --
 ALTER TABLE `penghargaan_mahasiswas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `pengumumen`
