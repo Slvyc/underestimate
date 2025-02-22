@@ -104,8 +104,8 @@
                     </div>
                     <div class="post-content">
                         <h3 class="post-title">
-                        <a href="#">{{ $KegiatanHmm->title }}</a>
-                        </h3>
+                            <span>{{ $KegiatanHmm->title }}</span>
+                            </h3>
                         <p class="post-description" data-full-description="{{ $KegiatanHmm->description }}">
                         {{ Str::limit($KegiatanHmm->description, 100) }}      
                         </p>
@@ -124,42 +124,10 @@
     <div class="popup-content">
         <span class="close" onclick="closePopup()">&times;</span>
         <img id="popup-image" src="" alt="" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-        <h3 id="popup-title"></h3>
+        <h3 id="popup-title">{{ $KegiatanHmm->title }}</h3>
         <p id="popup-description"></p>
         <span id="popup-date"><i class="fa fa-clock-o"></i></span>
     </div>
 </div>
 @endsection
 
-<script>
-    $(document).ready(function() {
-        $("#news-slider").owlCarousel({
-            items : 3,
-            itemsDesktop:[1199,3],
-            itemsDesktopSmall:[980,2],
-            itemsMobile : [600,1],
-            navigation:true,
-            navigationText:["",""],
-            pagination:true,
-            autoPlay:true
-        });
-    });
-
-    function openPopup(element) {
-        const title = element.querySelector('.post-title a').innerText;
-        const description = element.querySelector('.post-description').getAttribute('data-full-description');
-        const imageSrc = element.querySelector('.post-img img').src;
-        const dateNews = element.querySelector('.post-date').innerText;
-
-        document.getElementById('popup-title').innerText = title;
-        document.getElementById('popup-description').innerText = description;
-        document.getElementById('popup-image').src = imageSrc;
-        document.getElementById('popup-date').innerText = dateNews;
-
-        document.getElementById('news-popup').style.display = 'block';
-    }
-
-    function closePopup() {
-        document.getElementById('news-popup').style.display = 'none';
-    }
-</script>

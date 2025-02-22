@@ -398,7 +398,7 @@ initMDB({
     });
 
     function openPopup(element) {
-        const title = element.querySelector('.post-title a').innerText;
+        const title = element.querySelector('.post-title span').innerText;
         const description = element.querySelector('.post-description').getAttribute('data-full-description');
         const imageSrc = element.querySelector('.post-img img').src;
         const dateNews = element.querySelector('.post-date').innerText;

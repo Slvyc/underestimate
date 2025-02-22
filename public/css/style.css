@@ -691,6 +691,7 @@ transition:all 0.50s linear;
 opacity:1;
 text-decoration:none;
 }
+
 .post-slide .over-layer i{
 color: #fff !important;
 position: relative;
@@ -705,7 +706,7 @@ margin: 10px 15px 0 15px;
 padding: 2px 20px 40px ;
 }
 
-.post-slide .post-title a{
+.post-slide .post-title span{
 margin-top: 15px;
 font-size:19px;
 font-weight:600;
@@ -1863,6 +1864,10 @@ text-align: center;
 /* end Kurikulum */
 
 /* PENGHARGAAN */
+.award-body{
+  background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
 .award-container {
 max-width: 1200px;
 margin: 0 auto;
@@ -1870,6 +1875,34 @@ padding: 20px;
 margin-bottom: 14%;
 }
 
+.award-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0px 5px hsla(220, 32%, 8%, .1);
+  padding: 80px;
+  margin-top: 30px;
+  }
+
+  .award-card-title {
+    margin-top: -60px;
+    background-color: #012d04e2;
+    display: inline-block;
+    margin-left: -100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding-right: 20px; 
+}
+  
+  .award-title {
+  margin-left: 35px;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  }
+
+  
 .award-table {
 width: 100%;
 border-collapse: collapse;
@@ -1945,23 +1978,6 @@ font-style: italic;
 .profile-image:hover {
 transform: scale(1.1);
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Modern Card Design around table */
-.award-card {
-background-color: #fff;
-border-radius: 15px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-padding: 20px;
-margin-top: 30px;
-}
-
-.award-card-header {
-font-size: 1.9rem;
-font-weight: bold;
-margin-top: 10px;
-margin-bottom: 40px;
-color: #012d04;
 }
 
 .award-table th:nth-child(2), .award-table td:nth-child(2) {

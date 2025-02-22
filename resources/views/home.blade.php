@@ -40,7 +40,8 @@
                         </div>
                         <div class="post-content">
                             <h3 class="post-title">
-                            <a href="#">{{ $berita->title }}</a> 
+                            <span>{{ $berita->title }}</span>
+                            <!-- <h3>{{ $berita->title }}</h3> -->
                             </h3>
                             <p class="post-description" data-full-description="{{ $berita->description }}">
                                 {{ Str::limit($berita->description, 100) }}
@@ -61,7 +62,7 @@
         <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
             <img id="popup-image" src="" alt="" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-            <h3 id="popup-title">titel</h3>
+            <h3 id="popup-title">{{ $berita->title }}</h3>
             <p id="popup-description">description</p>
             <span id="popup-date"><i class="fa fa-clock-o"></i>date</span>
         </div>

@@ -1,6 +1,7 @@
 @extends ('layouts.app')
 
 @section('content')
+<body class="award-body">
 <section class="hero">
         <div class="container-hero text-center">
             <h1 class="display-4 fw-bold fade-in">Penghargaan</h1>
@@ -11,9 +12,22 @@
 <!-- Content -->
 <div class="award-container">
     <div class="award-card">
-        <div class="award-card-header">
+        <div class="award-card-title">
+        <h3 class="award-title">
             Prestasi Dosen
+        </h3>
         </div>
+        <!-- Search Box -->
+        <div class="download-search-wrapper mb-4 d-flex justify-content-end">
+                <div class="download-search-box">
+                    <div class="input-group" style="width: 300px;">
+                        <input type="text" class="form-control download-search-input" id="downloadSearchInput" placeholder="Cari">
+                        <span class="input-group-text download-search-icon">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
         <table class="award-table table-hover">
             <thead>
                 <tr>
@@ -45,4 +59,5 @@
         </table>
     </div>
 </div>
+</body>
 @endsection
