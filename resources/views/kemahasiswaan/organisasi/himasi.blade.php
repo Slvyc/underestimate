@@ -65,9 +65,9 @@
 
 <section class="struktur-section">
     <section class="si-vision-mission-section">
-        <h2 class="si-visimisi text-center mb-2 mt-2" style="color: #f9f3d9">Struktur Organisasi Himasi</h2>
+        <h2 class="si-visimisi text-center mt-2" style="color: #f9f3d9">Struktur Organisasi Himasi</h2>
     </section>
-        <div class="container-himpunan text-center  mt-5">
+        <div class="container-himpunan text-center">
             <!-- <h6 class="bem-section-title">Struktur Organisasi Himasi</h6> -->
             <!-- Gambar Struktur Organisasi -->
             <img src="asset\img\Struktur Himasi.png" alt="Struktur Organisasi Fakultas Teknik" class="org-maha-image">
@@ -78,14 +78,13 @@
 <!-- Carousel Himpunan News -->
 
 <section class="si-vision-mission-section">
-        <h2 class="si-visimisi text-center mb-2 mt-2" style="color: #f9f3d9">Kegiatan Himasi</h2>
+        <h2 class="si-visimisi text-center mt-2" style="color: #f9f3d9">Kegiatan Himasi</h2>
     </section>
-<section class="bem-section py-5">
     
 <!-- end carousel himpunan news -->
 
 <!-- berita baru -->
-<div class="container-fluid-news mt-5">
+<div class="container-fluid-news mt-1">
         <div class="col-md-12">
             <div id="news-slider" class="owl-carousel">
                 @foreach ( $KegiatanHimasis as $KegiatanHimasi )
@@ -96,7 +95,7 @@
                     </div>
                     <div class="post-content">
                         <h3 class="post-title">
-                        <a href="#">{{ $KegiatanHimasi->title }}</a>
+                        <span>{{ $KegiatanHimasi->title }}</span>
                         </h3>
                         <p class="post-description" data-full-description="{{ $KegiatanHimasi->description }}">
                         {{ Str::limit($KegiatanHimasi->description, 100) }}
@@ -116,42 +115,9 @@
     <div class="popup-content">
         <span class="close" onclick="closePopup()">&times;</span>
         <img id="popup-image" src="" alt="" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-        <h3 id="popup-title"></h3>
+        <h3 id="popup-title">{{ $KegiatanHimasi->title }}</h3>
         <p id="popup-description"></p>
         <span id="popup-date"><i class="fa fa-clock-o"></i></span>
     </div>
 </div>
 @endsection
-
-<script>
-    $(document).ready(function() {
-        $("#news-slider").owlCarousel({
-            items : 3,
-            itemsDesktop:[1199,3],
-            itemsDesktopSmall:[980,2],
-            itemsMobile : [600,1],
-            navigation:true,
-            navigationText:["",""],
-            pagination:true,
-            autoPlay:true
-        });
-    });
-
-    function openPopup(element) {
-        const title = element.querySelector('.post-title a').innerText;
-        const description = element.querySelector('.post-description').getAttribute('data-full-description');
-        const imageSrc = element.querySelector('.post-img img').src;
-        const dateNews = element.querySelector('.post-date').innerText;
-
-        document.getElementById('popup-title').innerText = title;
-        document.getElementById('popup-description').innerText = description;
-        document.getElementById('popup-image').src = imageSrc;
-        document.getElementById('popup-date').innerText = dateNews;
-
-        document.getElementById('news-popup').style.display = 'block';
-    }
-
-    function closePopup() {
-        document.getElementById('news-popup').style.display = 'none';
-    }
-</script>

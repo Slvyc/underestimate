@@ -76,9 +76,9 @@
 
 <section class="struktur-section">
     <section class="si-vision-mission-section">
-        <h2 class="si-visimisi text-center mb-2 mt-2" style="color: #f9f3d9">Struktur Organisasi HMM</h2>
+        <h2 class="si-visimisi text-center mt-2" style="color: #f9f3d9">Struktur Organisasi HMM</h2>
     </section>
-        <div class="container-himpunan text-center  mt-5">
+        <div class="container-himpunan text-center">
             <!-- <h6 class="bem-section-title">Struktur Organisasi Himasi</h6> -->
             <!-- Gambar Struktur Organisasi -->
             <img src="asset\img\Struktur HMM.png" alt="Struktur Organisasi Fakultas Teknik" class="org-maha-image">
@@ -89,11 +89,11 @@
 <!-- Carousel Himpunan News -->
 
 <section class="si-vision-mission-section">
-    <h2 class="si-visimisi text-center mb-2 mt-2" style="color: #f9f3d9">Kegiatan HMM</h2>
+    <h2 class="si-visimisi text-center mt-2" style="color: #f9f3d9">Kegiatan HMM</h2>
 </section>
 
 <!-- berita baru -->
-<div class="container-fluid-news mt-5">
+<div class="container-fluid-news mt-1">
         <div class="col-md-12">
             <div id="news-slider" class="owl-carousel">
                 @foreach ( $KegiatanHmms as $KegiatanHmm )

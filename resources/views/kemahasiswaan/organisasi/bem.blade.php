@@ -70,9 +70,9 @@
 
 <section class="struktur-section">
     <section class="si-vision-mission-section">
-        <h2 class="si-visimisi text-center mb-2 mt-2" style="color: #f9f3d9">Struktur Kepengurusan BEM-FT UNAYA</h2>
+        <h2 class="si-visimisi text-center mt-2" style="color: #f9f3d9">Struktur Kepengurusan BEM-FT UNAYA</h2>
     </section>
-        <div class="container-himpunan mt-2 text-center">
+        <div class="container-himpunan text-center">
             <!-- <h6 class="bem-section-title">Struktur Organisasi Himasi</h6> -->
             <!-- Gambar Struktur Organisasi -->
             <img src="asset\img\bem teknik.png" alt="Struktur Organisasi Fakultas Teknik" class="org-maha-image">
@@ -83,11 +83,11 @@
 <!-- Carousel Himpunan News -->
 
 <section class="si-vision-mission-section">
-        <h2 class="si-visimisi text-center mb-2 mt-2" style="color: #f9f3d9">Kegiatan BEM</h2>
+        <h2 class="si-visimisi text-center mt-2" style="color: #f9f3d9">Kegiatan BEM</h2>
 </section>
 
 <!-- berita baru -->
-<div class="container-fluid-news mt-5">
+<div class="container-fluid-news">
 <!-- <h2 class="news-titles">Beritaa</h2> -->
     <div class="row">
         <div class="col-md-12">

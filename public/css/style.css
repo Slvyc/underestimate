@@ -1164,7 +1164,8 @@ background-color: #012d04;
     }
 
   .description-sambutan {
-    font-size: 14px; 
+    font-size: 13px; 
+    text-align: justify;
     }
 
   .dekan-photo-container {
@@ -2724,18 +2725,16 @@ border-top-right-radius: 15px;
   border-top-left-radius: 15px; 
   border-top-right-radius: 15px; 
 }
-
 }
-
 
 @media (max-width: 768px) {
 .sejarah-container{
   padding: 20px;
-  text-align: left;
 }
 
 .sejarah-container p{
   margin-top: -50px;
+  font-size: 14px;
 }
 
 .container-timeline{
@@ -2875,13 +2874,12 @@ background-color: #fff;
 @media (max-width: 768px) {
 .container-organisasi {
   padding: 20px;
-  margin-top: 50px; 
-  margin-left: 20px;
+  margin-top: 50px;
 }
 
 .org-image {
   width: 110%;
-  max-width: 110%;
+  max-width: 100%;
   }
 }
 /* end struktur */
