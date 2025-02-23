@@ -1,6 +1,7 @@
 @extends ('layouts.app')
 
 @section('content')
+<body class="beasiswa-body">
 <section class="hero">
     <div class="container-hero text-center">
         <h1 class="display-4 fw-bold">Portal Beasiswa Terkini</h1>
@@ -9,7 +10,7 @@
 </section>
 
 <!-- main content -->
-<div class="container-beasiswa-fluid py-5">
+<div class="container-beasiswa-fluid py-5 mt-4">
     <div class="row justify-content-center ">
 
         <!-- Beasiswa KIP -->
@@ -29,7 +30,7 @@
                     </ul>
                 </div>
                 <div class="beasiswa-card-footer bg-transparent border-0">
-                    <a href="https://kip-kuliah.kemdikbud.go.id/" class="btn btn-primary w-100 beasiswa-btn">Informasi Selengkapnya</a>
+                    <a href="https://kip-kuliah.kemdikbud.go.id/" class="btn btn-primary beasiswa-btn">Informasi Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -51,7 +52,7 @@
                     </ul>
                 </div>
                 <div class="beasiswa-card-footer bg-transparent border-0">
-                    <a href="https://kip-kuliah.kemdikbud.go.id/" class="btn btn-success w-100 beasiswa-btn">Informasi Selengkapnya</a>
+                    <a href="https://kip-kuliah.kemdikbud.go.id/" class="btn btn-success beasiswa-btn">Informasi Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -73,10 +74,11 @@
                     </ul>
                 </div>
                 <div class="beasiswa-card-footer bg-transparent border-0">
-                    <a href="https://kip-kuliah.kemdikbud.go.id/" class="btn btn-warning w-100 beasiswa-btn">Informasi Selengkapnya</a>
+                    <a href="https://kip-kuliah.kemdikbud.go.id/" class="btn btn-warning beasiswa-btn">Informasi Selengkapnya</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</body>
 @endsection

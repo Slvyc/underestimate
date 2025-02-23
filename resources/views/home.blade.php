@@ -30,6 +30,7 @@
     <!-- berita baru -->
     <div class="container-fluid-news">
         <h2 class="news-titles">Berita</h2>
+        <p>Informasi Terbaru Fakultas Teknik</p>
             <div class="col-md-12">
                 <div id="news-slider" class="owl-carousel">
                     @foreach($beritas as $berita)
@@ -69,6 +70,7 @@
     </div>
     <!-- end berita baru -->
     
+    <div class="announcementEvent-section">
     <!-- container announcement -->
     <div class="container-announcement">
         <!-- pengunguman -->
@@ -101,12 +103,13 @@
             @endforeach
         </section>
     </div>
+    </div>
 
     <!-- Fitur 4 -->
     <!-- card pertama -->
 <section class="card-section">
     <h2 class="title-portal">Portal Akademik & Kemahasiswaan</h2>
-    <div class="home-container mb-2 mt-5">
+    <div class="home-container">
     <div class="d-lg-flex justify-content-center">
         <div class="d-md-flex align-items-center mb-lg-0 mb-md-5">
             <div class="home-col2">

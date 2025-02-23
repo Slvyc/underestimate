@@ -13,11 +13,11 @@
         <h2>Layanan Komunikasi</h2>
 
         <!-- Tujuan Tracer Study List -->
-        <div class="row">
+        <div class="tracer-study row mt-5">
             <div class="md-6">
                 <div class="row">
                     <div style="text-align: justify;">
-                        <p>Selamat datang di halaman resmi layanan komunikasi Orang Tua/Wali Fakultas Teknik Universitas Abulyatama (FT-UNAYA).
+                        <p> Selamat datang di halaman resmi layanan komunikasi Orang Tua/Wali Fakultas Teknik Universitas Abulyatama (FT-UNAYA).
                             Kami di FT UNAYA percaya bahwa peran aktif orang tua dan wali sangat penting dalam mendukung perkembangan akademik anak-anak kita.
                             Untuk itu, kami telah menyediakan ruang untuk orang tua/wali yang anaknya mengalami permasalahan studi atau lainnya untuk dapat mengetahui 
                             secara lebih jelas persoalan yang dialami anaknya di kampus. Untuk itu bapak/ibu dapat mengisi formulir yang disediakan. Komunikasi yang lebih 

@@ -17,7 +17,7 @@
         <h2>Tujuan Tracer Study</h2>
 
         <!-- Tujuan Tracer Study List -->
-        <div class="row" style="background-color: #a3b18a">
+        <div class="row">
             <div class="col-md-6">
                 <ul class="listTujuanTracerStudy">
                     <li><strong>Evaluasi Hasil Pendidikan:</strong> Menyediakan informasi yang digunakan untuk mengevaluasi hasil pendidikan tinggi, sehingga lembaga pendidikan dapat melakukan perbaikan dan penyempurnaan dalam proses dan sistem pendidikan yang diterapkan.</li>

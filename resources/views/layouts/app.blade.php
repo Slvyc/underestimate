@@ -223,7 +223,7 @@
             <div class="row row-footer">
                 <!--Grid column: Maps-->
                 <div class="footer-column">
-                    <h5 class="text-uppercase></h5>
+                    <h5 class="text-uppercase"></h5>
                 <ul class=" list-unstyled mb-0">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe

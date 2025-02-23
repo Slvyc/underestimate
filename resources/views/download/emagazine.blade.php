@@ -3,8 +3,8 @@
 @section('content')
 <section class="hero">
     <div>
+        <div class="container-hero text-center">
         <h1 class="display-4 fw-bold">E-Magazine</h1>
-        <p class="lead">Temukan Inspirasi, Inovasi, dan Wawasan baru di Laboratorium Fakultas Ultra Modern Kami</p>
     </div>
 </section>
 

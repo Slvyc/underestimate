@@ -10,7 +10,7 @@
 </section>
 
 <div class="container-lab mt-3">
-        <section id="fasilitas">
+        <section class="fasilitas-body" id="fasilitas">
             <h2 class="mb-4 lab-section-title">Fasilitas Laboratorium</h2>
             <div class="row g-4">
                 <div class="col-md-4">
@@ -92,7 +92,7 @@
             </div>
         </section>
 
-        <section id="lab-sipil" class="lab-section">
+        <section id="lab-sipil" class="lab-section mt-3">
             <h2 class="mb-4 lab-section-title">Laboratorium Teknik Sipil</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
