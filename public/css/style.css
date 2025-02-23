@@ -2902,8 +2902,8 @@ max-width: 100%;
 height: auto;
 margin: 0 auto;
 image-rendering: auto;
-transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk bayangan */
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada gambar */
+transition: transform 0.3s ease, box-shadow 0.3s ease; 
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -2911,18 +2911,15 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada gambar 
 .btn-custom {
 margin-top: 30px;
 margin-bottom: 20px;
-font-weight: bold;
 background-color: #012d04;
 border-radius: 50px;
 color: #fff;
 padding: 10px 20px;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-custom:hover {
-background-color: #a3b18a;
-color: #000;
-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Meningkatkan bayangan */
+background-color: #012d04;
+color: #ffd700;
 }
 
 /* Responsif */
