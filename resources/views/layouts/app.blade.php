@@ -22,6 +22,7 @@
 </head>
 
 <!-- navbar start -->
+<div class="navbar-container">
 <nav>
     <div class="logo-nav">
         <a href="{{ route('home') }}">
@@ -105,6 +106,7 @@
     </ul>
     <div class="hamburger"><i class="fas fa-bars" style="color: #000"></i></div>
 </nav>
+</div>
 
 <div class="mobile-menu">
     <div class="mobile-close"><i class="fas fa-times"></i></div>

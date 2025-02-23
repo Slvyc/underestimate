@@ -101,17 +101,22 @@ to { opacity: 1; }
 /* end Loading Screen */
 
 /* new navbar */
+.navbar-container {
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0px 5px hsla(220, 32%, 8%, .1);
+}
+
 nav {
-background-color: #fff;
-color: #fff;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 30px;
-position: sticky;
-top: 0;
-z-index: 1000;
-box-shadow: 0 0px 5px hsla(220, 32%, 8%, .1);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-nav {
