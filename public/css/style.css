@@ -371,7 +371,7 @@ display: block;
 /* NAVBAR RESPONSIVE UNTUK LAYAR 1366PX */
 @media screen and (max-width: 1366px) {
   nav {
-    padding: 15px 20px; 
+    padding: 15px 50px; 
   }
 
   .logo-nav img {
@@ -385,7 +385,7 @@ display: block;
   }
 
   .menu-nav li {
-    font-size: 14px; 
+    font-size: 13px; 
     padding: 10px 0;
   }
 
@@ -395,16 +395,20 @@ display: block;
 
   .submenu_dropdown-nav {
     top: 65px; 
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .submenu_dropdown-nav li a, 
   .dropdown-nav li a {
-    padding: 15px 30px; 
+    padding: 5px 30px; 
   }
 }
 
 @media (max-width: 768px) {
+  nav {
+    padding: 20px 20px;
+  }
+
 .menu-nav {
     display: none;
 }
@@ -418,6 +422,26 @@ display: block;
     margin-right: -10px;
 }
 }
+
+@media (max-width: 884px) {
+  nav {
+    padding: 20px 20px;
+  }
+
+  .menu-nav {
+      display: none;
+  }
+  
+  .logo-nav{
+      margin-left: -15px;
+  }
+  
+  .hamburger {
+      display: block;
+      margin-right: -10px;
+  }
+  }
+
 /* end navbar */
 
 /* pagination tabel */
@@ -625,10 +649,27 @@ transform: scale(1,1);
 transition:transform 0.2s linear;
 }
 
+@media screen and (max-width: 1366px) {
+  .container-fluid-news p {
+    position: relative;
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+    }
+  
+  .post-slide{
+    height: 500px;
+  }
+  
+  .post-slide .post-img img{
+  height: 200px; 
+  }
+}
+
 @media (max-width: 768px) {
 .container-fluid-news{
   padding: 20px;
-  margin-top: -50px;
+  margin-top: 10px;
 }
 
 .container-fluid-news p {
@@ -836,6 +877,16 @@ transition: background 0.5s ease;
   .owl-controls .owl-buttons .owl-next {
     right: 0; 
   }
+}
+
+@media screen and (max-width: 1366px) {
+  .post-slide .post-description{
+    font-size: 13px;
+    }
+
+    .post-slide .post-title span{
+      font-size: 17px;
+      }
 }
 
 .popup {
@@ -1054,7 +1105,21 @@ background-color: #012d04;
 }
 
 /* landing page sambutan dekan baru */
-/* .sambutan{} */
+.sambutan{
+    margin-top: -10px;
+    background: linear-gradient(135deg, #ffffff 50%, #012d042c 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-top: 30px solid #012d04;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sambutan span{
+  font-size: 35px !important;
+}
+
 .bg-gradient-primary-to-secondary {
   background: #fff;
   background: linear-gradient(135deg, #104908 0%, #000 100%);
@@ -1075,7 +1140,7 @@ background-color: #012d04;
 }
 
 .description-sambutan {
-  font-size: 16px; 
+  font-size: 15px !important; 
   line-height: 1.6;
   color: #000 !important;
   text-align: left; 
@@ -1101,15 +1166,15 @@ background-color: #012d04;
   border-radius: 5vw;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
-  max-height: 30rem;
-  max-width: 30rem;
+  max-height: 20rem;
+  max-width: 25rem;
 }
 
 .profile .profile-img {
   height: 60vw;
-  max-height: 30rem;
+  max-height: 25rem;
   position: absolute;
-  bottom: 2px;
+  bottom: 1px;
   border-radius: 20px;
   left: 52%;
   transform: translateX(-50%);
@@ -1121,45 +1186,40 @@ background-color: #012d04;
   right: 1.5vw;
   top: 4vw;
 }
-
 .profile .dots-1 svg {
   fill: #fff;
 }
-
 .profile .dots-2 {
   position: absolute;
   width: 3vw;
   right: -4vw;
   top: 6.05vw;
 }
-
 .profile .dots-2 svg {
-  fill: #104908;
+  fill: #012d04;
 }
-
 .profile .dots-3 {
   position: absolute;
   width: 3vw;
   left: 1.5vw;
   bottom: 6.05vw;
 }
-
 .profile .dots-3 svg {
   fill: #fff;
 }
-
 .profile .dots-4 {
   position: absolute;
   width: 3vw;
   left: -4vw;
   bottom: 4vw;
 }
-
 .profile .dots-4 svg {
-  fill: #104908;
+  fill: #012d04;
 }
 
 @media (min-width: 576px) {
+
+
   .profile {
     height: 60vw;
     width: 60vw;
@@ -1184,6 +1244,7 @@ background-color: #012d04;
     left: -4vw;
   }
 }
+
 @media (min-width: 768px) {
   .profile {
     height: 50vw;
@@ -1234,7 +1295,30 @@ background-color: #012d04;
     left: -2vw;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1120px) and (max-width: 1366px)  {
+  .container{
+    max-width: 1140px;
+  }
+
+  .col-xxl-7 {
+    flex: 0 0 auto;
+    max-width: 50% !important;
+  }
+
+  .col-xxl-5 {
+    flex: 0 0 auto;
+    max-width: 50% !important;
+  }
+
+  .text-xxl-start {
+    text-align: left !important;
+  }
+
+  .description-sambutan {
+    font-size: 13px !important;
+  }
+
   .profile {
     height: 35vw;
     width: 35vw;

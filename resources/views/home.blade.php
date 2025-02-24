@@ -9,13 +9,13 @@
     </div>
 
     <!-- Header-->
-    <section class="sambutan py-5">
-                <div class="container-sambutan">
+    <header class="sambutan py-5">
+        <div class="container px-5 mt-4 pb-5">
                     <div class="row gx-5 align-items-center">
-                    <div class="col-xxl-6">
+                    <div class="col-xxl-7">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-3"><div class="text-uppercase">Fakultas Teknik Universitas Abulyatama</div></div>
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-3"><div class="text-uppercase">Fakultas Teknik Unaya</div></div>
                                 <div class="fs-5 fw-light text-muted">Dr. Ir. Cut Rahmawati, M.T., IPM., ASEAN Eng.</div>
                                 <h5 class="display-6 mt-2 mb-1"><span class="text-gradient d-inline">Dekan Fakultas Teknik</span></h5>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-xxl-5">
                             <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-</section>
+    </header>
 
     <!-- berita baru -->
     <div class="container-fluid-news">
