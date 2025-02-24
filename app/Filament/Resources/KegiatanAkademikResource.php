@@ -28,7 +28,7 @@ class KegiatanAkademikResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('nama_kegiatan')
+                Textarea::make('nama_kegiatan')
                     ->label('Nama Kegiatan')
                     ->required(),
                 TextInput::make('link')
@@ -45,9 +45,13 @@ class KegiatanAkademikResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('nama_kegiatan')
+                    ->limit(50)
                     ->label('Nama Kegiatan')
+                    ->wrap()
                     ->searchable(),
                 TextColumn::make('link')
+                    ->limit(50)
+                    ->wrap()
                     ->label('Link')
                     ->searchable(),
                 TextColumn::make('tanggal_pelaksanaan')

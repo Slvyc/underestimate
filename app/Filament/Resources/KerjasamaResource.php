@@ -62,21 +62,34 @@ class KerjasamaResource extends Resource
             ->columns([
                 TextColumn::make('nama_kerjasama')
                     ->label('Nama Kerjasama')
+                    ->limit(50)
+                    ->wrap()
                     ->searchable(),
+
                 TextColumn::make('lingkup_kerjasama')
                     ->label('Lingkup Kerjasama')
+                    ->wrap()
                     ->searchable(),
+
                 TextColumn::make('jenis_dokumen')
                     ->label('Jenis Dokumen')
+                    ->wrap()
                     ->searchable(),
+
                 TextColumn::make('status_kerjasama')
                     ->label('Status Kerjasama')
+                    ->wrap()
                     ->searchable(),
+
                 TextColumn::make('link')
                     ->label('Link')
+                    ->limit(50)
+                    ->wrap()
                     ->searchable(),
+
                 TextColumn::make('tanggal')
                     ->label('Tanggal')
+                    ->wrap()
                     ->searchable(),
             ])
             ->filters([

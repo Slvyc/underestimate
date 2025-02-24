@@ -8,6 +8,7 @@ use App\Models\Pengumuman;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -33,6 +34,7 @@ class PengumumanResource extends Resource
                     ->label('Tanggal Pengumuman')
                     ->numeric()
                     ->required(),
+
                 Select::make('bulan_pengumuman')
                     ->label('Bulan Pengumuman')
                     ->options([
@@ -50,14 +52,21 @@ class PengumumanResource extends Resource
                         'DES' => 'Desember',
                     ])
                     ->required(),
+
                 TextInput::make('judul_pengumuman')
                     ->label('Judul Pengumuman')
                     ->required(),
-                TextInput::make('deskripsi_pengumuman')
-                    ->label('Deskripsi Pengumuman')
-                    ->required(),
+
+                Textarea::make('deskripsi_pengumuman')
+                    ->label('Deksripsi Pengumuman')
+                    ->required()
+                    ->rows(10)
+                    ->cols(20)
+                    ->columnSpanFull(),
+
                 TextInput::make('link')
                     ->label('Link Pengumuman')
+                    ->limit(50)
                     ->required(),
             ]);
     }
@@ -74,9 +83,13 @@ class PengumumanResource extends Resource
                     ->searchable(),
                 TextColumn::make('judul_pengumuman')
                     ->label('Judul Pengumuman')
+                    ->limit(50)
+                    ->wrap()
                     ->searchable(),
                 TextColumn::make('deskripsi_pengumuman')
                     ->label('Deskripsi Pengumuman')
+                    ->limit(50)
+                    ->wrap()
                     ->searchable(),
                 TextColumn::make('link')
                     ->label('Link Pengumuman')

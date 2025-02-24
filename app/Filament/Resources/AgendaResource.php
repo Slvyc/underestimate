@@ -7,6 +7,7 @@ use App\Filament\Resources\AgendaResource\RelationManagers;
 use App\Models\Agenda;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Form;
 use App\Forms\Components\YearPicker;
 use Filament\Resources\Resource;
@@ -32,7 +33,7 @@ class AgendaResource extends Resource
                 TextInput::make('tahun_agenda')
                     ->label('Tahun')
                     ->required(),
-                TextInput::make('judul_agenda')
+                Textarea::make('judul_agenda')
                     ->label('Judul')
                     ->required(),
                 TextInput::make('masa_agenda')
@@ -53,9 +54,13 @@ class AgendaResource extends Resource
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('judul_agenda')
+                    ->limit(50)
+                    ->wrap()
                     ->label('Judul')
                     ->searchable(),
                 TextColumn::make('masa_agenda')
+                    ->wrap()
+                    ->limit(50)
                     ->label('Masa')
                     ->searchable(),
                 TextColumn::make('date')

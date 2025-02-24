@@ -85,6 +85,7 @@ class PenghargaanMahasiswaResource extends Resource
                     ->label('Nama Dosen')
                     ->searchable(),
                 TextColumn::make('prestasi')
+                    ->limit(50)
                     ->label('Prestasi')
                     ->searchable(),
                 TextColumn::make('tingkat')

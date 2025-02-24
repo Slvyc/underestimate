@@ -35,16 +35,28 @@ class KegiatanBemResource extends Resource
             ->schema([
                 TextInput::make('title')
                     ->label('Judul')
-                    ->required(),
+                    ->required()
+                    ->columnSpanFull(),
+
                 Textarea::make('description')
                     ->label('Deksripsi Berita')
-                    ->required(),
-                FileUpload::make('image_news')
                     ->required()
-                    ->directory('uploads/kegiatan_bem'),
+                    ->rows(10)
+                    ->cols(20)
+                    ->columnSpanFull(),
+
+                FileUpload::make('image_news')
+                    ->label('Gambar Berita')
+                    ->required()
+                    ->directory('uploads/kegiatan_bem')
+                    ->columnSpan('full')
+                    ->imagePreviewHeight('250')
+                    ->imageEditor(),
+
                 DatePicker::make('date')
                     ->label('Tanggal Publikasi')
                     ->required()
+                    ->columnSpan('full'),
             ]);
     }
 
@@ -53,18 +65,27 @@ class KegiatanBemResource extends Resource
         return $table
             ->columns([
                 ImageColumn::make('image_news')
-                    ->label('Gambar Kegiatan')
+                    ->label('Gambar Berita')
                     ->square()
                     ->width(200)
                     ->height(200)
-                    ->disk('public') // Pastikan disk yang digunakan adalah 'public'
+                    ->disk('public')
                     ->url(fn ($record) => asset('storage/' . $record->image_news)),
+
                 TextColumn::make('title')
-                    ->searchable(),
+                    ->label('Judul')
+                    ->searchable()
+                    ->limit(50)
+                    ->wrap(),
+
                 TextColumn::make('description')
-                    ->searchable(),
+                    ->label('Deskripsi')
+                    ->limit(100)
+                    ->wrap(),
+
                 TextColumn::make('date')
                     ->label('Tanggal Publikasi')
+                    ->dateTime('d M Y')
                     ->searchable()
                     ->sortable(),
             ])
