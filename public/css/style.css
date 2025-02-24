@@ -1053,6 +1053,214 @@ background-color: #012d04;
 }
 }
 
+/* landing page sambutan dekan baru */
+/* .sambutan{} */
+.bg-gradient-primary-to-secondary {
+  background: #fff;
+  background: linear-gradient(135deg, #104908 0%, #000 100%);
+}
+
+.container-sambutan{
+  max-width: 1400px !important;
+  margin: 10px auto !important;
+  padding: 70px !important;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(315deg, #104908 0%, #000 100%);
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 3rem;
+  -webkit-text-fill-color: transparent;
+}
+
+.description-sambutan {
+  font-size: 16px; 
+  line-height: 1.6;
+  color: #000 !important;
+  text-align: left; 
+  }
+
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.profile {
+  position: relative;
+  height: 48vw;
+  width: 48vw;
+  border-radius: 5vw;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  max-height: 30rem;
+  max-width: 30rem;
+}
+
+.profile .profile-img {
+  height: 60vw;
+  max-height: 30rem;
+  position: absolute;
+  bottom: 2px;
+  border-radius: 20px;
+  left: 52%;
+  transform: translateX(-50%);
+}
+
+.profile .dots-1 {
+  position: absolute;
+  width: 3vw;
+  right: 1.5vw;
+  top: 4vw;
+}
+
+.profile .dots-1 svg {
+  fill: #fff;
+}
+
+.profile .dots-2 {
+  position: absolute;
+  width: 3vw;
+  right: -4vw;
+  top: 6.05vw;
+}
+
+.profile .dots-2 svg {
+  fill: #104908;
+}
+
+.profile .dots-3 {
+  position: absolute;
+  width: 3vw;
+  left: 1.5vw;
+  bottom: 6.05vw;
+}
+
+.profile .dots-3 svg {
+  fill: #fff;
+}
+
+.profile .dots-4 {
+  position: absolute;
+  width: 3vw;
+  left: -4vw;
+  bottom: 4vw;
+}
+
+.profile .dots-4 svg {
+  fill: #104908;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    height: 60vw;
+    width: 60vw;
+  }
+  .profile .profile-img {
+    height: 65vw;
+  }
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+  .profile .dots-3 {
+    width: 3vw;
+    left: 1.5vw;
+  }
+  .profile .dots-4 {
+    width: 3vw;
+    left: -4vw;
+  }
+}
+@media (min-width: 768px) {
+  .profile {
+    height: 50vw;
+    width: 50vw;
+  }
+  .profile .profile-img {
+    height: 55vw;
+  }
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+  .profile .dots-3 {
+    width: 3vw;
+    left: 1.5vw;
+  }
+  .profile .dots-4 {
+    width: 3vw;
+    left: -4vw;
+  }
+}
+@media (min-width: 992px) {
+  .profile {
+    height: 40vw;
+    width: 40vw;
+  }
+  .profile .profile-img {
+    height: 45vw;
+  }
+  .profile .dots-1 {
+    width: 1.5vw;
+    right: 0.75vw;
+  }
+  .profile .dots-2 {
+    width: 1.5vw;
+    right: -2vw;
+  }
+  .profile .dots-3 {
+    width: 1.5vw;
+    left: 0.75vw;
+  }
+  .profile .dots-4 {
+    width: 1.5vw;
+    left: -2vw;
+  }
+}
+@media (min-width: 1200px) {
+  .profile {
+    height: 35vw;
+    width: 35vw;
+  }
+  .profile .profile-img {
+    height: 40vw;
+  }
+  .profile .dots-1 {
+    width: 1.5vw;
+    right: 0.75vw;
+  }
+  .profile .dots-2 {
+    width: 1.5vw;
+    right: -2vw;
+  }
+  .profile .dots-3 {
+    width: 1.5vw;
+    left: 0.75vw;
+  }
+  .profile .dots-4 {
+    width: 1.5vw;
+    left: -2vw;
+  }
+}
+/* end landing page sambutan dekan baru */
+
   /* SELAMAT */
   .hero-section-sambutan {
     top:-10px;
@@ -2906,8 +3114,6 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-
-/* Efek bayangan dan animasi untuk tombol */
 .btn-custom {
 margin-top: 30px;
 margin-bottom: 20px;
@@ -2930,7 +3136,7 @@ color: #ffd700;
 }
 
 .org-image-kalender {
-  width: 90%; /* Menyesuaikan ukuran gambar di tampilan responsif */
+  width: 90%; 
   max-width: 100%;
   height: auto;
   margin: 0 auto;
