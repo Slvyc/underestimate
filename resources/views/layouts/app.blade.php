@@ -26,7 +26,7 @@
 <nav>
     <div class="logo-nav">
         <a href="{{ route('home') }}">
-            <img src="\asset\img\logoFTUNAYA.svg" alt="FT UI Logo">
+            <img src="\asset\img\logoFTUNAYA.svg" alt="">
         </a>
     </div>
     <ul class="menu-nav">
