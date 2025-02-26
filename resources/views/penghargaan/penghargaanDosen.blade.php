@@ -18,16 +18,16 @@
         </h3>
         </div>
         <!-- Search Box -->
-        <div class="download-search-wrapper mb-4 d-flex justify-content-end">
+        <form action="{{ route('penghargaanDosen') }}" method="GET">
+            <div class="download-search-wrapper mb-4 d-flex justify-content-end">
                 <div class="download-search-box">
                     <div class="input-group" style="width: 300px;">
-                        <input type="text" class="form-control download-search-input" id="downloadSearchInput" placeholder="Cari">
-                        <span class="input-group-text download-search-icon">
-                            <i class="bi bi-search"></i>
-                        </span>
+                        <input type="text" name="search" value="{{ request('search') }}" class="form-control download-search-input" id="downloadSearchInput" placeholder="Cari">
                     </div>
                 </div>
             </div>
+        </form>
+        <!-- end searchbox -->
         <table class="award-table table-hover">
             <thead>
                 <tr>
@@ -38,26 +38,28 @@
                     <th>Tahun</th>
                 </tr>
             </thead>
-            <tbody>
-            @foreach ( $PenghargaanDosens as $PenghargaanDosen )
-                    <tr>
-                        <td class="text-center">{{ $loop->iteration }}</td>
-                        <td>
-                            <div class="profile-container">
-                                <img src="{{ asset('storage/' . $PenghargaanDosen->gambar_person) }}" alt="Dosen Image" class="profile-image">
-                                <div class="profile-name">{{ $PenghargaanDosen->person }}</div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="{{ $PenghargaanDosen->link }}">{{ $PenghargaanDosen->prestasi }}</a>
-                        </td>
-                        <td>{{ $PenghargaanDosen->tingkat }}</td>
-                        <td>{{ $PenghargaanDosen->tahun }}</td>
-                    </tr>
-            @endforeach
+            <tbody class="table-penghargaan">
+                @include('partials.penghargaanDosen-table')
             </tbody>
         </table>
     </div>
 </div>
 </body>
+<!-- script pencarian -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#downloadSearchInput').on('keyup', function () {
+            let search = $(this).val();
+            $.ajax({
+                url: "{{ route('penghargaanDosen') }}",
+                type: "GET",
+                data: { search: search },
+                success: function (response) {
+                    $('.table-penghargaan').html(response);
+                }
+            });
+        });
+    });
+</script>  
 @endsection

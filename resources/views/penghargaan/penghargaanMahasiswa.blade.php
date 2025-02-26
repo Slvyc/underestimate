@@ -18,16 +18,16 @@
         </h3>
         </div>
         <!-- Search Box -->
-        <div class="download-search-wrapper mb-4 d-flex justify-content-end">
+        <form action="{{ route('penghargaanMahasiswa') }}" method="GET">
+            <div class="download-search-wrapper mb-4 d-flex justify-content-end">
                 <div class="download-search-box">
                     <div class="input-group" style="width: 300px;">
-                        <input type="text" class="form-control download-search-input" id="downloadSearchInput" placeholder="Cari">
-                        <span class="input-group-text download-search-icon">
-                            <i class="bi bi-search"></i>
-                        </span>
+                        <input type="text" name="search" value="{{ request('search') }}" class="form-control download-search-input" id="downloadSearchInput" placeholder="Cari">
                     </div>
                 </div>
             </div>
+        </form>
+        <!-- end searchbox -->
         <table class="award-table table-hover">
             <thead>
                 <tr>
@@ -38,26 +38,29 @@
                     <th>Tahun</th>
                 </tr>
             </thead>
-            <tbody>
-            @foreach ( $PenghargaanMahasiswas as $PenghargaanMahasiswa )   
-                    <tr>
-                        <td class="text-center">{{ $loop->iteration }}</td>
-                        <td>
-                            <div class="profile-container">
-                                <img src="{{ asset('storage/' . $PenghargaanMahasiswa->gambar_person) }}" alt="Mahasiswa Image" class="profile-image">
-                                <div class="profile-name">{{ $PenghargaanMahasiswa->person }}</div>
-                            </div>
-                        </td>
-                        <td>
-                            <a href="{{ $PenghargaanMahasiswa->link }}">{{ $PenghargaanMahasiswa->prestasi }}</a>
-                        </td>
-                        <td>{{ $PenghargaanMahasiswa->tingkat }}</td>
-                        <td>{{ $PenghargaanMahasiswa->tahun }}</td>
-                    </tr>
-            @endforeach
+            <tbody class="table-penghargaan">
+                @include('partials.penghargaanMahasiswa-table')
             </tbody>
         </table>
     </div>
 </div>
 </body>
+<!-- script pencarian -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#downloadSearchInput').on('keyup', function () {
+            let search = $(this).val();
+            $.ajax({
+                url: "{{ route('penghargaanMahasiswa') }}",
+                type: "GET",
+                data: { search: search },
+                success: function (response) {
+                    $('.table-penghargaan').html(response);
+                }
+            });
+        });
+    });
+</script>  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 @endsection

@@ -1,9 +1,15 @@
 <?php
 
+use App\Http\Controllers\KegiatanAkademikController;
+use App\Http\Controllers\PenghargaanDosenController;
+use App\Http\Controllers\PenghargaanMahasiswaController;
+use App\Http\Controllers\PengurusanSuratController;
+use App\Http\Controllers\SopController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KurikulumSiController;
 use App\Http\Controllers\KurikulumMesinController;
 use App\Http\Controllers\KurikulumSipilController;
+use App\Http\Controllers\KerjasamaController;
 
 
 
@@ -118,42 +124,23 @@ Route::get('/HMM', function () {
 
 //route penghargaan
 //dosen
-Route::get('/Penghargaan-Dosen', function () {
-    $PenghargaanDosens = App\Models\PenghargaanDosen::all();
-    return view('penghargaan.penghargaanDosen', compact('PenghargaanDosens'));
-})->name('penghargaanDosen');
+Route::get('/Penghargaan-Dosen', [PenghargaanDosenController::class, 'index'])->name('penghargaanDosen');
 //mahasiswa
-Route::get('/Penghargaan-Mahasiswa', function () {
-    $PenghargaanMahasiswas = App\Models\PenghargaanMahasiswa::all();
-    return view('penghargaan.penghargaanMahasiswa', compact('PenghargaanMahasiswas'));
-})->name('penghargaanMahasiswa'); //url buat navbar
-
+Route::get('/Penghargaan-Mahasiswa', [PenghargaanMahasiswaController::class, 'index'])->name('penghargaanMahasiswa');
 //route kerjasama
-Route::get('/Kerjasama', function () {
-    $Kerjasamas = App\Models\Kerjasama::all();
-    return view('kerjasama', compact('Kerjasamas'));
-})->name('kerjasama');
+Route::get('/kerjasama', [KerjasamaController::class, 'index'])->name('kerjasama');
 
 //route download
 //kegiatan akademik
-Route::get('/Kegiatan-Akademik', function () {
-    $KegiatanAkademiks = App\Models\KegiatanAkademik::all();
-    return view('download.kegiatanAkademik', compact('KegiatanAkademiks'));
-})->name('kegiatanAkademik');
+Route::get('/Kegiatan-Akademik', [KegiatanAkademikController::class, 'index'])->name('kegiatanAkademik');
 //e-magazine
 Route::get('/E-Magazine', function () {
     return view('download.emagazine');
 })->name('emagazine');
 //pengurusan surat
-Route::get('/Pengurusan-Surat', function () {
-    $PengurusanSurats = App\Models\PengurusanSurat::all();
-    return view('download.pengurusanSurat', compact('PengurusanSurats'));
-})->name('pengurusanSurat');
+Route::get('/Pengurusan-Surat', [PengurusanSuratController::class, 'index'])->name('pengurusanSurat');
 //SOP
-Route::get('/SOP/Panduan', function () {
-    $Sops = App\Models\Sop::all();
-    return view('download.sop', compact('Sops'));
-})->name('sop');
+Route::get('/SOP/Panduan', [SopController::class, 'index'])->name('sop');
 
 //route tracer study
 Route::get('/Tracer-Study', function () {

@@ -115,7 +115,7 @@
     <div class="popup-content">
         <span class="close" onclick="closePopup()">&times;</span>
         <img id="popup-image" src="" alt="" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-        <h3 id="popup-title">{{ $KegiatanHimasi->title }}</h3>
+        <h3 id="popup-title"></h3>
         <p id="popup-description"></p>
         <span id="popup-date"><i class="fa fa-clock-o"></i></span>
     </div>
