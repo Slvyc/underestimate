@@ -75,6 +75,7 @@
         <li><a href="#">Kemahasiswaan</a>
         <ul class="submenu_dropdown-nav">
                 <li><a href="{{ route('layanan')}}" class="no-border-hover">Layanan Komunikasi Orang Tua/Wali Mahasiswa</a></li>
+                <li><a href="{{ route('layananSuratAktifKuliah')}}" class="no-border-hover">Layanan Permohonan Surat Aktif Kuliah</a></li>
                 <li><a href="#" class="no-border-hover">Organisasi Mahasiswa</a>
                     <ul class="dropdown-nav">
                         <li><a href="{{ route('bem') }}" class="no-border-hover">BEM</a></li>
@@ -177,6 +178,7 @@
             <ul class="menu-slide kemahasiswaan-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('layanan') }}">Layanan Komunikasi Orang Tua/Wali Mahasiswa</a></li>
+                <li><a href="{{ route('layananSuratAktifKuliah') }}">Layanan Permohonan Surat Aktif Kuliah</a></li>
                 <li class="submenu-link" data-target="Organisasi-menu"><a href="#">Organisasi Mahasiswa<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li><a href="#">UKM</a></li>
             </ul>

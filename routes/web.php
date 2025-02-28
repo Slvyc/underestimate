@@ -98,9 +98,14 @@ Route::get('/Jurnal', function () {
 })->name('jurnal');
 
 //route kemahasiswaan 
+//layanan komunikasi
 Route::get('/Layanan-Komunikasi', function () {
     return view('kemahasiswaan.layanan');
 })->name('layanan');
+//layanan surat aktif permohonan kuliah
+Route::get('/Layanan-Surat-Aktif', function () {
+    return view('kemahasiswaan.layananSuratAktifKuliah');
+})->name('layananSuratAktifKuliah');
 //bem
 Route::get('/Bem', function () {
     $KegiatanBems = App\Models\KegiatanBem::all();
