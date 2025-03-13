@@ -37,8 +37,7 @@ class DosenSiResource extends Resource
                     ->label('Foto Dosen')
                     ->visibility('public')
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
-                    ->directory('uploads/gambar_dosen_si')
-                    ->required(),
+                    ->directory('uploads/gambar_dosen_si'),
                 TextInput::make('nama_dosen')
                     ->label('Nama Dosen')
                     ->required(),

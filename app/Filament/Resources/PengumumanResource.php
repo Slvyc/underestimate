@@ -66,7 +66,6 @@ class PengumumanResource extends Resource
 
                 TextInput::make('link')
                     ->label('Link Pengumuman')
-                    ->limit(50)
                     ->required(),
             ]);
     }

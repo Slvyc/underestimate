@@ -73,7 +73,7 @@ class BeritaResource extends Resource
                 TextColumn::make('title')
                     ->label('Judul')
                     ->searchable()
-                    ->limit(50)
+                    ->limit(50) 
                     ->wrap(),
 
                 TextColumn::make('description')

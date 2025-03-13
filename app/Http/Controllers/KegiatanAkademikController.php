@@ -17,7 +17,7 @@ class KegiatanAkademikController extends Controller
                 ->orWhere('tanggal_pelaksanaan', 'LIKE', "%{$search}%");
         }
 
-        $KegiatanAkademiks = $query->get();
+        $KegiatanAkademiks = $query->get(); 
 
         if ($request->ajax()) {
             return view('partials.kegiatanAkademik-table', compact('KegiatanAkademiks'))->render();
