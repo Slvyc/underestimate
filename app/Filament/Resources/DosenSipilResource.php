@@ -50,8 +50,7 @@ class DosenSipilResource extends Resource
                         'Profesor' => 'Profesor',
                     ]),
                 TextInput::make('nidn')
-                    ->label('NIDN')
-                    ->numeric(),
+                    ->label('NIDN'),
                 Forms\Components\Section::make('Riwayat Pendidikan')
                     ->schema([
                         TextInput::make('riwayat_prodi')

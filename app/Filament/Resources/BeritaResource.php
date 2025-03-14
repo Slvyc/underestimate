@@ -6,6 +6,7 @@ use App\Filament\Resources\BeritaResource\Pages;
 use App\Filament\Resources\BeritaResource\RelationManagers;
 use App\Models\Berita;
 use Filament\Forms;
+use Illuminate\Support\Facades\Storage;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
@@ -25,6 +26,8 @@ class BeritaResource extends Resource
     protected static ?string $model = Berita::class;
     protected static ?string $navigationLabel = 'Berita FT Unaya'; // Mengubah nama sidebar
     protected static ?string $navigationGroup = 'Manajemen Berita'; // Membuat grup di sidebar
+    protected static ?string $label = 'Berita FT-Unaya'; // Mengubah nama header
+    protected static ?string $slug = 'berita-ftunaya';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
@@ -66,9 +69,7 @@ class BeritaResource extends Resource
                     ->label('Gambar Berita')
                     ->square()
                     ->width(200)
-                    ->height(200)
-                    ->disk('public')
-                    ->url(fn ($record) => asset('storage/' . $record->image_news)),
+                    ->height(200),
 
                 TextColumn::make('title')
                     ->label('Judul')
