@@ -1,0 +1,33 @@
+name: 🚀 Deploy Laravel ke VPS
+
+on:
+  push:
+    branches:
+      - master  # Trigger jika ada push ke branch 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 🚀 Deploy ke VPS via SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: teknik.unaya.ac.id
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/teknik.unaya.ac.id
+            git pull origin main
+            composer install --no-dev --prefer-dist
+            php artisan migrate --force
+            php artisan cache:clear
+            php artisan config:clear
+            php artisan route:clear
+            php artisan view:clear
+            php artisan optimize
+            chmod -R 775 storage bootstrap/cache
+            chown -R www-data:www-data storage bootstrap/cache
