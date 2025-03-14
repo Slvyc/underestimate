@@ -328,7 +328,7 @@
 
     <!-- berita baru -->
     <div class="container-fluid-news">
-        <h2 class="news-titles">Berita</h2>
+        <h2 class="news-titles">Berita tes saja</h2>
         <p>Informasi Terbaru Fakultas Teknik</p>
         <div class="col-md-12">
             <div id="news-slider" class="owl-carousel">
