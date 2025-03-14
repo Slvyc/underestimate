@@ -22,8 +22,8 @@ jobs:
           script: |
             cd /var/www/teknik.unaya.ac.id
             git fetch --all
-            git reset --hard origin/main
-            git pull origin main
+            git reset --hard origin/master
+            git pull origin master
             composer install --no-dev --prefer-dist
             php artisan migrate --force
             php artisan cache:clear
