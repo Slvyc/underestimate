@@ -329,7 +329,7 @@
     <!-- berita baru -->
     <div class="container-fluid-news">
         <h2 class="news-titles">Berita</h2>
-        <p>Informasi Terbaru Fakultas Teknik Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus iure sed reiciendis omnis nihil nulla illo dolorem quam, consequuntur, ipsam eligendi inventore? Temporibus quo totam error at tenetur qui accusantium?</p>
+        <p>Informasi Terbaru Fakultas Teknik</p>
         <div class="col-md-12">
             <div id="news-slider" class="owl-carousel">
                 @foreach($beritas as $berita)
