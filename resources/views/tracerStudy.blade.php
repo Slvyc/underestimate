@@ -36,7 +36,7 @@
         </div>
 
         <!-- Call-to-Action Button -->
-        <a href="#mulai-tracer-study" class="btn ctaButtonTracerStudy">Mulai Tracer Study</a>
+        <a href="https://docs.google.com/forms/d/1UpuNIdwRWiUEcLUBqCTL5Heuby1080ikzoehr97WV-M/edit" class="btn ctaButtonTracerStudy">Mulai Tracer Study</a>
     </div>
 </section>
 @endsection
