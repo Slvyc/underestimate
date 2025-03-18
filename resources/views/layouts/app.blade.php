@@ -104,6 +104,13 @@
             </ul>
         </li>
         <li><a href="{{ route('tracerStudy') }}">Tracer Study</a></li>
+        <li><a href="#">Quality Assurance</a>
+            <ul class="submenu_dropdown-nav">
+                    <li><a href="" class="no-border-hover">Survey</a></li>
+                    <li><a href="" class="no-border-hover">Dokomen AMI</a></li>
+                    <li><a href="" class="no-border-hover">Dokumen Monev</a></li>
+            </ul>
+        </li>
     </ul>
     <div class="hamburger"><i class="fas fa-bars" style="color: #000"></i></div>
 </nav>
@@ -122,6 +129,7 @@
                 <li><a href="{{ route('kerjasama') }}">Kerjasama</a></li>
                 <li class="submenu-link" data-target="download-menu"><a href="#">Download<i class="ri-arrow-right-s-fill"></i></a></li>
                 <li><a href="{{ route('tracerStudy') }}">Tracer Studi</a></li>
+                <li class="submenu-link" data-target="quality-assurance"><a href="#">Quality Assurance<i class="ri-arrow-right-s-fill"></i></a></li>
             </ul>
 
             <!-- Profile Menu -->
@@ -207,6 +215,14 @@
                 <li><a href="{{ route('pengurusanSurat') }}">Pengurusan Surat</a></li>
                 <li><a href="{{ route('sop') }}">SOP / Panduan</a></li>
                 <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing">Video Intro / Outro Teknik</a></li>
+            </ul>
+
+            {{-- Menu Quality Assurance --}}
+            <ul class="menu-slide quality-assurance-menu">
+                <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
+                <li><a href="" class="no-border-hover">Survey</a></li>
+                <li><a href="" class="no-border-hover">Dokomen AMI</a></li>
+                <li><a href="" class="no-border-hover">Dokumen Monev</a></li>,   
             </ul>
 
         </div>
