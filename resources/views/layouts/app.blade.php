@@ -106,9 +106,9 @@
         <li><a href="{{ route('tracerStudy') }}">Tracer Study</a></li>
         <li><a href="#">Quality Assurance</a>
             <ul class="submenu_dropdown-nav">
-                    <li><a href="" class="no-border-hover">Survey</a></li>
-                    <li><a href="" class="no-border-hover">Dokomen AMI</a></li>
-                    <li><a href="" class="no-border-hover">Dokumen Monev</a></li>
+                    <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
+                    <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokumen AMI</a></li>
+                    <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>
             </ul>
         </li>
     </ul>
@@ -218,11 +218,11 @@
             </ul>
 
             {{-- Menu Quality Assurance --}}
-            <ul class="menu-slide quality-assurance-menu">
+            <ul class="menu-slide assurance-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
-                <li><a href="" class="no-border-hover">Survey</a></li>
-                <li><a href="" class="no-border-hover">Dokomen AMI</a></li>
-                <li><a href="" class="no-border-hover">Dokumen Monev</a></li>,   
+                <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
+                <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokomen AMI</a></li>
+                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>,   
             </ul>
 
         </div>

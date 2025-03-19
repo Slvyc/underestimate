@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DokumenAmiController;
+use App\Http\Controllers\DokumenMonevController;
 use App\Http\Controllers\KegiatanAkademikController;
 use App\Http\Controllers\PenghargaanDosenController;
 use App\Http\Controllers\PenghargaanMahasiswaController;
@@ -10,8 +12,8 @@ use App\Http\Controllers\KurikulumSiController;
 use App\Http\Controllers\KurikulumMesinController;
 use App\Http\Controllers\KurikulumSipilController;
 use App\Http\Controllers\KerjasamaController;
-
-
+use App\Http\Controllers\SurveyController;
+use App\Models\DokumenAmi;
 
 Route::get('/', function () {
     $beritas = App\Models\Berita::all();
@@ -151,3 +153,9 @@ Route::get('/SOP/Panduan', [SopController::class, 'index'])->name('sop');
 Route::get('/Tracer-Study', function () {
     return view('tracerStudy');
 })->name('tracerStudy');
+
+//route penjaminan mutu
+Route::get('/Survey', [SurveyController::class, 'index'])->name('survey');
+Route::get('/Dokumen-Ami', [DokumenAmiController::class, 'index'])->name('dokumenAmi');
+Route::get('/Dokumen-Monevs', [DokumenMonevController::class, 'index'])->name('dokumenMonev');
+
