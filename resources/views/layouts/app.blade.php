@@ -223,8 +223,8 @@
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('sopPanduan')}}" class="no-border-hover">Sop</a></li>
                 <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
-                <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokomen AMI</a></li>
-                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>,   
+                <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokumen AMI</a></li>
+                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>  
             </ul>
 
         </div>
