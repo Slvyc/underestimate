@@ -219,7 +219,7 @@
             </ul>
 
             {{-- Menu Quality Assurance --}}
-            <ul class="menu-slide assurance-menu">
+            <ul class="menu-slide quality-assurance">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('sopPanduan')}}" class="no-border-hover">Sop</a></li>
                 <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
