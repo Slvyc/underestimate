@@ -99,13 +99,14 @@
                     <li><a href="{{ route('kegiatanAkademik') }}" class="no-border-hover">Kegiatan Akademik</a></li>
                     <li><a href="{{ route('emagazine') }}" class="no-border-hover">E-Magazine</a></li>
                     <li><a href="{{ route('pengurusanSurat') }}" class="no-border-hover">Pengurusan Surat</a></li>
-                    <li><a href="{{ route('sop') }}" class="no-border-hover">SOP / Panduan</a></li>
+                    <li><a href="{{ route('sop') }}" class="no-border-hover">Dokumen</a></li>
                     <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing" class="no-border-hover">Video Intro / Outro Teknik</a></li>
             </ul>
         </li>
         <li><a href="{{ route('tracerStudy') }}">Tracer Study</a></li>
         <li><a href="#">Quality Assurance</a>
             <ul class="submenu_dropdown-nav">
+                    <li><a href="{{ route('sopPanduan')}}" class="no-border-hover">SOP</a></li>
                     <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
                     <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokumen AMI</a></li>
                     <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>
@@ -213,13 +214,14 @@
                 <li><a href="{{ route('kegiatanAkademik') }}">Kegiatan Akademik</a></li>
                 <li><a href="{{ route('emagazine') }}">E-Magazine</a></li>
                 <li><a href="{{ route('pengurusanSurat') }}">Pengurusan Surat</a></li>
-                <li><a href="{{ route('sop') }}">SOP / Panduan</a></li>
+                <li><a href="{{ route('sop') }}">Dokumen</a></li>
                 <li><a href="https://drive.google.com/drive/folders/1KO-dTlJQt9lWJoVkNn_BFNZO062cjPwX?usp=sharing">Video Intro / Outro Teknik</a></li>
             </ul>
 
             {{-- Menu Quality Assurance --}}
             <ul class="menu-slide assurance-menu">
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
+                <li><a href="{{ route('sopPanduan')}}" class="no-border-hover">Sop</a></li>
                 <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
                 <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokomen AMI</a></li>
                 <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>,   

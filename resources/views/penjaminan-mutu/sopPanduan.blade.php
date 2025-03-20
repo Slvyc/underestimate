@@ -3,7 +3,7 @@
 @section('content')
     <section class="hero">
         <div class="container-hero text-center">
-            <h1 class="display-4 fw-bold fade-in">Dokumen</h1>
+            <h1 class="display-4 fw-bold fade-in">Sop/Panduan</h1>
             <p class="lead fade-in">Universitas Abulyatama</p>
         </div>
     </section>
@@ -12,7 +12,7 @@
     <section class="download-content py-5">
         <div class="container">
             <!-- Search Box -->
-            <form action="{{ route('sop') }}" method="GET">
+            <form action="{{ route('sopPanduan') }}" method="GET">
                 <div class="download-search-wrapper mb-4 d-flex justify-content-end">
                     <div class="download-search-box">
                         <div class="input-group" style="width: 300px;">
@@ -35,7 +35,7 @@
                         </tr>
                     </thead>
                     <tbody class="download-table-body">
-                        @include('partials.sop-table')
+                        @include('partials.sopPanduan-table')
                     </tbody>
                 </table>
             </div>
@@ -48,7 +48,7 @@
             $('#downloadSearchInput').on('keyup', function () {
                 let search = $(this).val();
                 $.ajax({
-                    url: "{{ route('sop') }}",
+                    url: "{{ route('sopPanduan') }}",
                     type: "GET",
                     data: { search: search },
                     success: function (response) {

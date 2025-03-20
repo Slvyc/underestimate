@@ -12,6 +12,7 @@ use App\Http\Controllers\KurikulumSiController;
 use App\Http\Controllers\KurikulumMesinController;
 use App\Http\Controllers\KurikulumSipilController;
 use App\Http\Controllers\KerjasamaController;
+use App\Http\Controllers\SopPanduanController;
 use App\Http\Controllers\SurveyController;
 use App\Models\DokumenAmi;
 
@@ -146,7 +147,7 @@ Route::get('/E-Magazine', function () {
 })->name('emagazine');
 //pengurusan surat
 Route::get('/Pengurusan-Surat', [PengurusanSuratController::class, 'index'])->name('pengurusanSurat');
-//SOP
+//Dokumen
 Route::get('/SOP/Panduan', [SopController::class, 'index'])->name('sop');
 
 //route tracer study
@@ -158,4 +159,5 @@ Route::get('/Tracer-Study', function () {
 Route::get('/Survey', [SurveyController::class, 'index'])->name('survey');
 Route::get('/Dokumen-Ami', [DokumenAmiController::class, 'index'])->name('dokumenAmi');
 Route::get('/Dokumen-Monevs', [DokumenMonevController::class, 'index'])->name('dokumenMonev');
+Route::get('/Sop', [SopPanduanController::class, 'index'])->name('sopPanduan');
 
