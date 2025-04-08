@@ -3262,6 +3262,11 @@ color: #ffd700;
   margin-right: auto; 
 }
 
+@media (max-width: 810px) {
+  .roster-card iframe {
+    width: 340px;
+  }
+}
 /* Responsif */
 @media (max-width: 768px) {
 .roster-container {

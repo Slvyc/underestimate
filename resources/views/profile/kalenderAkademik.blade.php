@@ -44,6 +44,11 @@
                     height="600px" 
                     style="border: none;">
                 </iframe>
+                <div class="mt-2 text-center">
+                    <a href="{{ asset('storage/' . $RosterAkademik->roster_sipil) }}" download class="btn btn-custom">
+                        <i class="bi bi-download"></i> Download 
+                    </a>
+                </div>
             </div>
 
             <div class="roster-card">
@@ -54,6 +59,11 @@
                     height="600px" 
                     style="border: none;">
                 </iframe>
+                <div class="mt-2 text-center">
+                    <a href="{{ asset('storage/' . $RosterAkademik->roster_mesin) }}" download class="btn btn-custom">
+                        <i class="bi bi-download"></i> Download 
+                    </a>
+                </div>
             </div>
 
             <div class="roster-card">
@@ -64,6 +74,11 @@
                     height="600px" 
                     style="border: none;">
                 </iframe>
+                <div class="mt-2 text-center">
+                    <a href="{{ asset('storage/' . $RosterAkademik->roster_sistem_informasi) }}" download class="btn btn-custom">
+                        <i class="bi bi-download"></i> Download 
+                    </a>
+                </div>
             </div>
         @endforeach
     </div>
