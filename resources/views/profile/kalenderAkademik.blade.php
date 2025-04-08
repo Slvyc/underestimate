@@ -12,7 +12,7 @@
     @foreach ( $KalenderAkademiks as $KalenderAkademik )
     <div class="container-kalender-akademik text-center">
         <!-- Gambar Struktur Organisasi -->
-        <img src="{{ asset('storage/' . $KalenderAkademik->image_ganjil) }}" alt="Struktur Organisasi Fakultas Teknik" class="org-image-kalender">
+        <img src="{{ asset('storage/' . $KalenderAkademik->image_ganjil) }}" alt="Kalender Akademik Ganjil" class="org-image-kalender">
         <!-- Download Button -->
         <div class="mt-3">
             <a href="{{ asset('storage/' . $KalenderAkademik->image_ganjil) }}" download class="btn btn-custom">
@@ -23,7 +23,7 @@
 
     <div class="container-kalender-akademik text-center">
         <!-- Gambar Struktur Organisasi -->
-        <img src="{{ asset('storage/' . $KalenderAkademik->image_genap) }}" alt="Struktur Organisasi Fakultas Teknik" class="org-image-kalender">
+        <img src="{{ asset('storage/' . $KalenderAkademik->image_genap) }}" alt="Kalender Akademik Genap" class="org-image-kalender">
         <!-- Download Button -->
         <div class="mt-3">
             <a href="{{ asset('storage/' . $KalenderAkademik->image_genap) }}" download class="btn btn-custom">
