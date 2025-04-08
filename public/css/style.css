@@ -3212,8 +3212,81 @@ background-color: #012d04;
 color: #ffd700;
 }
 
+.roster-container {
+  max-width: 1400px;
+  margin: 10px auto;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #a3b18a;
+}
+  
+.roster-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 680px;
+  width: 100%;
+  margin: 20px;
+  padding: 40px;
+  align-items: center;
+}
+
+.roster-card iframe {
+  margin-top: 5px;
+}
+
+.roster-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #012d04;
+}
+
+.roster-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #012d04;
+}
+  
+.roster-container h2::after {
+  content: "";
+  display: block;
+  width: 40%; 
+  height: 2px;
+  background-color: #FFD700; 
+  margin-top: 10px;
+  margin-bottom: 30px; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
 /* Responsif */
 @media (max-width: 768px) {
+.roster-container {
+  margin-top: -5px;
+  padding: 10px;
+  }
+
+.roster-card {
+  flex-direction: column;
+  padding: 20px; 
+  margin: 40px 0 40px 0;
+}
+.roster-container h2 {
+  font-size: 1.8rem;
+  margin-top: 23px;
+  margin-bottom: -40px;
+}
+.roster-card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #012d04;
+}
+.roster-card iframe {
+  width: 330px;
+}
 .container-kalender-akademik {
   padding: 20px;
   padding-top: 25px;

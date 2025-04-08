@@ -10,7 +10,7 @@
 <!-- Struktur Organisasi Section -->
 <section class="kalender-akademik-section">
     @foreach ( $KalenderAkademiks as $KalenderAkademik )
-    <div class="container-kalender-akademik text-center">
+    {{-- <div class="container-kalender-akademik text-center">
         <!-- Gambar Struktur Organisasi -->
         <img src="{{ asset('storage/' . $KalenderAkademik->image_ganjil) }}" alt="Kalender Akademik Ganjil" class="org-image-kalender">
         <!-- Download Button -->
@@ -19,7 +19,7 @@
                 <i class="bi bi-download"></i> Download 
             </a>`
         </div>
-    </div>
+    </div> --}}
 
     <div class="container-kalender-akademik text-center">
         <!-- Gambar Struktur Organisasi -->
@@ -32,5 +32,25 @@
         </div>
     </div>
     @endforeach
+
+    <div class="roster-container">
+        <h2>Roster Akademik</h2>
+        @foreach ( $RosterAkademiks as $RosterAkademik)
+            <div class="roster-card">
+                <h3>Teknik Sipil</h3>
+                <iframe src="{{ asset('storage/' . $RosterAkademik->roster_sipil) }}" width="600" height="400"></iframe>
+            </div>
+
+            <div class="roster-card">
+                <h3>Teknik Mesin</h3>
+                <iframe src="{{ asset('storage/' . $RosterAkademik->roster_mesin) }}" width="600" height="400"></iframe>
+            </div>
+
+            <div class="roster-card">
+                <h3>Sistem Informasi</h3>
+                <iframe src="{{ asset('storage/' . $RosterAkademik->roster_sistem_informasi) }}" width="600" height="400"></iframe>
+            </div>
+        @endforeach
+    </div>
 </section>
 @endsection

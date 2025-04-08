@@ -40,7 +40,8 @@ Route::get('/Struktur-Organisasi', function () {
 //kalender akademik
 Route::get('/Kalender-Akademik', function () {
     $KalenderAkademiks = App\Models\KalenderAkademik::all();
-    return view('profile.kalenderAkademik', compact('KalenderAkademiks'));
+    $RosterAkademiks = App\Models\RosterAkademik::all();
+    return view('profile.kalenderAkademik', compact('KalenderAkademiks', 'RosterAkademiks'));
 })->name('kalenderAkademik');
 
 
