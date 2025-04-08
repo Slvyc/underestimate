@@ -3262,7 +3262,7 @@ color: #ffd700;
   margin-right: auto; 
 }
 
-@media (max-width: 810px) {
+@media (max-width: 1080px) {
   .roster-card iframe {
     width: 340px;
   }
