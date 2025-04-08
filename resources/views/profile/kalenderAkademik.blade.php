@@ -38,17 +38,32 @@
         @foreach ( $RosterAkademiks as $RosterAkademik)
             <div class="roster-card">
                 <h3>Teknik Sipil</h3>
-                <iframe src="{{ asset('storage/' . $RosterAkademik->roster_sipil) }}" width="600" height="400"></iframe>
+                <iframe 
+                    src="{{ asset('pdfjs/web/viewer.html?file=' . asset('storage/' . $RosterAkademik->roster_sipil)) }}" 
+                    width="100%" 
+                    height="600px" 
+                    style="border: none;">
+                </iframe>
             </div>
 
             <div class="roster-card">
                 <h3>Teknik Mesin</h3>
-                <iframe src="{{ asset('storage/' . $RosterAkademik->roster_mesin) }}" width="600" height="400"></iframe>
+                <iframe 
+                    src="{{ asset('pdfjs/web/viewer.html?file=' . asset('storage/' . $RosterAkademik->roster_mesin)) }}" 
+                    width="100%" 
+                    height="600px" 
+                    style="border: none;">
+                </iframe>
             </div>
 
             <div class="roster-card">
                 <h3>Sistem Informasi</h3>
-                <iframe src="{{ asset('storage/' . $RosterAkademik->roster_sistem_informasi) }}" width="600" height="400"></iframe>
+                <iframe 
+                    src="{{ asset('pdfjs/web/viewer.html?file=' . asset('storage/' . $RosterAkademik->roster_sistem_informasi)) }}" 
+                    width="100%" 
+                    height="600px" 
+                    style="border: none;">
+                </iframe>
             </div>
         @endforeach
     </div>
