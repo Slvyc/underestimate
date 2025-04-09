@@ -29,11 +29,13 @@ class KalenderAkademikResource extends Resource
                 FileUpload::make('image_ganjil')
                     ->label('Kalender Ganjil')
                     ->visibility('public')
+                    ->preserveFilenames()
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
                     ->directory('uploads/kalender_akademik'),
                 FileUpload::make('image_genap')
                     ->label('Kalender Genap')
                     ->visibility('public')
+                    ->preserveFilenames()
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
                     ->directory('uploads/kalender_akademik'),
             ]);

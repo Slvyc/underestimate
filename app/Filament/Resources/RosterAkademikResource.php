@@ -32,16 +32,22 @@ class RosterAkademikResource extends Resource
                     ->label('Roster Sipil')
                     ->visibility('public')
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->preserveFilenames()
                     ->directory('uploads/Roster'),
                 FileUpload::make('roster_mesin')
                     ->label('Roster Mesin')
                     ->visibility('public')
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->preserveFilenames()
                     ->directory('uploads/Roster'),
                 FileUpload::make('roster_sistem_informasi')
                     ->label('Roster Sistem Informasi')
                     ->visibility('public')
                     ->disk('public') // Pastikan disk yang digunakan adalah 'public'
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->preserveFilenames()
                     ->directory('uploads/Roster'),
                 
             ]);
