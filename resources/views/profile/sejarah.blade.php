@@ -90,14 +90,6 @@ Teknik Sipil diakreditasi dengan peringkat B (SK BAN-PT No. 1011/SK/BAN PT/Akred
 				</p>
 			</div>
 		</div>
-
-		<div class="timeline-row">
-			<div class="timeline-content">
-				<i class="icon-attachment"></i>
-				<h4>Continue...</h4>
-				<p></p>
-			</div>
-		</div>
 	</div>
 </div>
 @endsection
