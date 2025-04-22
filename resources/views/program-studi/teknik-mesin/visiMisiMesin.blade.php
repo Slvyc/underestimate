@@ -41,7 +41,7 @@
                         <img src="/asset/akred/FT-Mesin.jpg" class="img-akred" alt="Foto Departemen 3">
                         <div class="overlay-akred">
                             <div class="button-akred">
-                                <a href="asset/akred/FT-Mesin.jpg" download> Download </a>
+                                <a href="/asset/akred/FT-Mesin.jpg" download> Download </a>
                             </div>
                         </div>
                     </div>

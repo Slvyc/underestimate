@@ -27,10 +27,10 @@
                 <!-- Slideshow Section -->
                 <hr class="si-border-gray">
                     <div class="container-akred">
-                        <img src="\asset\akred\FT-Sipil.png" class="img-akred" alt="Foto Departemen 2">
+                        <img src="/asset/akred/FT-Sipil.png" class="img-akred" alt="Foto Departemen 2">
                         <div class="overlay-akred">
                             <div class="button-akred">
-                                <a href="asset/akred/FT-Sipil.jpg" download> Download </a>
+                                <a href="/asset/akred/FT-Sipil.png" download> Download </a>
                             </div>
                         </div>
                     </div>
