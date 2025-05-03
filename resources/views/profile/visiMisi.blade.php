@@ -219,6 +219,13 @@
             </div>
             <canvas id="myChart2023"></canvas>
         </div>
+        <div class="chart-card">
+            <div class="chart-title">
+                Tingkat ketercapaian pemahaman <span>dosen, mahasiswa dan tendik</span>
+                <br>terhadap visi misi Fakultas Teknik UNAYA Tahun 2024
+            </div>
+            <canvas id="myChart2024"></canvas>
+        </div>
     </div>
 
     <script>
@@ -390,6 +397,153 @@
                         {
                             label: 'IKM',
                             data: [92.04, 85.32, 85.56],
+                            backgroundColor: 'rgba(255, 99, 71, 0.8)',
+                            borderColor: 'rgba(255, 99, 71, 1)',
+                            borderWidth: 1,
+                            borderRadius: 4,
+                            barPercentage: 0.6,
+                            categoryPercentage: 0.8
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    devicePixelRatio: 2,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                boxWidth: 12,
+                                font: {
+                                    size: 12
+                                },
+                                padding: 20
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                            titleFont: {
+                                size: 14
+                            },
+                            bodyFont: {
+                                size: 13
+                            },
+                            padding: 12,
+                            cornerRadius: 6,
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.raw + '%';
+                                }
+                            }
+                        },
+                        datalabels: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                },
+                                font: {
+                                    size: 11
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Tingkat Pemahaman (%)',
+                                font: {
+                                    size: 12,
+                                    weight: 'normal'
+                                },
+                                padding: {
+                                    top: 10,
+                                    bottom: 10
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                font: {
+                                    size: 11
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Responden',
+                                font: {
+                                    size: 12,
+                                    weight: 'normal'
+                                },
+                                padding: {
+                                    top: 10,
+                                    bottom: 0
+                                }
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 1500,
+                        easing: 'easeOutQuart'
+                    },
+                    onHover: (event, chartElement) => {
+                        event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
+                    }
+                }
+            });
+
+            // Add data labels manually since Chart.js 4 doesn't have built-in datalabels
+            ctx.canvas.addEventListener('mousemove', function() {
+                const datasets = chart.data.datasets;
+                for (let i = 0; i < datasets.length; i++) {
+                    const meta = chart.getDatasetMeta(i);
+                    const dataset = datasets[i];
+                    for (let j = 0; j < meta.data.length; j++) {
+                        const model = meta.data[j];
+                        ctx.fillStyle = dataset.borderColor;
+                        ctx.font = '11px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+                        ctx.fillText(dataset.data[j] + '%', model.x, model.y - 5);
+                    }
+                }
+            });
+        });
+    </script>
+
+    {{-- chart 2024 --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('myChart2024').getContext('2d');
+            
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Dosen', 'Mahasiswa', 'Tendik'],
+                    datasets: [
+                        {
+                            label: 'SKM',
+                            data: [3.58, 3.48, 3.49],
+                            backgroundColor: 'rgba(54, 162, 235, 0.8)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1,
+                            borderRadius: 4,
+                            barPercentage: 0.6,
+                            categoryPercentage: 0.8
+                        },
+                        {
+                            label: 'IKM',
+                            data: [89.61, 86.91, 87.22],
                             backgroundColor: 'rgba(255, 99, 71, 0.8)',
                             borderColor: 'rgba(255, 99, 71, 1)',
                             borderWidth: 1,
