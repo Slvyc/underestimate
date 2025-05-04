@@ -208,9 +208,9 @@
         <div class="chart-card">
             <div class="chart-title">
                 Tingkat ketercapaian pemahaman <span>dosen, mahasiswa dan tendik</span>
-                <br>terhadap visi misi Fakultas Teknik UNAYA Tahun 2022
+                <br>terhadap visi misi Fakultas Teknik UNAYA Tahun 2024
             </div>
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart2024"></canvas>
         </div>
         <div class="chart-card">
             <div class="chart-title">
@@ -222,9 +222,9 @@
         <div class="chart-card">
             <div class="chart-title">
                 Tingkat ketercapaian pemahaman <span>dosen, mahasiswa dan tendik</span>
-                <br>terhadap visi misi Fakultas Teknik UNAYA Tahun 2024
+                <br>terhadap visi misi Fakultas Teknik UNAYA Tahun 2022
             </div>
-            <canvas id="myChart2024"></canvas>
+            <canvas id="myChart"></canvas>
         </div>
     </div>
 
