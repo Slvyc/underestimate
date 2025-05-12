@@ -25,7 +25,7 @@
                         <h6>Riwayat Pendidikan</h6>
                         <p>{{ $DosenSipil->riwayat_prodi }}</p>
                         <p>({{ $DosenSipil->riwayat_universitas }})</p>
-                        <a href="{{ $DosenSipil->link_Publikasi }}" target="_blank">
+                        <a href="{{ $DosenSipil->link_publikasi }}" target="_blank">
                             <button class="btn-publications">Lihat Publikasi</button>
                         </a>
                         <div class="button-info">
