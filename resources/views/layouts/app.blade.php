@@ -111,6 +111,7 @@
                     <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
                     <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokumen AMI</a></li>
                     <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>
+                    <li><a href="{{ route('kesiapanTeknologi')}}" class="no-border-hover">Tingkat Kesiapan Teknologi</a></li>
             </ul>
         </li>
     </ul>
@@ -225,9 +226,9 @@
                 <li><a href="{{ route('sopPanduan')}}" class="no-border-hover">Sop</a></li>
                 <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
                 <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokumen AMI</a></li>
-                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>  
+                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li> 
+                <li><a href="{{ route('kesiapanTeknologi')}}" class="no-border-hover">Tingkat Kesiapan Teknologi</a></li> 
             </ul>
-
         </div>
     </div>
 </div>
