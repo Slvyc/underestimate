@@ -42,43 +42,130 @@
 </section>
 
 <!-- Vision and Mission Section -->
-<section class="si-vision-mission-section">
-    <h2 class="si-visimisi text-center mb-3 mt-4" style="color: #f9f3d9">Visi & Tujuan Program Studi Teknik Sipil</h2>
+<!-- Vision and Mission Section -->
+    <section class="si-vision-mission-section">
+        <h2 class="si-visimisi text-center mb-3 mt-4" style="color: #f9f3d9">Visi & Misi Program Studi Teknik Sipil </h2>
     </section>
     <div class="container si-vision-mission-container mb-5">
         <div class="row">
             <!-- Vision Section -->
             <div class="col-md-6">
                 <h2 class="text-center si-section-title si-border-title py-4">Visi</h2>
-                <p class="si-vision-text mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur accusantium hic voluptates labore eos rem, ipsam possimus dolore laboriosam sapiente, fuga quos quidem porro, suscipit corporis eum dolor in quibusdam.</p>
+                <p class="si-vision-text mt-4">Menjadi Program Studi yang unggul di bidang rekayasa bahan bangunan dan berwawasan global pada tahun 2027.
+                </p>
             </div>
             <!-- Mission Section -->
             <div class="col-md-6">
-                <h2 class="text-center si-section-title si-border-title py-4">Tujuan</h2>
+                <h2 class="text-center si-section-title si-border-title py-4">Misi</h2>
                 <ul class="list-unstyled si-tujuan-list mt-4" style="color: #f9f3d9; text-align:justify;">
                     <li class="si-tujuan-item">
                         <i class='bx bx-check-circle tujuan-icon'></i>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laboriosam excepturi illum sequi optio et asperiores, odio ipsa magnam, recusandae quis quaerat libero vero quos suscipit? Quis vitae voluptate reprehenderit!
+                        Menyelenggarakan pendidikan teknik sipil yang berkualitas.
                     </li>
                     <li class="si-tujuan-item">
                         <i class='bx bx-check-circle tujuan-icon'></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae labore, repellendus dicta corrupti error consequuntur obcaecati voluptatibus rerum dignissimos laborum aperiam aliquam reiciendis quas. Quam fugiat inventore sint consectetur?
+                        Melaksanakan pengembangan ilmu teknik sipil melalui kegiatan penelitian di bidang rekayasa bahan bangunan.
                     </li>
                     <li class="si-tujuan-item">
                         <i class='bx bx-check-circle tujuan-icon'></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores similique adipisci quo optio placeat possimus vel alias! Earum, eaque soluta! Quae ab deleniti explicabo cum harum amet doloremque alias.
+                        Menerapkan ilmu teknik sipil melalui kegiatan pengabdian pada masyarakat sesuai kebutuhan masyarakat.
                     </li>
                     <li class="si-tujuan-item">
                         <i class='bx bx-check-circle tujuan-icon'></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos commodi, magni non quia sequi quibusdam eligendi asperiores. Culpa iure, excepturi qui cupiditate quaerat dolore beatae! Omnis maiores labore architecto doloremque!
+                        Meningkatkan kualitas lulusan yang unggul dan berwawasan global.
                     </li>
-                    <li class="si-tujuan-item">
-                        <i class='bx bx-check-circle tujuan-icon'></i>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, facere blanditiis libero ex aliquam incidunt. Omnis nisi, magni odit est quasi corporis aut vero! Officia debitis minima exercitationem asperiores quo.
-                    </li>
-                </ul>  
+                </ul>
             </div>
         </div>
     </div>
-</section>
+    </section>
+    <div class="feedback-section">
+        <div class="container">
+            <h1 class="border-title text-center mb-5"><b>Tujuan & Sasaran</b></h1>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4"><b>Tujuan</b></h2>
+                    <ul class="tujuan-list">
+                        <li>Menghasilkan lulusan yang unggul, berwawasan global dan menguasai seluruh proses 
+                            perencanaan, pelaksanaan, pengawasan di bidang konstruksi. 
+                        </li>
+                        <li>Menghasilkan lulusan yang berbudi pekerti luhur dan berdedikasi terhadap profesi ketekniksipilan.
+                        </li>
+                        <li>Menghasilkan penelitian dan pengabdian masyarakat di bidang rekayasa bahan bangunan.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4"><b>Sasaran Strategis</b></h2>
+                    <ul class="tujuan-list mb-5">
+                        {{-- <li>Peningkatan Akses dan Kualitas Penerimaan Mahasiswa Baru</li>
+                        <li>Tersedianya program studi berkualitas</li>
+                        <li>Lulusan mendapatkan pekerjaan yang layak</li>
+                        <li>Tersedianya layanan berkualitas </li> --}}
+                    </ul>
+
+                    <div class="container mt-5 mb-5">
+                        <div class="accordion teknik-accordion" id="accordionMasukan">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMasukan1" aria-expanded="false"
+                                        aria-controls="collapseMasukan1">
+                                        -
+                                    </button>
+                                </h2>
+                                <div id="collapseMasukan1" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionMasukan">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>-
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMasukan2" aria-expanded="false"
+                                        aria-controls="collapseMasukan2">
+                                        -
+                                    </button>
+                                </h2>
+                                <div id="collapseMasukan2" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionMasukan">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>
+                                                -
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMasukan3" aria-expanded="false"
+                                        aria-controls="collapseMasukan3">
+                                         -
+                                    </button>
+                                </h2>
+                                <div id="collapseMasukan3" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionMasukan">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>
+                                                -
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end accordion-->
+            </div>
+        </div>
+    </div> <!-- end main content -->
 @endsection
