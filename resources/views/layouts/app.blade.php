@@ -92,6 +92,7 @@
             <ul class="submenu_dropdown-nav">
                     <li><a href="{{ route('penghargaanDosen') }}" class="no-border-hover">Penghargaan Dosen</a></li>
                     <li><a href="{{ route('penghargaanMahasiswa') }}" class="no-border-hover">Penghargaan Mahasiswa</a></li>
+                    <li><a href="{{ route('kesiapanTeknologi')}}" class="no-border-hover">Tingkat Kesiapan <br> Teknologi</a></li>
                 </ul>
             </li>
         <li><a href="{{ route('kerjasama') }}">Kerjasama</a></li>
@@ -207,6 +208,7 @@
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('penghargaanDosen') }}">Prestasi Dosen</a></li>
                 <li><a href="{{ route('penghargaanMahasiswa') }}">Prestasi Mahasiswa</a></li>
+                <li><a href="{{ route('kesiapanTeknologi')}}" class="no-border-hover">Tingkat Kesiapan Teknologi</a></li> 
             </ul>
 
             <!--Menu Download -->
@@ -225,9 +227,8 @@
                 <li><a href="{{ route('sopPanduan')}}" class="no-border-hover">Sop</a></li>
                 <li><a href="{{ route('survey')}}" class="no-border-hover">Survey</a></li>
                 <li><a href="{{ route('dokumenAmi')}}" class="no-border-hover">Dokumen AMI</a></li>
-                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li>  
+                <li><a href="{{ route('dokumenMonev')}}" class="no-border-hover">Dokumen Monev</a></li> 
             </ul>
-
         </div>
     </div>
 </div>

@@ -14,7 +14,9 @@ use App\Http\Controllers\KurikulumSipilController;
 use App\Http\Controllers\KerjasamaController;
 use App\Http\Controllers\SopPanduanController;
 use App\Http\Controllers\SurveyController;
+use App\Http\Controllers\KesiapanTeknologiController                                                                                                                                                      ;
 use App\Models\DokumenAmi;
+use App\Models\KesiapanTeknologi;
 
 Route::get('/', function () {
     $beritas = App\Models\Berita::all();
@@ -161,4 +163,8 @@ Route::get('/Survey', [SurveyController::class, 'index'])->name('survey');
 Route::get('/Dokumen-Ami', [DokumenAmiController::class, 'index'])->name('dokumenAmi');
 Route::get('/Dokumen-Monevs', [DokumenMonevController::class, 'index'])->name('dokumenMonev');
 Route::get('/Sop', [SopPanduanController::class, 'index'])->name('sopPanduan');
+Route::get('/Tingkat-kesiapan-teknologi', [KesiapanTeknologiController::class, 'index'])->name('kesiapanTeknologi');
+// Route::get('/Tingkat-Kesiapan-Teknologi', function () {
+//     return view('penjaminan-mutu.kesiapanTeknologi');
+// })->name('kesiapanTeknologi');
 
