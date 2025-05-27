@@ -81,10 +81,10 @@
     </section>
     <div class="feedback-section">
         <div class="container">
-            <h1 class="border-title text-center mb-5"><b>Tujuan & Sasaran</b></h1>
+            <h1 class="border-title text-center mb-5"><b>Tujuan</b></h1>
             <div class="row g-4">
-                <div class="col-md-6">
-                    <h2 class="text-center mb-4"><b>Tujuan</b></h2>
+                <div >
+                    {{-- <h2 class="text-center mb-4"><b>Tujuan</b></h2> --}}
                     <ul class="tujuan-list">
                         <li>Menghasilkan lulusan yang unggul, berwawasan global dan menguasai seluruh proses 
                             perencanaan, pelaksanaan, pengawasan di bidang konstruksi. 
@@ -95,75 +95,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <h2 class="text-center mb-4"><b>Sasaran Strategis</b></h2>
-                    <ul class="tujuan-list mb-5">
-                        {{-- <li>Peningkatan Akses dan Kualitas Penerimaan Mahasiswa Baru</li>
-                        <li>Tersedianya program studi berkualitas</li>
-                        <li>Lulusan mendapatkan pekerjaan yang layak</li>
-                        <li>Tersedianya layanan berkualitas </li> --}}
-                    </ul>
-
-                    <div class="container mt-5 mb-5">
-                        <div class="accordion teknik-accordion" id="accordionMasukan">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseMasukan1" aria-expanded="false"
-                                        aria-controls="collapseMasukan1">
-                                        -
-                                    </button>
-                                </h2>
-                                <div id="collapseMasukan1" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionMasukan">
-                                    <div class="accordion-body">
-                                        <ol>
-                                            <li>-
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseMasukan2" aria-expanded="false"
-                                        aria-controls="collapseMasukan2">
-                                        -
-                                    </button>
-                                </h2>
-                                <div id="collapseMasukan2" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionMasukan">
-                                    <div class="accordion-body">
-                                        <ol>
-                                            <li>
-                                                -
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseMasukan3" aria-expanded="false"
-                                        aria-controls="collapseMasukan3">
-                                         -
-                                    </button>
-                                </h2>
-                                <div id="collapseMasukan3" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionMasukan">
-                                    <div class="accordion-body">
-                                        <ol>
-                                            <li>
-                                                -
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{-- SASARAN STRATEGIS --}}
                 <!-- end accordion-->
             </div>
         </div>
