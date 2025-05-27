@@ -96,7 +96,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="text-center mb-4"><b>Sasaran Strategis</b></h2>
+                    <h2 class="text-center mb-4"><b>Sasaran Strategis TES</b></h2>
                     <ul class="tujuan-list mb-5">
                         {{-- <li>Peningkatan Akses dan Kualitas Penerimaan Mahasiswa Baru</li>
                         <li>Tersedianya program studi berkualitas</li>
