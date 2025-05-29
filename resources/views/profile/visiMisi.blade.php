@@ -15,8 +15,7 @@
                 <div class="col-md-6">
                     <h1 class="vision-mission-title py-4"><b>Visi</b></h1>
                     <p class="visi-list mt-4">Pada Tahun 2035 menjadikan Fakultas yang Inovatif, Unggul, Islami dan
-                        berwawasan
-                        Global dalam penyelenggaraan tri dharma serta menghasilkan lulusan yang menguasai teknologi
+                        berwawasan Global dalam penyelenggaraan tri dharma serta menghasilkan lulusan yang menguasai teknologi
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -65,6 +64,13 @@
                         <li>Tersedianya program studi berkualitas</li>
                         <li>Lulusan mendapatkan pekerjaan yang layak</li>
                         <li>Tersedianya layanan berkualitas </li>
+                        <li>Meningkatkan prestasi mahasiswa di tingkat nasional dan internasional</li>
+                        <li>Meningkatkan skema penelitian dan pengabdian kepada masyarakat</li>
+                        <li>Meningkatnya publikasi, produk inovasi, HKI, dan hilirisasi hasil-hasil penelitian</li>
+                        <li>Meningkatkan kontribusi dalam kerja sama bidang pendidikan, penelitian dan pengabdian kepada masyarakat</li>
+                        <li>Tersedianya sumber daya manusia berkarakter pembelajar yang produktif dan berdaya saing</li>
+                        <li>Menciptakan tata kelola organisasi yang fleksibel, akuntabel, transparan, efisien, dan efektif</li>
+                        <li>Mengembangkan infrastruktur untuk memuhi kebutuhan Tri Dharma </li>
                     </ul>
 
                     <div class="container mt-5 mb-5">
