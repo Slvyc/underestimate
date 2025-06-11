@@ -38,6 +38,7 @@
                 <li><a href="{{ route('visiMisi') }}" class="no-border-hover">Visi & Misi</a></li>
                 <li><a href="{{ route('strukturOrganisasi')}}" class="no-border-hover">Struktur Organisasi</a></li>
                 <li><a href="{{ route('kalenderAkademik')  }}" class="no-border-hover">Kalender Akademik</a></li>
+                <li><a href="{{ route('roadmap')  }}" class="no-border-hover">Roadmap</a></li>
             </ul>
         </li>
         <li><a href="#">Program Studi</a>
@@ -140,8 +141,9 @@
                 <li class="back-button-nav" data-target="main-menu"><i class="ri-arrow-left-wide-fill"></i>Back</li>
                 <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
                 <li><a href="{{ route('visiMisi') }}">Visi & Misi</a></li>
-            <li><a href="{{ route('strukturOrganisasi') }}">Struktur Organisasi</a></li>
+                <li><a href="{{ route('strukturOrganisasi') }}">Struktur Organisasi</a></li>
                 <li><a href="{{ route('kalenderAkademik') }}">Kalender Akademik</a></li>
+                <li><a href="{{ route('roadmap') }}">Roadmap</a></li>
             </ul>
 
             <!-- Program Studi Menu -->

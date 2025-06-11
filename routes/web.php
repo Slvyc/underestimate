@@ -39,6 +39,10 @@ Route::get('/Visi-Misi', function () {
 Route::get('/Struktur-Organisasi', function () {
     return view('profile.strukturOrganisasi');
 })->name('strukturOrganisasi');
+//Roadmap
+Route::get('/Roadmap', function () {
+    return view('profile.roadmap');
+})->name('roadmap');
 //kalender akademik
 Route::get('/Kalender-Akademik', function () {
     $KalenderAkademiks = App\Models\KalenderAkademik::all();

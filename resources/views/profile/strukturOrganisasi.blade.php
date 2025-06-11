@@ -12,7 +12,7 @@
 <section class="struktur-section">
         <div class="container-organisasi text-center">
             <!-- Gambar Struktur Organisasi -->
-            <img src="asset\img\Struktur Fakultas Teknik.png" alt="Struktur Organisasi Fakultas Teknik" class="org-image">
+            <img src="asset\img\Struktur Organisasi Teknik.jpeg" alt="Struktur Organisasi Fakultas Teknik" class="org-image">
             <!-- Ganti URL gambar di atas dengan path gambar struktur organisasi Anda -->
         </div>
 </section>
