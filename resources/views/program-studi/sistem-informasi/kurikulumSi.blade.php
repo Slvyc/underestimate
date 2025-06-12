@@ -28,7 +28,7 @@
             </thead>
             <tbody>
             @php 
-                $groupedKurikulum = $kurikulumSis->groupBy('semester');
+                $groupedKurikulum = $kurikulumSis->groupBy('semester')->sortKeys();
             @endphp
 
             @foreach ($groupedKurikulum as $semester => $kurikulum)
