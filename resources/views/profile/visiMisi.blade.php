@@ -5,7 +5,6 @@
     <section class="hero">
         <div class="container-hero text-center">
             <h1 class="display-4 fw-bold fade-in">Visi & Misi</h1>
-            <p class="lead fade-in">Menciptakan Lulusan Berkualitas di Bidang Teknologi Informasi</p>
         </div>
     </section>
 
