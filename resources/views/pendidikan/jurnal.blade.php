@@ -10,6 +10,55 @@
 
 <!-- main content -->
 <div class="jurnal-container">
+    <div class="jurnal-card">
+        <!-- <img src="/Web-Profile-Company/img/img.jpg" alt="Tentang Kami" class="service-page-image"> -->
+        <div class="jurnal-content-left">
+            <i class="fa-solid fa-book-journal-whills"><a class="link-artikel" href="https://www.sciencedirect.com/journal/case-studies-in-construction-materials">Case Studies In Construction Materials</a></i>
+            <p>Published by Elsevier B.V.</p>
+            <p>Frequency : 2 Issues per year (Juni dan Desember)</p>
+            <p>Online ISSN: 2214-5095</p>
+        </div>  
+        <div class="garis-vertikal"></div>
+        <div class="jurnal-content-right">
+            <p>Case Studies in Construction Materials provides a forum for the rapid publication of short, structured Case Studies on construction materials 
+                and related Short Communications, specialising in actual case studies involving real construction projects. Now by popular demand, CSCM has 
+                expanded the scope of the journal to also enable longer papers to be submitted for publication. </p>
+        </div>
+    </div>
+    <div class="jurnal-card">
+        <!-- <img src="/Web-Profile-Company/img/img.jpg" alt="Tentang Kami" class="service-page-image"> -->
+        <div class="jurnal-content-left">
+            <i class="fa-solid fa-book-journal-whills"><a class="link-artikel" href="https://www.frontiersin.org/journals/materials/sections/structural-materials">Structural Materials</a></i>
+            <p>Published by Frontiers Media S.A.</p>
+            <p>Continuous Publication</p>
+            <p>Electronic ISSN : 2296-8016</p>
+        </div>  
+        <div class="garis-vertikal"></div>
+        <div class="jurnal-content-right">
+            <p>The Structural Materials section is dedicated to publishing research focused on advancing the understanding and application of materials in 
+                the built environment and industrial infrastructure. Led by Professor John Provis from Paul Scherrer Institut (PSI), the Structural Materials 
+                section welcomes submissions in various domains of structural materials, which connect fundamental research with practical applications and societal 
+                impact.
+                </p>
+        </div>
+    </div>
+    <div class="jurnal-card">
+        <!-- <img src="/Web-Profile-Company/img/img.jpg" alt="Tentang Kami" class="service-page-image"> -->
+        <div class="jurnal-content-left">
+            <i class="fa-solid fa-book-journal-whills"><a class="link-artikel" href="https://www.cambridge.org/core/">Cambridge Core</a></i>
+            <p>Published by Cambridge University Press.</p>
+            {{-- <p>Continuous Publication</p>
+            <p>Electronic ISSN : 2296-8016</p> --}}
+        </div>  
+        {{-- <div class="garis-vertikal"></div>
+        <div class="jurnal-content-right">
+            <p>The Structural Materials section is dedicated to publishing research focused on advancing the understanding and application of materials in 
+                the built environment and industrial infrastructure. Led by Professor John Provis from Paul Scherrer Institut (PSI), the Structural Materials 
+                section welcomes submissions in various domains of structural materials, which connect fundamental research with practical applications and societal 
+                impact.
+                </p>
+        </div> --}}
+    </div>
     <!-- Card pertama: Gambar di sebelah kiri, konten di sebelah kanan -->
     <div class="jurnal-card">
         <!-- <img src="/Web-Profile-Company/img/img.jpg" alt="Tentang Kami" class="service-page-image"> -->
